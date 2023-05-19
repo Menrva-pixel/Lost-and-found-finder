@@ -26,7 +26,7 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
-    "regenerator-runtime": "^0.13.11"
+    "regenerator-runtime": "^0.13.11",
     "express": "^4.18.2",
     "mysql": "^2.18.1"
   }
