@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+  AppBar
+*/
+
+.app-bar {
+    padding: 8px 16px;
+    background-color: #243352;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.app-bar .app-bar__menu {
+    display: flex;
+    align-items: center;
+}
+
+.app-bar .app-bar__menu button {
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    padding: 8px;
+    cursor: pointer;
+    color: #E6BE3C;
+}
+
+.app-bar .app-bar__brand {
+    display: flex;
+    align-items: center;
+}
+
+.app-bar .app-bar__brand img {
+    width: 50px;   
+    height: auto;
+}
+
+.app-bar .app-bar__navigation {
+    position: absolute;
+    top: 72px;
+    left: -180px;
+    width: 150px;
+    transition: all 0.3s;
+    padding: 8px;
+    background-color: #243352;
+    overflow: hidden;
+    border-radius: 0 0 5px 0;
+}
+
+.app-bar .app-bar__navigation.open {
+    left: 0;
+}
+
+.app-bar .app-bar__navigation ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #E6BE3C;
+    font-weight: bold;
+    padding: 8px;
+    margin-bottom: 5px;
+    width: 100%;
+}
