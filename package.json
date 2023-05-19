@@ -1,0 +1,11 @@
+{
+  "name": "lost-and-found-finder",
+  "version": "1.0.0",
+  "description": "Dicoding Capstone Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "start-dev"
+  },
+  "author": "",
+  "license": "ISC"
+}
