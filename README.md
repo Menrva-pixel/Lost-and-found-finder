@@ -3,9 +3,12 @@
 
 <div align="center">
   
-# Lost & Found
+  [![Netlify Status](https://api.netlify.com/api/v1/badges/269ee15a-ff2e-47e4-8945-a91096983710/deploy-status)](https://app.netlify.com/sites/lost-and-found-finder/deploys)
+  
+# Lost & Found 
 
-Dicoding Capstone Project
+Dicoding Capstone Project 
+  
 
 
   
