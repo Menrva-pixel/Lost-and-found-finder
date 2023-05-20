@@ -204,3 +204,86 @@ site-description-element .desc-container {
   color: #e6be3c;
   padding-bottom: 20px;
 }
+
+/* function section */
+function-section {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 50px;
+    /* height: 300px; */
+}
+
+function-section h2 {
+    color: #243352;
+}
+.lostButton, .findButton {
+    text-align: center;
+}
+
+function-section button {
+    margin-top: 10px;
+    padding: 15px 25px;
+    font-size: 1em;
+    background-color: #4B68A3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: .1s;
+}
+function-section button:hover {
+    transform: scale(1.1);
+}
+
+/* information section */
+information-section {
+    padding: 50px;
+    display: inline-block;   
+    background-color: #243352;
+    padding: 80px 0;
+    margin-bottom: 30px;
+    width: 100%;
+}
+information-section h2 {
+    color: #e6be3c;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.containerCard {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    width: 90%;
+    padding: 10px 10px;
+    overflow-x: scroll;
+}
+
+.containerCard::-webkit-scrollbar {
+    width: 2px;
+}
+.containerCard::-webkit-scrollbar-thumb{
+    background-color: #4B68A3;
+    height: 5px;
+    width: 5px;
+    border-radius: 5px;
+    border: 3px solid white;
+}
+.containerCard::-webkit-scrollbar-track{
+    background-color: white;
+    /* margin-block: 100px; */
+    border-radius: 5px;
+}
+.card{
+    min-width: 18rem;
+    margin-bottom: 30px;
+}
+.card h5{
+    padding: 0 5px;
+    font-weight: 600;
+}
+.card-text{
+    padding: 5px;
+}
+
