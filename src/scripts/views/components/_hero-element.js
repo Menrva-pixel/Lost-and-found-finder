@@ -1,3 +1,4 @@
+/* eslint-disable no-plusplus */
 /* eslint-disable no-inner-declarations */
 /* eslint-disable no-param-reassign */
 import bannerImage from '../../../public/images/hero/hero.png';
