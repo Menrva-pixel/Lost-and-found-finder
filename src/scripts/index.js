@@ -1,7 +1,7 @@
 import 'regenerator-runtime';
 import '../styles/style.css';
 import '../styles/responsive.css';
-
+import './views/components/_hero-element';
 import App from './views/app';
 
 // eslint-disable-next-line no-unused-vars
