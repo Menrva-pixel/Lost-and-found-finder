@@ -1,3 +1,5 @@
+import '../components/_site-description-element';
+
 const Home = {
   async render() {
     return `

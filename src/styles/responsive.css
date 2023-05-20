@@ -24,3 +24,13 @@
         margin: 0;
     }
 }
+
+/*
+  Site Description
+*/
+
+@media screen and (min-width: 1050px) {
+    site-description-element .desc-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}

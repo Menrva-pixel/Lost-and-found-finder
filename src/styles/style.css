@@ -80,3 +80,38 @@ body {
 footer {
   display: flex;
 }
+
+footer {
+  display: flex;
+}
+
+/*
+  Site Description
+*/
+site-description-element div {
+  background-color: #243352;
+}
+
+site-description-element .desc-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  padding: 30px;
+  margin: 0 auto;
+  max-width: 1200px;
+  align-items: center;
+}
+
+.desc-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.desc-container .description p{
+  color: #fff;
+}
+
+.desc-container .description h2{
+  color: #e6be3c;
+  padding-bottom: 20px;
+}
