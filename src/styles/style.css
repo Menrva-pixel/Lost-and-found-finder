@@ -77,8 +77,97 @@ body {
   width: 100%;
 }
 
+/* footer */
 footer {
   display: flex;
+  flex-direction: row;
+  background-color: #243352;
+  padding: 30px;
+  color: #e6be3c;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  font-size: large;
+}
+
+.footer-left img {
+  width: 30px;
+  height: 30px;
+}
+
+.location,
+.phone,
+.message {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.message a {
+  color: #e6be3c;
+}
+
+.icon-location,
+.icon-phone,
+.icon-message {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 50%;
+  margin-right: 10px;
+  transition: 0.5s;
+}
+
+.icon-location:hover,
+.icon-phone:hover,
+.icon-message:hover {
+  background-color: #9ba4b5;
+  cursor: pointer;
+}
+
+.footer-mid {
+  flex: 2;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+}
+
+.footer-right h3 {
+  margin-bottom: 10px;
+}
+
+.footer-right .sosmed {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.item-sosmed img {
+  width: 30px;
+  height: 30px;
+}
+
+.item-sosmed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+.item-sosmed:hover {
+  background-color: #9ba4b5;
+  cursor: pointer;
 }
 
 footer {
