@@ -1,7 +1,7 @@
 const Home = {
   async render() {
     return `
-        <h2>Home page</h2>
+        <hero-element></hero-element>
       `;
   },
 
