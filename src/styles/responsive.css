@@ -47,32 +47,18 @@
   }
 
   /* Function Section */
-  function-section{
+  function-section {
     flex-direction: row;
     padding: 100px 0;
   }
-  function-section button{
+  function-section button {
     margin-top: 30px;
     padding: 10px 20px;
   }
-  .containerCard{
+  .containerCard {
     padding: 10px 50px;
   }
-  .card{
+  .card {
     min-width: 20rem;
+  }
 }
-
-}
-/*
-  Site Description
-*/
-
-@media screen and (min-width: 1050px) {
-    site-description-element .desc-container {
-        grid-template-columns: 1fr 1fr;
-    }
-    .card {
-        /* width: 12em; */
-    }
-}
-
