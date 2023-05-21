@@ -1,10 +1,10 @@
 class information extends HTMLElement {
-    connectedCallback(){
-        this.render();
-    }
+  connectedCallback() {
+    this.render();
+  }
 
-    render(){
-        this.innerHTML = `
+  render() {
+    this.innerHTML = `
         <h2>Informasi Kehilangan</h2>
         <div class="containerCard">
             <div class="card" style="width: 18rem;">
@@ -53,6 +53,6 @@ class information extends HTMLElement {
             </div>
         </div>
         `;
-    }
+  }
 }
 customElements.define('information-section', information);
