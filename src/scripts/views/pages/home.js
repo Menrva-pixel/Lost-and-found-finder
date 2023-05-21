@@ -1,6 +1,7 @@
 import '../components/_site-description-element';
 import '../components/function-section';
-import '../components/informationSection'
+import '../components/informationSection';
+
 const Home = {
   async render() {
     return `
