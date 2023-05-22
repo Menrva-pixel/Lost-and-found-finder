@@ -1,7 +1,7 @@
 @media screen and (min-width: 650px) {
   .app-bar {
     grid-template-columns: 1fr auto;
-    padding: 8px 32px;
+    padding: 8px 320px;
   }
 
   .app-bar .app-bar__menu {

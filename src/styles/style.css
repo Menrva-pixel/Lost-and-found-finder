@@ -5,8 +5,9 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: white;
-  min-height: 100vh;
+  background-image: url(../public/images/bg3.webp);
+  background-size: cover; 
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
 }
@@ -15,20 +16,33 @@ main {
   flex: 1;
 }
 
-/*
-  AppBar
-*/
+/* AppBar */
 
 .app-bar {
   padding: 8px 16px;
-  background-color: #243352;
+  background-color: transparent;
   display: grid;
   grid-template-columns: auto 1fr auto;
   gap: 10px;
   position: sticky;
   top: 0;
   z-index: 99;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.app-bar--scrolled {
+  background-color: #0f131bb4; 
+}
+
+.btn-abt {
+  background-color: #43609b;
+  color: #d7d7d7 !important;
+  border-radius: 25px;
+}
+
+
+.btn-abt:hover{
+  transform: scale(1.1);
 }
 
 .app-bar .app-bar__menu {
@@ -42,7 +56,7 @@ main {
   font-size: 30px;
   padding: 8px;
   cursor: pointer;
-  color: #e6be3c;
+  color: #43609b;
 }
 
 .app-bar .app-bar__brand {
@@ -62,7 +76,7 @@ main {
   width: 150px;
   transition: all 0.3s;
   padding: 8px;
-  background-color: #243352;
+  background-color: none;
   overflow: hidden;
   border-radius: 0 0 5px 0;
 }
@@ -74,20 +88,32 @@ main {
 .app-bar .app-bar__navigation ul li a {
   display: inline-block;
   text-decoration: none;
-  color: #e6be3c;
+  color: #1f1f1f;
   font-weight: bold;
   padding: 8px;
   margin-bottom: 5px;
   width: 100%;
+  transition: color 0.3s ease-in-out;
+}
+
+.app-bar__navigation ul li a.a--scrolled {
+  color: #d3d3d3;
+}
+
+dl, ol, ul {
+  margin-bottom: 0 !important;
 }
 
 /* footer */
 footer {
   display: flex;
   flex-direction: row;
-  background-color: #43609b;
+  background: rgba(153, 153, 153, 0.51);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.5px);
   padding: 30px;
-  color: #e6be3c;
+  color: #1c1a1a;
+  text-shadow: 1px 1px rgb(143, 143, 143);
 }
 
 .footer-left {
@@ -111,7 +137,8 @@ footer {
 }
 
 .message a {
-  color: #e6be3c;
+  color: #1c1a1a;
+  text-shadow: 1px 1px rgb(143, 143, 143);
 }
 
 .icon-location,
@@ -145,6 +172,7 @@ footer {
 
 .footer-right h3 {
   margin-bottom: 10px;
+  color: #43609b;
 }
 
 .footer-right .sosmed {
@@ -181,7 +209,7 @@ footer {
 .copy-right {
   padding: 20px;
   text-align: center;
-  color: #e6be3c;
+  color: #43609b;
   font-size: 20px;
   background-color: #243352;
 }
@@ -195,33 +223,87 @@ footer {
   Site Description
 */
 site-description-element div {
-  background-color: #243352;
+  background-color: transparent;
+  padding: 20px;
+  background-color: #1c1a1a;
 }
 
 site-description-element .desc-container {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 20px;
-  padding: 30px;
+  padding: 40px;
   margin: 0 auto;
   max-width: 1200px;
   align-items: center;
+  position: relative;
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(1.9px);
+  border-radius: 10px;
+}
+.description h2 {
+  font-weight: 600;
+  font-size: 2.5em;
 }
 
 .desc-container img {
   max-width: 100%;
   height: auto;
+  border-radius: 15px;
+  vertical-align: middle;
 }
 
 .desc-container .description p{
-  color: #fff;
+  color: #d7d7d7;
+  text-align: justify;
+  line-break: auto;
 }
 
 .desc-container .description h2{
-  color: #e6be3c;
+  color: #43609b;
   padding-bottom: 20px;
 }
 
+/* Services */
+.services {
+  padding: 75px;
+}
+
+.services ul {
+  display: flex !important;
+  justify-content: center;
+  gap:60px;
+  list-style: none;
+  padding: 50px;
+  margin: 80px;
+  color: #1c1a1a;
+  background: rgba(153, 153, 153, 0.51);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+  }
+
+.services h1{
+  color: #43609b;
+  text-align: center;
+  margin: 50px;
+  font-size: 3.8em;
+  font-weight: bold;
+  filter: drop-shadow(0px 5px 1px #333);
+}
+
+.services h2{
+  color: #43609b;
+  font-weight: 500;
+}
+
+.services li {
+  width: 450px;
+  text-align: justify;
+}
 /* function section */
 function-section {
     padding: 50px 0;
@@ -229,41 +311,34 @@ function-section {
     flex-direction: column;
     justify-content: space-around;
     gap: 50px;
+    background-color: #1c1a1a;
     /* height: 300px; */
 }
 
 function-section h2 {
-    color: #243352;
+    color: #43609b;
+    -webkit-text-stroke-width: 0.4px;
+    -webkit-text-stroke-color: black;
 }
 .lostButton, .findButton {
     text-align: center;
-}
-
-function-section button {
-    margin-top: 10px;
-    padding: 15px 25px;
-    font-size: 1em;
-    background-color: #4B68A3;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    transition: .1s;
-}
-function-section button:hover {
-    transform: scale(1.1);
 }
 
 /* information section */
 information-section {
     padding: 50px;
     display: inline-block;   
-    background-color: #243352;
-    padding: 80px 0;
-    margin-bottom: 30px;
+    background: rgba(153, 153, 153, 0.51);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.5px);
+    padding: 20px 165px;
+    margin:  40px 0 40px 0;
     width: 100%;
 }
 information-section h2 {
-    color: #e6be3c;
+    color: #43609b;
+    font-weight: 600;
+    font-size: 2.4em;
     text-align: center;
     margin-bottom: 40px;
 }
@@ -295,6 +370,14 @@ information-section h2 {
 .card{
     min-width: 18rem;
     margin-bottom: 30px;
+    background-color: aliceblue;
+    box-shadow: 0px 5px 6px #1f1f1f;
+    padding: 20px;
+    border-radius: 15px !important;
+}
+
+.card:hover {
+  transform:translateY(1.2);
 }
 .card h5{
     padding: 0 5px;
@@ -302,6 +385,11 @@ information-section h2 {
 }
 .card-text{
     padding: 5px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; 
+            line-clamp: 4; 
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 /* Form */
@@ -338,4 +426,26 @@ information-section h2 {
 .image-area img {
   z-index: 2;
   position: relative;
+}
+
+/* button */
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  background-color: #43609b;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #c99c26;
+}
+
+button:active {
+  transform: translateY(2px);
 }

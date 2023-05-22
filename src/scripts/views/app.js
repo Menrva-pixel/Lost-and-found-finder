@@ -27,4 +27,22 @@ class App {
   }
 }
 
+window.addEventListener('scroll', () => {
+  const appBar = document.querySelector('.app-bar');
+  const navigationLinks = document.querySelectorAll('.app-bar__navigation ul li a');
+  const scrolled = window.scrollY > 0;
+
+  appBar.classList.toggle('app-bar--scrolled', scrolled);
+
+  navigationLinks.forEach((link) => {
+    link.classList.toggle('a--scrolled', scrolled);
+  });
+});
+
+window.addEventListener('scroll', () => {
+  const parallaxBg = document.querySelector('.parallax-bg');
+  const scrolled = window.pageYOffset;
+  parallaxBg.style.transform = `translateY(${scrolled * 0.4}px)`;
+});
+
 export default App;

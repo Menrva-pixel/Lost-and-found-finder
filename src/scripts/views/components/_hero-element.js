@@ -1,7 +1,7 @@
 /* eslint-disable no-plusplus */
 /* eslint-disable no-inner-declarations */
 /* eslint-disable no-param-reassign */
-import bannerImage from '../../../public/images/hero/hero.png';
+import bannerImage from '../../../public/images/hero/guy.png';
 
 class BannerElement extends HTMLElement {
   constructor() {
@@ -16,196 +16,102 @@ class BannerElement extends HTMLElement {
   render() {
     this.shadowDOM.innerHTML = `
     <style>
-      banner {
-        display: grid;
-        align-content: center;
-        height: 500px;
-        padding: 24px;
-        position: relative;
-      }
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: center;  
+      padding: 120px 420px;
+    }
+    
+    .hero-text {
+      flex: 1;
+      padding-right: 20px;
+    }
 
-      .banner-container {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        overflow: hidden;
-      }
+    .hero-text h1{
+      font-size: 5.2em;
+      color: #43609b;
+    }
 
-      img {
-        width: 100%;
+    button {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      border: none;
+      border-radius: 4px;
+      background-color: #43609b;
+      color: #fff;
+      transition: background-color 0.3s ease;
+    }
+    
+    button:hover {
+      background-color: #c99c26;
+    }
+    
+    button:active {
+      transform: translateY(2px);
+    }
+    
+    .hero-text p {
+      color: #1c1a1a;
+      text-shadow: 1px 1px rgb(143, 143, 143);
+    }
+    
+    .hero-image {
+      width: 450px;
+      height: auto;
+      overflow: hidden;
+    }
+    
+    .hero-image img {
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.51);
+      backdrop-filter: blur(1.9px);
+      -webkit-backdrop-filter: blur(1.9px);
+      border-radius: 50px 0 50px 0;
+      object-fit: cover;
+    }
+
+    @media (max-width: 1367px) {
+      .hero {
+        padding: 120px 420px; /* Adjust the padding as needed */
+      }
+    
+      .hero-image {
+        display: none;
+      }
+    }
+
+    @media (min-widthL 1366px) {
+      .hero-image img {
+        width: auto;
         height: 100%;
+        background: rgba(0, 0, 0, 0.51);
+        backdrop-filter: blur(1.9px);
+        -webkit-backdrop-filter: blur(1.9px);
+        border-radius: 50px 0 50px 0;
         object-fit: cover;
-        filter: blur(2px);
       }
-
-      .banner-text {
-        text-align: center;
-        z-index: 1;
-        padding: 0 20px;
-      }
+    }
       
-      h1 {
-        font-family: 'Satisfy', cursive;
-        color: rgb(145, 126, 87);
-        font-size: 2.8em;
-        font-weight: bold;
-        margin-bottom: 20px;
-        text-shadow: 2px 2px #0c0c0c;
-      }
-
-      p {
-        font-size: 24px;
-        color: white;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        overflow: hidden;
-        border-right: .15em solid white;
-        white-space: nowrap;
-        margin: 0 auto;
-        letter-spacing: .15em;
-        animation: typing 2.5s steps(30, end), blink-caret .75s step-end infinite;
-        width: 30%;
-      }
-
-      @keyframes typing {
-        from {
-          width: 0;
-        }
-        to {
-          width: 20%;
-        }
-      }
-
-      @keyframes blink-caret {
-        from,
-        to {
-          border-color: transparent;
-        }
-        50% {
-          border-color: white;
-        }
-      }
-
-      @media (max-width: 576px) {
-        h1 {
-          font-size: 36px;
-        }
-        p {
-          font-size: 20px;
-          width: 220px;
-        }
-      }
-
-      @media (min-width: 576px) and (max-width: 992px) {
-        h1 {
-          font-size: 42px;
-        }
-        p {
-          font-size: 22px;
-          width: 220px;
-        }
-      }
-
-      @media (min-width: 992px) and (max-width: 1200px) {
-        h1 {
-          font-size: 48px;
-        }
-        p {
-          font-size: 24px;
-          width: 220px;
-        }
-      }
-
-      @media (min-width: 1200px) {
-        h1 {
-          font-size: 56px;
-        }
-        p {
-          font-size: 28px;
-        }
-      }
-
-      @media (max-width: 576px) {
-        banner {
-          height: 300px;
-          padding: 16px;
-        }
-      
-        h1 {
-          font-size: 24px;
-          margin-bottom: 10px;
-        }
-      
-        p {
-          font-size: 16px;
-        }
-      }
-      
-      @media (min-width: 577px) and (max-width: 768px) {
-        banner {
-          height: 400px;
-          padding: 20px;
-        }
-      
-        h1 {
-          font-size: 28px;
-          margin-bottom: 15px;
-        }
-      
-        p {
-          font-size: 18px;
-          width: 250px;
-        }
-      }
-      
-      @media (min-width: 769px) and (max-width: 992px) {
-        banner {
-          height: 450px;
-          padding: 24px;
-        }
-      
-        h1 {
-          font-size: 32px;
-          margin-bottom: 20px;
-        }
-      
-        p {
-          font-size: 20px;
-          width: 280px;
-        }
-      }
-      
+    
       
     </style>
-    <banner>
-      <div class='banner-container'>
-        <img src='${bannerImage}' alt='Banner-image' crossorigin='anonymous'>
-      </div>
-      <div class='banner-text'>
-        <h1>Lost & Found</h1>
-        <p id='typing-text'>Find or Report Missing Stuff Online</p>
-      </div>
-    </banner>
+    <div class="hero">
+    <div class="hero-text">
+      <h1>Kehilangan Barang?</h1>
+      <p>Merasa menemukan atau kehilangan barang ?</p>
+      <p>Buat laporan disini</p>
+      <button href="#id">Laporkan</button>
+    </div>
+    <div class="hero-image">
+      <img src="${bannerImage}" alt="Hero Image">
+    </div>
+  </div>
     `;
-
-    const element = this.shadowDOM.getElementById('typing-text');
-
-    if (element !== null) {
-      const originalText = element.innerHTML;
-      element.innerHTML = '';
-      function typeText(text, i) {
-        if (i < text.length) {
-          element.innerHTML += text.charAt(i);
-          i++;
-          setTimeout(() => {
-            typeText(text, i);
-          }, Math.random() * 200);
-        }
-      }
-
-      typeText(originalText, 0);
-    }
   }
 }
 
