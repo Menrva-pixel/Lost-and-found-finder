@@ -30,9 +30,7 @@ class BannerElement extends HTMLElement {
 
     .hero-text h1{
       font-size: 5.2em;
-      color: #e6be3c;
-      -webkit-text-stroke-width: 1.2px;
-      -webkit-text-stroke-color: black;
+      color: #43609b;
     }
 
     button {
@@ -43,7 +41,7 @@ class BannerElement extends HTMLElement {
       text-decoration: none;
       border: none;
       border-radius: 4px;
-      background-color: #e6be3c;
+      background-color: #43609b;
       color: #fff;
       transition: background-color 0.3s ease;
     }

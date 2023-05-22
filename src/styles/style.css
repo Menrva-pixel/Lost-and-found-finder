@@ -36,8 +36,10 @@ main {
 
 .btn-abt {
   background-color: #43609b;
+  color: #d7d7d7 !important;
   border-radius: 25px;
 }
+
 
 .btn-abt:hover{
   transform: scale(1.1);
@@ -54,7 +56,7 @@ main {
   font-size: 30px;
   padding: 8px;
   cursor: pointer;
-  color: #e6be3c;
+  color: #43609b;
 }
 
 .app-bar .app-bar__brand {
@@ -95,7 +97,7 @@ main {
 }
 
 .app-bar__navigation ul li a.a--scrolled {
-  color: #e6be3c;
+  color: #d3d3d3;
 }
 
 dl, ol, ul {
@@ -170,9 +172,7 @@ footer {
 
 .footer-right h3 {
   margin-bottom: 10px;
-  color: #e6be3c;
-  -webkit-text-stroke-width: 0.4px;
-  -webkit-text-stroke-color: black;
+  color: #43609b;
 }
 
 .footer-right .sosmed {
@@ -209,7 +209,7 @@ footer {
 .copy-right {
   padding: 20px;
   text-align: center;
-  color: #e6be3c;
+  color: #43609b;
   font-size: 20px;
   background-color: #243352;
 }
@@ -244,10 +244,8 @@ site-description-element .desc-container {
   border-radius: 10px;
 }
 .description h2 {
+  font-weight: 600;
   font-size: 2.5em;
-  text-shadow: 1px 1px rgb(143, 143, 143);
-  -webkit-text-stroke-width: 0.4px;
-  -webkit-text-stroke-color: black;
 }
 
 .desc-container img {
@@ -264,7 +262,7 @@ site-description-element .desc-container {
 }
 
 .desc-container .description h2{
-  color: #e6be3c;
+  color: #43609b;
   padding-bottom: 20px;
 }
 
@@ -281,7 +279,6 @@ site-description-element .desc-container {
   padding: 50px;
   margin: 80px;
   color: #1c1a1a;
-  text-shadow: 1px 1px rgb(143, 143, 143);
   background: rgba(153, 153, 153, 0.51);
   border-radius: 10px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -290,19 +287,17 @@ site-description-element .desc-container {
   }
 
 .services h1{
-  color: #e6be3c;
-  -webkit-text-stroke-width: 0.4px;
-  -webkit-text-stroke-color: black;
-  text-shadow: 1px 1px rgb(143, 143, 143);
+  color: #43609b;
   text-align: center;
   margin: 50px;
   font-size: 3.8em;
+  font-weight: bold;
+  filter: drop-shadow(0px 5px 1px #333);
 }
 
 .services h2{
-  color: #e6be3c;
-  -webkit-text-stroke-width: 0.4px;
-  -webkit-text-stroke-color: black; 
+  color: #43609b;
+  font-weight: 500;
 }
 
 .services li {
@@ -321,7 +316,7 @@ function-section {
 }
 
 function-section h2 {
-    color: #e6be3c;
+    color: #43609b;
     -webkit-text-stroke-width: 0.4px;
     -webkit-text-stroke-color: black;
 }
@@ -341,10 +336,9 @@ information-section {
     width: 100%;
 }
 information-section h2 {
-    color: #e6be3c;
-    -webkit-text-stroke-width: 0.4px;
-    -webkit-text-stroke-color: black;
-    text-shadow: 1px 1px rgb(143, 143, 143);
+    color: #43609b;
+    font-weight: 600;
+    font-size: 2.4em;
     text-align: center;
     margin-bottom: 40px;
 }
@@ -380,6 +374,10 @@ information-section h2 {
     box-shadow: 0px 5px 6px #1f1f1f;
     padding: 20px;
     border-radius: 15px !important;
+}
+
+.card:hover {
+  transform:translateY(1.2);
 }
 .card h5{
     padding: 0 5px;
