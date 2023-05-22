@@ -85,7 +85,7 @@ main {
 footer {
   display: flex;
   flex-direction: row;
-  background-color: #243352;
+  background-color: #43609b;
   padding: 30px;
   color: #e6be3c;
 }
@@ -177,6 +177,19 @@ footer {
 footer {
   display: flex;
 }
+
+.copy-right {
+  padding: 20px;
+  text-align: center;
+  color: #e6be3c;
+  font-size: 20px;
+  background-color: #243352;
+}
+
+.copy-right span {
+  font-weight: bold;
+}
+
 
 /*
   Site Description
