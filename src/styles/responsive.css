@@ -60,7 +60,7 @@
   }
   .card{
     min-width: 20rem;
-}
+  }
 
 }
 /*
@@ -71,8 +71,8 @@
     site-description-element .desc-container {
         grid-template-columns: 1fr 1fr;
     }
-    .card {
-        /* width: 12em; */
+    .boxCard{
+      flex-direction: row;
     }
 }
 

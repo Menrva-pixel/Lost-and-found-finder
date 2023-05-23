@@ -306,19 +306,18 @@ site-description-element .desc-container {
 }
 /* function section */
 function-section {
-    padding: 50px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    gap: 50px;
-    background-color: #1c1a1a;
-    /* height: 300px; */
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 50px;
+  background-color: #1c1a1a;
 }
 
 function-section h2 {
-    color: #43609b;
-    -webkit-text-stroke-width: 0.4px;
-    -webkit-text-stroke-color: black;
+  color: #43609b;
+  -webkit-text-stroke-width: 0.4px;
+  -webkit-text-stroke-color: black;
 }
 .lostButton, .findButton {
     text-align: center;
@@ -326,70 +325,69 @@ function-section h2 {
 
 /* information section */
 information-section {
-    padding: 50px;
-    display: inline-block;   
-    background: rgba(153, 153, 153, 0.51);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(2.5px);
-    padding: 20px 165px;
-    margin:  40px 0 40px 0;
-    width: 100%;
+  padding: 50px;
+  display: inline-block;   
+  background: rgba(153, 153, 153, 0.51);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.5px);
+  padding: 20px 165px;
+  margin:  40px 0 40px 0;
+  width: 100%;
 }
 information-section h2 {
-    color: #43609b;
-    font-weight: 600;
-    font-size: 2.4em;
-    text-align: center;
-    margin-bottom: 40px;
+  color: #43609b;
+  font-weight: 600;
+  font-size: 2.4em;
+  text-align: center;
+  margin-bottom: 40px;
 }
 .containerCard {
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    width: 90%;
-    padding: 10px 10px;
-    overflow-x: scroll;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  width: 90%;
+  padding: 10px 10px;
+  overflow-x: scroll;
 }
 
 .containerCard::-webkit-scrollbar {
-    width: 2px;
+  width: 2px;
 }
 .containerCard::-webkit-scrollbar-thumb{
-    background-color: #4B68A3;
-    height: 5px;
-    width: 5px;
-    border-radius: 5px;
-    border: 3px solid white;
+  background-color: #4B68A3;
+  height: 5px;
+  width: 5px;
+  border-radius: 5px;
+  border: 3px solid white;
 }
 .containerCard::-webkit-scrollbar-track{
-    background-color: white;
-    /* margin-block: 100px; */
-    border-radius: 5px;
+  background-color: white;
+  border-radius: 5px;
 }
 .card{
-    min-width: 18rem;
-    margin-bottom: 30px;
-    background-color: aliceblue;
-    box-shadow: 0px 5px 6px #1f1f1f;
-    padding: 20px;
-    border-radius: 15px !important;
+  min-width: 18rem;
+  margin-bottom: 30px;
+  background-color: aliceblue;
+  box-shadow: 0px 5px 6px #1f1f1f;
+  padding: 20px;
+  border-radius: 15px !important;
 }
 
 .card:hover {
   transform:translateY(1.2);
 }
 .card h5{
-    padding: 0 5px;
-    font-weight: 600;
+  padding: 0 5px;
+  font-weight: 600;
 }
 .card-text{
-    padding: 5px;
-    display: -webkit-box;
-    -webkit-line-clamp: 4; 
-            line-clamp: 4; 
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+  padding: 5px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; 
+          line-clamp: 4; 
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .more-icon-container {
@@ -453,4 +451,72 @@ button:hover {
 
 button:active {
   transform: translateY(2px);
+}
+
+
+/* about page */
+.About {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.Latar {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 70px;
+  /* border: 2px solid black; */
+}
+.Latar p{
+  text-indent: 50px;
+}
+
+.ourTeam {
+  padding-top: 10px;
+  margin: 30px;
+  
+  background-color: #f5f5f5;
+}
+.ourTeam h2{
+  text-align: center;
+  margin: 50px;
+}
+.boxCard {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.ourTeam .kartu{
+  text-align: center;
+  width: 300px;
+  /* box-sizing: border-box; */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 30px;
+  /* border-radius: 5px; */
+}
+.ourTeam .kartu img{
+  width: 100px;
+  background-color: aqua;
+  border-radius: 50%;
+  margin: 20px;
+}
+.ourTeam .kartu h3{
+  margin: 8px;
+}
+.ourTeam .socialMedia {
+  margin-top: 20px;
+}
+
+.ourTeam .socialMedia a{
+  padding: 10px;
+}
+.ourTeam .socialMedia i{
+  font-size: 1.5em;
+}
+.ourTeam .socialMedia a:hover i{
+  transform: scale(1.2);
 }
