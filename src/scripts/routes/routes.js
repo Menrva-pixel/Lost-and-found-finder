@@ -3,6 +3,7 @@ import Contact from '../views/pages/contact';
 import About from '../views/pages/about';
 import LostForm from '../views/pages/lost-form';
 import FoundForm from '../views/pages/found-form';
+import LostItems from '../views/pages/lostitems';
 
 const routes = {
   '/': Home, // default page
@@ -11,6 +12,7 @@ const routes = {
   '/about': About,
   '/lost-form': LostForm,
   '/found-form': FoundForm,
+  '/lost-items': LostItems,
 };
 
 export default routes;

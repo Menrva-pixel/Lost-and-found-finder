@@ -38,4 +38,5 @@ window.addEventListener('scroll', () => {
     link.classList.toggle('a--scrolled', scrolled);
   });
 });
+
 export default App;
