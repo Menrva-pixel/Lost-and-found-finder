@@ -7,7 +7,7 @@ body {
   font-family: "Poppins", sans-serif;
   background-image: url(../public/images/bg3.webp);
   background-size: cover; 
-  min-height: 50vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -390,6 +390,11 @@ information-section h2 {
             line-clamp: 4; 
     -webkit-box-orient: vertical;
     overflow: hidden;
+}
+
+.more-icon-container {
+  display: flex;
+  align-items: center; /* Align items vertically */
 }
 
 /* Form */
