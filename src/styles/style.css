@@ -392,6 +392,11 @@ information-section h2 {
     overflow: hidden;
 }
 
+.more-icon-container {
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
 /* Form */
 .form-container {
   padding: 20px;
