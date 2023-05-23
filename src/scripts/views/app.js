@@ -38,11 +38,4 @@ window.addEventListener('scroll', () => {
     link.classList.toggle('a--scrolled', scrolled);
   });
 });
-
-window.addEventListener('scroll', () => {
-  const parallaxBg = document.querySelector('.parallax-bg');
-  const scrolled = window.pageYOffset;
-  parallaxBg.style.transform = `translateY(${scrolled * 0.4}px)`;
-});
-
 export default App;
