@@ -1,7 +1,8 @@
 import '../components/_site-description-element';
-import '../components/function-section';
-import '../components/informationSection';
+import '../components/_function-section';
+import '../components/_information-section';
 import '../components/_services-element';
+import '../components/_nav-bar';
 
 const Home = {
   async render() {

@@ -14,10 +14,9 @@ class information extends HTMLElement {
             ${createLostItemCard()}
             ${createLostItemCard()}
             ${createLostItemCard()}
-            <div class="more-icon-container">
-                <a href="#/lost-items"><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/circled-right-2.png" alt="circled-right-2"/><a>
-            </div>
         </div>
+        <h3><a href="#/lost-items">Lihat Semua..</a></h3>
+
         `;
   }
 }

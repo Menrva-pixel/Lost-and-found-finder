@@ -60,7 +60,7 @@ class BannerElement extends HTMLElement {
     }
     
     .hero-image {
-      width: 450px;
+      min-width: 450px;
       height: auto;
       overflow: hidden;
     }
@@ -75,27 +75,23 @@ class BannerElement extends HTMLElement {
       object-fit: cover;
     }
 
-    @media (max-width: 1367px) {
+    @media(max-width: 790px) {
       .hero {
-        padding: 120px 420px; /* Adjust the padding as needed */
+        padding: 140px;
       }
-    
-      .hero-image {
-        display: none;
+
+      .hero-text h1 {
+        font-size: 3.2em;
       }
     }
 
-    @media (min-widthL 1366px) {
-      .hero-image img {
-        width: auto;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.51);
-        backdrop-filter: blur(1.9px);
-        -webkit-backdrop-filter: blur(1.9px);
-        border-radius: 50px 0 50px 0;
-        object-fit: cover;
+    @media (max-width: 1100px) {
+      .hero-image {
+      display: none;
       }
     }
+
+
       
     
       

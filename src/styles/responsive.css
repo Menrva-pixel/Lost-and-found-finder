@@ -1,4 +1,4 @@
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 1270px) {
   .app-bar {
     grid-template-columns: 1fr auto;
     padding: 8px 320px;
@@ -76,3 +76,36 @@
     }
 }
 
+@media screen and (min-width: 1270px) {
+  .services {
+    padding: 0 320px ;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  site-description-element div {
+    padding: 0;
+  }
+}
+
+/* information section */
+
+@media screen and (min-width: 870px) {
+  information-section {
+    padding: 20px 25px;
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  information-section {
+    padding: 10px 5px;
+  }
+
+  .containerCard {
+    width: 75%;
+  }
+
+  .desc-container .description h2 {
+    font-size: 2.2em;
+  }
+}
