@@ -49,19 +49,31 @@
   /* Function Section */
   function-section{
     flex-direction: row;
-    padding: 100px 0;
   }
+
   function-section button{
-    margin-top: 30px;
     padding: 10px 20px;
   }
+
   .containerCard{
     padding: 10px 50px;
   }
+
   .card{
     min-width: 20rem;
   }
 
+}
+
+@media screen and (max-width: 1269px) {
+  .left-side img {
+    display: none;
+  }
+
+  function-section {
+    display: flex;
+    justify-content: center;
+  }
 }
 /*
   Site Description
@@ -80,12 +92,14 @@
   .services {
     padding: 0 320px ;
   }
+  
 }
 
 @media screen and (max-width: 500px) {
   site-description-element div {
     padding: 0;
   }
+
 }
 
 /* information section */
@@ -94,6 +108,7 @@
   information-section {
     padding: 20px 25px;
   }
+  
 }
 
 @media only screen and (min-width: 375px) {

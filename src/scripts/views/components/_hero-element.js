@@ -20,7 +20,7 @@ class BannerElement extends HTMLElement {
       display: flex;
       align-items: center;
       justify-content: center;  
-      padding: 120px 420px;
+      padding: 20px 320px;
     }
     
     .hero-text {
@@ -28,26 +28,31 @@ class BannerElement extends HTMLElement {
       padding-right: 20px;
     }
 
-    .hero-text h1{
+    .hero-text h1 {
+      font-family: 'Raleway', sans-serif;
+      font-weight: bold;
       font-size: 5.2em;
       color: #43609b;
+      margin: 0px 20px 20px 0px;
+      line-height: 1.125;
     }
 
-    button {
-      display: inline-block;
-      padding: 10px 20px;
-      font-size: 16px;
-      font-weight: bold;
-      text-decoration: none;
+    .hero-text h3 {
+      margin: 0px 0px -10px 0px;
+      font-size: 1.8em;
+    }
+
+    .btn-lapor {
+      padding: 15px 40px 15px 40px;
+      color: #d3d3d3;
+      font-weight: 400;
+      font-size: 1.4em;
       border: none;
-      border-radius: 4px;
-      background-color: #43609b;
-      color: #fff;
-      transition: background-color 0.3s ease;
+      background: #333;
     }
     
     button:hover {
-      background-color: #c99c26;
+      background-color: #43609b;
     }
     
     button:active {
@@ -55,8 +60,10 @@ class BannerElement extends HTMLElement {
     }
     
     .hero-text p {
+      font-family: 'Montserrat', sans-serif;
       color: #1c1a1a;
-      text-shadow: 1px 1px rgb(143, 143, 143);
+      font-weight: 600;
+      font-size: 1.2em;
     }
     
     .hero-image {
@@ -75,19 +82,29 @@ class BannerElement extends HTMLElement {
       object-fit: cover;
     }
 
-    @media(max-width: 790px) {
+    @media (max-width: 790px) {
       .hero {
         padding: 140px;
       }
 
       .hero-text h1 {
-        font-size: 3.2em;
+        font-size: 2.2em;
       }
     }
 
     @media (max-width: 1100px) {
       .hero-image {
       display: none;
+      }
+    }
+
+    @media (max-width: 1367px) {
+      .hero-text h1 {
+        font-size: 4.2em;
+      }
+
+      .hero {
+        padding: 120px 120px;
       }
     }
 
@@ -98,10 +115,11 @@ class BannerElement extends HTMLElement {
     </style>
     <div class="hero">
     <div class="hero-text">
-      <h1>Kehilangan Barang?</h1>
-      <p>Merasa menemukan atau kehilangan barang ?</p>
-      <p>Buat laporan disini</p>
-      <button href="#id">Laporkan</button>
+       <h3>Finder</h3>
+      <h1>Selamat Datang di Lost & Found</h1>
+      <p>Kami menyediakan platform untuk membantu anda melaporkan<br>
+       atau mencari barang yang hilang!</p>
+      <button class="btn-lapor" href="#">Buat Laporan</button>
     </div>
     <div class="hero-image">
       <img src="${bannerImage}" alt="Hero Image">
