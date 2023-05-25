@@ -56,7 +56,8 @@
   }
 
   .containerCard{
-    padding: 10px 50px;
+    padding-inline: 50px;
+    padding-block: 10px 30px;
   }
 
   .card{
