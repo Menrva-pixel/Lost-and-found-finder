@@ -16,7 +16,7 @@ const About = {
             <div class="boxCard">
                 <div class="kartu">
                     <img src="${pictIcon}" alt="">
-                    <h3>David Slebeww</h3>
+                    <h3>Om Mahen</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nobis nam consectetur officia a ipsum odit delectus </p>
     
                     <div class="socialMedia">
