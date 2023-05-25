@@ -31,9 +31,15 @@ class App {
 window.addEventListener('scroll', () => {
   const appBar = document.querySelector('.app-bar');
   const navigationLinks = document.querySelectorAll('.app-bar__navigation ul li a');
+  const spans = document.querySelectorAll('#hamburgerButton span');
+
   const scrolled = window.scrollY > 0;
 
   appBar.classList.toggle('app-bar--scrolled', scrolled);
+
+  spans.forEach((span) => {
+    span.classList.toggle('span--scrolled', scrolled);
+  });
 
   navigationLinks.forEach((link) => {
     link.classList.toggle('a--scrolled', scrolled);

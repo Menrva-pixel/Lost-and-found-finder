@@ -1,0 +1,107 @@
+.app-bar {
+  padding: 8px 16px;
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.app-bar--scrolled {
+  background: rgba(0, 0, 0, 0.58);
+  backdrop-filter: blur(5.7px);
+  -webkit-backdrop-filter: blur(5.7px);
+}
+
+.btn-abt {
+  background-color: #43609b;
+  color: #d7d7d7 !important;
+  border-radius: 25px;
+}
+
+.btn-abt:hover {
+  transform: scale(1.1);
+}
+
+.app-bar .app-bar__menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.app-bar .app-bar__menu button {
+  background-color: transparent;
+  color: #43609b;
+}
+
+.app-bar .app-bar__brand {
+  display: flex;
+  align-items: center;
+}
+
+.app-bar .app-bar__brand img {
+  width: 50px;
+  height: auto;
+}
+
+.app-bar .app-bar__navigation {
+  position: absolute;
+  top: -0px;
+  left: -200px;
+  width: 200px;
+  transition: all 0.3s;
+  padding: 8px;
+  background: none;
+}
+
+.app-bar .app-bar__navigation.open {
+  left: 0;
+  height: 100vh;
+  background: #43609b;
+  padding: 16px;
+}
+
+.app-bar .app-bar__navigation.open .nav-link {
+  color: #d7d7d7 !important;
+  font-size: 1.2em;
+}
+
+.app-bar .app-bar__navigation ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #1f1f1f;
+  font-weight: bold;
+  padding: 8px;
+  margin-bottom: 5px;
+  width: 100%;
+  transition: color 0.3s ease-in-out;
+}
+
+.app-bar__navigation ul li a.a--scrolled {
+  color: #d3d3d3;
+}
+
+#hamburgerButton span.span--scrolled {
+  background: #d3d3d3;
+}
+
+.app-bar__navigation ul li a:hover {
+  color: #295cc4;
+}
+
+dl,
+ol,
+ul {
+  margin-bottom: 0 !important;
+}
+
+ol,
+ul {
+  padding-left: 0 !important;
+}
+
+ul {
+    list-style-type: none;
+}
