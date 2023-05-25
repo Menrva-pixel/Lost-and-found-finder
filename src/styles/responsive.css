@@ -1,4 +1,4 @@
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 1270px) {
   .app-bar {
     grid-template-columns: 1fr auto;
     padding: 8px 320px;
@@ -49,20 +49,34 @@
   /* Function Section */
   function-section{
     flex-direction: row;
-    padding: 100px 0;
   }
+
   function-section button{
-    margin-top: 30px;
     padding: 10px 20px;
   }
+
   .containerCard{
     padding-inline: 50px;
     padding-block: 10px 30px;
   }
+
   .card{
     min-width: 20rem;
   }
 
+}
+
+@media screen and (max-width: 1269px) { 
+  .right-side {
+    width: 550px;
+    align-items: none;
+  }
+
+  function-section {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+  }
 }
 /*
   Site Description
@@ -77,3 +91,47 @@
     }
 }
 
+@media screen and (min-width: 1270px) {
+  .services {
+    padding: 0 320px ;
+  }
+  
+}
+
+@media screen and (max-width: 700px) {
+  site-description-element div {
+    padding: 0;
+  }
+
+  .left-side {
+    display: none;
+  }
+
+  .left-side img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* information section */
+
+@media screen and (min-width: 870px) {
+  information-section {
+    padding: 20px 25px;
+  }
+  
+}
+
+@media only screen and (max-width: 375px) {
+  information-section {
+    padding: 10px 5px;
+  }
+
+  .containerCard {
+    width: 75%;
+  }
+
+  .desc-container .description h2 {
+    font-size: 2.2em;
+  }
+}

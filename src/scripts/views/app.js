@@ -1,3 +1,4 @@
+/* eslint-disable no-plusplus */
 import routes from '../routes/routes';
 import UrlParser from '../routes/url-parser';
 import DrawerInitiator from '../utils/drawer-initiator';
