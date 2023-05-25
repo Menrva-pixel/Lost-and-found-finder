@@ -163,12 +163,8 @@ ol, ul {
 footer {
   display: flex;
   flex-direction: row;
-  background: rgba(153, 153, 153, 0.51);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(2.5px);
   padding: 30px;
   color: #1c1a1a;
-  text-shadow: 1px 1px rgb(143, 143, 143);
 }
 
 .footer-left {
@@ -189,6 +185,7 @@ footer {
   display: flex;
   align-items: center;
   margin: 10px 0;
+  color: #333;
 }
 
 .message a {
@@ -264,9 +261,9 @@ footer {
 .copy-right {
   padding: 20px;
   text-align: center;
-  color: #43609b;
+  color: #d3d3d3;
   font-size: 20px;
-  background-color: #243352;
+  background-color: #131517;
 }
 
 .copy-right span {
@@ -322,6 +319,8 @@ site-description-element .desc-container {
 .desc-container .description h2{
   color: #43609b;
   padding-bottom: 20px;
+  font-size: 2.4em !important;
+  font-weight: bold;
 }
 
 /* Services */
@@ -338,20 +337,10 @@ site-description-element .desc-container {
 .services-list li {
   padding: 20px;
   list-style: none;
-  border-radius: 20px;
+  border-radius: 0;
   margin: 20px;
-}
-
-.list-item1 {
-  border: 2px solid rgb(42, 42, 219);
-}
-
-.list-item2 {
-  border: 2px solid rgb(45, 185, 64);
-}
-
-.list-item3 {
-  border: 2px solid rgb(233, 22, 67);
+  border: 1px solid rgb(24, 24, 24);
+  box-shadow: 6px 6px 2px #000000;
 }
 
 
@@ -394,8 +383,8 @@ function-section h2 {
 }
 
 .banner-img {
-  width: 500px;
-  height: 650px;;
+  min-width: 500px;
+  min-height: 650px;;
 }
 
 .banner-img img {
@@ -404,7 +393,8 @@ function-section h2 {
 }
 
 .left-side {
-  margin-bottom: -60px;
+  margin-bottom: -70px;
+  padding: 0 !important;
 }
 
 .right-side {
@@ -420,17 +410,18 @@ function-section h2 {
 information-section {
   padding: 50px;
   display: inline-block;   
-  background: rgba(153, 153, 153, 0.51);
+  background: #131517;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(2.5px);
-  padding: 20px 165px;
-  margin:  40px 0 40px 0;
+  padding: 50px 165px !important;
+  margin:  50px 0 50px 0;
   width: 100%;
 }
+
 information-section h2 {
-  color: #43609b;
+  color: #cacaca;
   font-weight: 600;
-  font-size: 2.4em;
+  font-size: 2.5em;
   text-align: center;
   margin-bottom: 40px;
 }
@@ -441,6 +432,7 @@ information-section h3 {
 
 information-section a {
   text-decoration: none;
+  color: #43609b;
 }
 
 information-section a:hover {
@@ -471,7 +463,7 @@ information-section a:hover {
 }
 
 .containerCard::-webkit-scrollbar-track{
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0);
   border-radius: 5px;
 }
 
@@ -503,6 +495,7 @@ information-section a:hover {
           line-clamp: 4; 
   -webkit-box-orient: vertical;
   overflow: hidden;
+  color: #cacaca;
 }
 
 
@@ -701,3 +694,4 @@ button:active {
 .ourTeam .socialMedia a:hover i{
   transform: scale(1.2);
 }
+

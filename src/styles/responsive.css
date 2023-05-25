@@ -65,14 +65,16 @@
 
 }
 
-@media screen and (max-width: 1269px) {
-  .left-side img {
-    display: none;
+@media screen and (max-width: 1269px) { 
+  .right-side {
+    width: 550px;
+    align-items: none;
   }
 
   function-section {
     display: flex;
     justify-content: center;
+    padding: 40px;
   }
 }
 /*
@@ -95,11 +97,19 @@
   
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
   site-description-element div {
     padding: 0;
   }
 
+  .left-side {
+    display: none;
+  }
+
+  .left-side img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 /* information section */
@@ -111,7 +121,7 @@
   
 }
 
-@media only screen and (min-width: 375px) {
+@media only screen and (max-width: 375px) {
   information-section {
     padding: 10px 5px;
   }
