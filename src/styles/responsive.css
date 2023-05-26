@@ -115,9 +115,10 @@
 
 /* information section */
 
-@media screen and (min-width: 870px) {
+@media screen and (max-width: 870px) {
   information-section {
-    padding: 20px 25px;
+    padding: 100px 10px;
+    /* width: 500px; */
   }
   
 }
@@ -133,5 +134,45 @@
 
   .desc-container .description h2 {
     font-size: 2.2em;
+  }
+}
+
+/* about */
+@media screen and (max-width: 1200px){
+  .boxCard {
+    width: 90%;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 10px;
+  }
+
+  .profile {
+    margin: auto;
+    max-width: 350px;
+    min-width: 300px;
+  }
+
+  .profile p{
+    margin: auto;
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 750px){
+  .boxCard {
+    width: 320px;
+    grid-template-columns: 1fr;
+  }
+  
+}
+
+@media only screen and (max-width: 375px) {
+  .boxCard {
+    width: 100%;
+  }
+  .ourTeam {
+    padding: 15px;
+    margin: 0px;
+    background-color: #b1b1b196;
   }
 }
