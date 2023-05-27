@@ -8,15 +8,15 @@ class NavigationBar extends HTMLElement {
     
         <nav id="navigationDrawer" class="app-bar__navigation">
           <ul>
-            <li><a href="#/home">HOME</a></li>
+            <li><a class="nav-link" href="#/home">HOME</a></li>
             <li class="dropdown">
-              <a href="#" class="dropbtn">SERVICE</a>
+              <a href="#" class="dropbtn nav-link">SERVICE</a>
               <div class="dropdown-content">
                 <a href="#/service1">Service 1</a>
                 <a href="#/service2">Service 2</a>
               </div>
             </li>
-            <li><a class="btn-abt" href="#/about">ABOUT</a></li>
+            <li><a class="btn-abt nav-link" href="#/about">ABOUT</a></li>
           </ul>
         </nav>
       `;

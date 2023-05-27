@@ -14,10 +14,14 @@ const About = {
         <div class="ourTeam">
             <h2>Our Team</h2>
             <div class="boxCard">
-                <div class="kartu">
-                    <img src="${pictIcon}" alt="">
-                    <h3>David Slebeww</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nobis nam consectetur officia a ipsum odit delectus </p>
+                <div class="profile">
+                    <div class ="imageProfile">
+                        <div class ="imageProfile">
+                        <img src="${pictIcon}" alt="">
+                    </div>
+                    </div>
+                    <h4>Om Mahen</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nobis nam consectetur officia a ipsum odit delectus Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     
                     <div class="socialMedia">
                         <a href=""><i class="bi bi-github"></i></a>
@@ -26,10 +30,12 @@ const About = {
                     </div>
                 </div>
 
-                <div class="kartu">
-                    <img src="${pictIcon}" alt="">
-                    <h3>David Slebeww</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nobis nam consectetur officia a ipsum odit delectus </p>
+                <div class="profile">
+                    <div class ="imageProfile">
+                        <img src="${pictIcon}" alt="">
+                    </div>
+                    <h4>David Slebeww</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nobis nam consectetur officia a ipsum odit delectus Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     
                     <div class="socialMedia">
                         <a href=""><i class="bi bi-github"></i></a>
@@ -38,10 +44,12 @@ const About = {
                     </div>
                 </div>
 
-                <div class="kartu">
-                    <img src="${pictIcon}" alt="">
-                    <h3>David Slebeww</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nobis nam consectetur officia a ipsum odit delectus </p>
+                <div class="profile">
+                    <div class ="imageProfile">
+                        <img src="${pictIcon}" alt="">
+                    </div>
+                    <h4>David Slebeww</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nobis nam consectetur officia a ipsum odit delectus Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     
                     <div class="socialMedia">
                         <a href=""><i class="bi bi-github"></i></a>
@@ -50,10 +58,12 @@ const About = {
                     </div>
                 </div>
 
-                <div class="kartu">
-                    <img src="${pictIcon}" alt="">
-                    <h3>David Slebeww</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nobis nam consectetur officia a ipsum odit delectus </p>
+                <div class="profile">
+                    <div class ="imageProfile">
+                        <img src="${pictIcon}" alt="">
+                    </div>
+                    <h4>David Slebeww</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nobis nam consectetur officia a ipsum odit delectus Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     
                     <div class="socialMedia">
                         <a href=""><i class="bi bi-github"></i></a>
