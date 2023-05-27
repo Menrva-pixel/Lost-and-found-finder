@@ -8,17 +8,9 @@
 
 Dicoding Capstone Project 
   
-
-
-  
 ## Authors
-
+  ### Team ID : `C23-R4104`
  [@bherdyanto](https://github.com/Menrva-pixel) | [@Mahendra](https://github.com/OmMahen) | [@VickyPratama](https://github.com/VickyPratama87) | [@IbnuHasyim](https://github.com/IbnuHs)
-
-## Documentation
-
-[Project Plan and Documentation](https://docs.google.com/document/d/11AZIsu7ZXM8i8nVDMIL0YBuNyv7aJ6xwYcQtyKEa_hc/edit)
-
 
 ## Features
 
@@ -37,7 +29,13 @@ Dicoding Capstone Project
   
 | Tema : `Solusi Utilitas`  |  Judul Project : `Lost and Found Finder` |
  ----------------------------- |----------------------------------- 
-  
+ ### Capstone Team
+ | ID | NAMA |
+  ----------------|------------------
+  F047XB403 | Barkah Herdyanto Sejati
+  F007XA007 | Ibnu Hasyim Surianto
+  F008XB035 | Vicky Pratama Setya Mahardika
+  F009XA009 | Mahendra Putra Raharja
 
 
   ## Executive Summary 
