@@ -36,9 +36,41 @@ Dicoding Capstone Project
 ![badge](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)
   
   
+| Tema : Solusi Utilitas  |  Judul Project : Lost and Found Finder |
+ ----------------------------- |----------------------------------- 
+  
+
+
+  ## Executive Summary 
+  
+  Semua orang memiliki barang berharga seperti handphone, laptop, sepeda motor, dompet, dan lain-lain. Hal ini menimbulkan permasalahan yaitu tindak kejahatan pencurian yang mengakibatkan kehilangan barang. Oleh karena itu, kami selaku generasi muda khususnya mahasiswa yang bergerak dibidang teknologi menciptakan ide yaitu “Lost and Found Finder”.
+
+  ## Project Scope & Deliverables:
+  
+  Tujuan akhir dari proyek adalah untuk memberikan solusi bagi masyarakat dalam mengatasi masalah kehilangan atau penemuan barang dengan cara memberikan platform online berbasis website yang memungkinkan pengguna untuk melaporkan dan mencari informasi tentang barang yang hilang atau ditemukan secara efektif dan efisien, serta memudahkan proses penemuan barang yang hilang oleh pemiliknya. 
+  
+</div>
+
+1. aplikasi online berbasis website yang menampilkan informasi detail seputar barang hilang atau ditemukan.
+2. Fitur pelaporan barang hilang atau ditemukan yang dapat diakses oleh pengguna.
+3. Fitur pencarian untuk memudahkan pengguna dalam mencari barang.
+
+<div align="center">
+  
+Ada 6 tahapan kegiatan yang harus dilakukan dalam waktu tersebut, yaitu tahap perencanaan selama 7 hari, tahap desain selama 5 hari, tahap penulisan kode program selama 20 hari, tahap pengujian selama 4 hari, tahap peluncuran selama 4 hari, dan tahap hasil akhir selama 5 hari. Setiap tahap memiliki target tertentu yang harus dicapai.   
+
+Scope |  Kegiatan
+------------- | ---------------------------------------
+Planning | Pencarian ide dan pembuatan ide project
+Design | Inisialisasi, mockup, dan evaluasi
+Coding | Setting GitHub Repository, HomePage, fitur utama dan fitur tambahan
+Testing | Testing Fungsionalitas, dan Evaluasi
+Release | Deploy dan Evaluasi
+Final Result | Dokumentasi, Project brieft, Slide presentasi, Video Presentasi
+
   ##  Risk and Issue Management Plan: 
 
-Berikut merupakan beberapa faktor yang dapat menggagalkan atau menunda pembuatan proyek website yang akan dibangun dan perencanaan bagaimana mengidentifikasi serta menyelesaikan isu yang mungkin terjadi selama pengerjaan proyek. 
+Berikut merupakan beberapa faktor yang dapat menggagalkan atau menunda pembuatan proyek website yang akan dibangun dan perencanaan bagaimana mengidentifikasi serta menyelesaikan isu yang mungkin terjadi selama pengerjaan proyek. Proyek ini dibagi menjadi 3 deliverables utama yaitu :
 
 Kondisi  | Penyebab |Dampak  | Strategi Mitigasi
 ------------- | ------------- |------------- | -------------
