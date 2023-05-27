@@ -1,4 +1,4 @@
-import createLostItemCard from '../template/template-creator';
+import createLostItemCard from "../template/template-creator";
 
 class information extends HTMLElement {
   connectedCallback() {
@@ -16,8 +16,7 @@ class information extends HTMLElement {
             ${createLostItemCard()}
         </div>
         <h3><a href="#/lost-items">Lihat Semua..</a></h3>
-
         `;
   }
 }
-customElements.define('information-section', information);
+customElements.define("information-section", information);
