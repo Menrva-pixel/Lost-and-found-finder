@@ -1,7 +1,6 @@
-
-![Logo](https://i.ibb.co/mG7Qdsk/banner.jpg")
-
 <div align="center">
+  
+  <a href="https://ibb.co/pxpCNDc"><img src="https://i.ibb.co/Nszwfh5/banner.jpg" alt="banner" border="0" /></a>
   
   [![Netlify Status](https://api.netlify.com/api/v1/badges/269ee15a-ff2e-47e4-8945-a91096983710/deploy-status)](https://app.netlify.com/sites/lost-and-found-finder/deploys)
   
