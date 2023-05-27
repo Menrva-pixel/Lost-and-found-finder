@@ -1,4 +1,4 @@
-import { createLostItemCardForResult } from '../template/template-creator';
+import createLostItemCard from '../template/template-creator';
 
 const LostItems = {
   async render() {
@@ -50,11 +50,10 @@ const LostItems = {
           </div>
 
           <div class="container mb-3">
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3">
-              <div class="col">${createLostItemCardForResult()}</div>
-              <div class="col">${createLostItemCardForResult()}</div>
-              <div class="col">${createLostItemCardForResult()}</div>
-              <div class="col">${createLostItemCardForResult()}</div>
+            <div class="row row-cols-1 row-cols-lg-2 g-3">
+              <div class="col">${createLostItemCard()}</div>
+              <div class="col">${createLostItemCard()}</div>
+              <div class="col">${createLostItemCard()}</div>
             </div>
           </div>
           

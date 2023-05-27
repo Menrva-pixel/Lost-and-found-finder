@@ -370,14 +370,11 @@ information-section a:hover {
 }
 
 .card{
+  min-width: 18rem;
   margin-bottom: 30px;
   border: none !important;
   border-radius: 0 !important;
   background-color: transparent !important;
-}
-
-.home-card {
-  min-width: 18rem;
 }
 
 .card:hover {
@@ -411,9 +408,9 @@ information-section a:hover {
 
 /* Form */
 .form-container {
-  padding: 0 20px;
+  padding: 0 150px;
   margin-inline: auto;
-  max-width: 1000px;
+  max-width: 1200px;
 }
 
 .form-check {
