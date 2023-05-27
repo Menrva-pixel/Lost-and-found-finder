@@ -1,5 +1,6 @@
 import createLostItemCard from "../template/template-creator";
 
+
 class information extends HTMLElement {
   connectedCallback() {
     this.render();
