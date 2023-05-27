@@ -35,14 +35,14 @@ Dicoding Capstone Project
 ![badge](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)
   
   
-| Tema : Solusi Utilitas  |  Judul Project : Lost and Found Finder |
+| Tema : `Solusi Utilitas`  |  Judul Project : `Lost and Found Finder` |
  ----------------------------- |----------------------------------- 
   
 
 
   ## Executive Summary 
   
-  Semua orang memiliki barang berharga seperti handphone, laptop, sepeda motor, dompet, dan lain-lain. Hal ini menimbulkan permasalahan yaitu tindak kejahatan pencurian yang mengakibatkan kehilangan barang. Oleh karena itu, kami selaku generasi muda khususnya mahasiswa yang bergerak dibidang teknologi menciptakan ide yaitu “Lost and Found Finder”.
+  Semua orang memiliki barang berharga seperti handphone, laptop, sepeda motor, dompet, dan lain-lain. Hal ini menimbulkan permasalahan yaitu tindak kejahatan pencurian yang mengakibatkan kehilangan barang. Oleh karena itu, kami selaku generasi muda khususnya mahasiswa yang bergerak dibidang teknologi menciptakan ide yaitu *“Lost and Found Finder”*.
 
   ## Project Scope & Deliverables:
   
