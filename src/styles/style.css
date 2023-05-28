@@ -261,12 +261,14 @@ site-description-element .desc-container {
 
 /* function section */
 function-section {
-  padding: 20px 180px;
-  display: flex;
+  /* padding: 20px 180px; */
+  /* display: flex;
   flex-direction: row;
   justify-content: space-around;
   gap: 10px;
-  object-fit: fill;
+  object-fit: fill; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 function-section h2 {
@@ -292,8 +294,17 @@ function-section h2 {
   margin-bottom: -70px;
   padding: 0 !important;
 }
+.left-side img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 100%; */
+  margin: auto;
+  /* max-width: 700px; */
+}
 
 .right-side {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -304,6 +315,7 @@ function-section h2 {
 
 /* information section */
 information-section {
+  position: relative;
   padding: 80px;
   display: inline-block;
   background: #131517;
@@ -311,6 +323,7 @@ information-section {
   backdrop-filter: blur(2.5px);
   margin: 50px 0 0 0;
   width: 100%;
+  border: 2px solid white;
 }
 
 information-section h2 {
@@ -335,8 +348,23 @@ information-section a:hover {
   color: #c99c26;
 }
 
-
+#scrollLeft,#scrollRight {
+  position: absolute;
+  top: 35%;
+  margin: 0 50px;
+  background-color: #00000000;
+  /* bottom: 50%; */
+  font-size: 2.5em;
+}
+#scrollLeft{
+  
+  left: 0;
+}
+#scrollRight{
+  right: 0;
+}
 .containerCard {
+  position: relative;
   margin: auto;
   margin-bottom: 50px;
   display: flex;
@@ -345,6 +373,7 @@ information-section a:hover {
   width: 90%;
   padding: 10px 10px;
   overflow-x: scroll;
+  scroll-behavior: smooth;
 }
 
 .containerCard::-webkit-scrollbar {
