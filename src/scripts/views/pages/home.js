@@ -20,6 +20,17 @@ const Home = {
 
   async afterRender() {
     // Fungsi ini akan dipanggil setelah render()
+    const leftscroll = document.querySelector('#scrollLeft');
+    const rightscroll = document.querySelector('#scrollRight');
+    leftscroll.addEventListener('click', () => {
+      const containerCard = document.querySelector('.containerCard');
+      containerCard.scrollBy(-250, 0);
+    });
+
+    rightscroll.addEventListener('click', () => {
+      const containerCard = document.querySelector('.containerCard');
+      containerCard.scrollBy(250, 0);
+    });
   },
 };
 

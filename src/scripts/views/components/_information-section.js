@@ -8,6 +8,7 @@ class information extends HTMLElement {
   render() {
     this.innerHTML = `
         <h2>Informasi Kehilangan</h2>
+        <button id="scrollLeft"><i class="bi bi-caret-left-fill"></i></button>
         <div class="containerCard">
             ${createLostItemCard()}
             ${createLostItemCard()}
@@ -15,6 +16,7 @@ class information extends HTMLElement {
             ${createLostItemCard()}
             ${createLostItemCard()}
         </div>
+        <button id="scrollRight"><i class="bi bi-caret-right-fill"></i></button>
         <h3><a href="#/lost-items">Lihat Semua..</a></h3>
 
         `;
