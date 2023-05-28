@@ -2,7 +2,7 @@
   
   <a href="https://ibb.co/pxpCNDc"><img src="https://i.ibb.co/Nszwfh5/banner.jpg" alt="banner" border="0" /></a>
   
-  [![Netlify Status](https://api.netlify.com/api/v1/badges/269ee15a-ff2e-47e4-8945-a91096983710/deploy-status)](https://app.netlify.com/sites/lost-and-found-finder/deploys)
+
   
 # Lost & Found 
 
@@ -25,6 +25,7 @@ Dicoding Capstone Project
 ![badge](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![badge](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 ![badge](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)
+![badge](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white) 
   
   
 | Tema : `Solusi Utilitas`  |  Judul Project : `Lost and Found Finder` |
