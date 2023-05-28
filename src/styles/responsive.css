@@ -25,27 +25,8 @@
   }
 }
 
-@media screen and (min-width: 250px) {
-  footer {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .footer-left {
-    margin-bottom: 20px;
-  }
-}
 
 @media screen and (min-width: 650px) {
-  footer {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .footer-left {
-    margin-bottom: 20px;
-  }
-
   /* Function Section */
   function-section{
     flex-direction: row;
@@ -174,5 +155,18 @@
     padding: 15px;
     margin: 0px;
     background-color: #b1b1b196;
+  }
+}
+
+
+/* footer section */
+
+@media only screen and (max-width: 766px) {
+  .footer-top {
+    text-align: center;
+  }
+
+  .footer-copyright {
+    text-align: center;
   }
 }

@@ -3,6 +3,7 @@ import '../components/_function-section';
 import '../components/_information-section';
 import '../components/_services-element';
 import '../components/_nav-bar';
+import '../components/_footer-element';
 
 const Home = {
   async render() {
