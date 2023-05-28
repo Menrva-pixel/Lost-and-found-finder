@@ -11,15 +11,15 @@ class ServiceElement extends HTMLElement {
         <ul>
           <li class="list-item1">
             <h2>Finder</h2>
-            <p>The finder is someone who discovers or comes across a lost item or object. They play a crucial role in the process of finding and potentially returning lost belongings to their rightful owners.</p>
+            <p>Finder / Penemu adalah seseorang yang menemukan atau menemui suatu barang atau objek yang hilang. Mereka memainkan peran penting dalam proses mencari dan mungkin mengembalikan barang yang hilang kepada pemiliknya.</p>
           </li>
           <li class="list-item2">
             <h2>Helper</h2>
-            <p>The helper refers to an individual who offers assistance or support to those in need. In the context of the website, a helper could be someone who provides guidance, advice, or practical help to both finders and seekers in their efforts to locate or recover lost items.</p>
+            <p>Helper merujuk pada individu yang menawarkan bantuan atau dukungan kepada mereka yang membutuhkannya. Dalam konteks situs web ini, seorang helper bisa menjadi seseorang yang memberikan panduan, nasihat, atau bantuan praktis kepada penemu dan pencari dalam upaya mereka untuk menemukan atau mendapatkan kembali barang yang hilang.</p>
           </li>
           <li class="list-item3">
             <h2>Seeker</h2>
-            <p>The seeker is a person actively searching for a lost or missing item. They are looking for information, resources, or services that can aid them in finding their lost belongings. Seekers rely on the assistance and tools provided by the website to increase their chances of locating their lost items.</p>
+            <p>Seeker / Pencari adalah seseorang yang sedang aktif mencari barang yang hilang atau hilang. Mereka mencari informasi, sumber daya, atau layanan yang dapat membantu mereka dalam menemukan barang yang hilang tersebut. Pencari mengandalkan bantuan dan alat yang disediakan oleh situs web untuk meningkatkan peluang mereka dalam menemukan barang yang hilang.</p>
           </li>
         </ul>
       </div>
