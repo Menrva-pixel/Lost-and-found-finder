@@ -1,4 +1,4 @@
-@media screen and (min-width: 1270px) {
+@media screen and (min-width: 1100px) {
   .app-bar {
     grid-template-columns: 1fr auto;
     padding: 8px 320px;
@@ -11,6 +11,7 @@
   .app-bar .app-bar__navigation {
     position: static;
     width: 100%;
+    height: auto;
   }
 
   .app-bar .app-bar__navigation ul li {
@@ -22,6 +23,16 @@
     width: 120px;
     text-align: center;
     margin: 0;
+  }
+
+  .btn-abt {
+    background-color: #43609b;
+    color: #d7d7d7 !important;
+    border-radius: 25px;
+  }
+  
+  .btn-abt:hover {
+    transform: scale(1.1);
   }
 }
 
@@ -60,7 +71,7 @@
     padding-block: 10px 30px;
   }
 
-  .card{
+  .home-card{
     min-width: 20rem;
   }
 

@@ -436,6 +436,10 @@ information-section a:hover {
   background-color: transparent !important;
 }
 
+.home-card {
+  min-width: 18rem;
+}
+
 .card:hover {
   transform: translateY(1.2);
 }
@@ -466,9 +470,9 @@ information-section a:hover {
 
 /* Form */
 .form-container {
-  padding: 0 150px;
+  padding: 0 20px;
   margin-inline: auto;
-  max-width: 1200px;
+  max-width: 1000px;
 }
 
 .form-check {
