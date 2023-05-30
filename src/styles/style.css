@@ -636,3 +636,38 @@ button:active {
 .ourTeam .socialMedia a:hover i {
   transform: scale(1.2);
 }
+
+/* terms of use */
+
+h1 {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+#terms-of-use {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  margin-bottom: 20px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

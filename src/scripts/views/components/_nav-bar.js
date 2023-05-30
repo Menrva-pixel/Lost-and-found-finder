@@ -12,7 +12,7 @@ class NavigationBar extends HTMLElement {
             <li class="dropdown">
               <a href="#" class="dropbtn nav-link">SERVICE</a>
               <div class="dropdown-content">
-                <a href="#/service1">Service 1</a>
+                <a href="#/terms-of-use">Terms of use</a>
                 <a href="#/service2">Service 2</a>
               </div>
             </li>
