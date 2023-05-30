@@ -168,6 +168,10 @@
     margin: auto;
     padding: 0 10px;
   }
+
+  .credit .credit-list .credit-item {
+    width: 40%;
+  }
 }
 
 @media screen and (max-width: 750px){
@@ -186,6 +190,14 @@
     padding: 15px;
     margin: 0px;
     background-color: #b1b1b196;
+  }
+
+  .credit {
+    padding: 0px 30px;
+  }
+
+  .credit-list .credit-item {
+    width: 100%;
   }
 }
 
