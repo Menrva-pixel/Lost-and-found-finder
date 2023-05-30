@@ -4,6 +4,7 @@ import '../components/_information-section';
 import '../components/_services-element';
 import '../components/_nav-bar';
 import '../components/_footer-element';
+import '../components/_terms-of-use';
 
 const Home = {
   async render() {

@@ -4,7 +4,7 @@ import About from '../views/pages/about';
 import LostForm from '../views/pages/lost-form';
 import FoundForm from '../views/pages/found-form';
 import LostItems from '../views/pages/lost-items';
-import Tou from '../views/pages/terms-of-use';
+import Tou from '../views/pages/tou-page';
 
 const routes = {
   '/': Home, // default page
