@@ -1,0 +1,46 @@
+.credit {
+  /* background-color: royalblue; */
+  width: 100%;
+  height: auto;
+  padding: 50px 70px;
+}
+
+.credit h2 {
+  margin: 30px;
+  text-align: center;
+}
+
+.credit .credit-list {
+  /* background-color: salmon; */
+  display: flex;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+
+.credit .credit-list .credit-item {
+  /* background-color: greenyellow; */
+  width: 24%;
+  padding: 10px;
+  border: 1px solid #adadad;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 5px #adadad;
+  overflow: hidden;
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+}
+
+.credit .credit-list .credit-item img:hover {
+  transition-duration: 1s;
+  transform: scale(120%);
+}
+
+.credit .credit-list .credit-item img {
+  width: 60%;
+
+}
