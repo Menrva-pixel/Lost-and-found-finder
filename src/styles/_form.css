@@ -1,0 +1,37 @@
+/* Form */
+.form-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+  
+.left-form {
+    position: relative;
+    background-color: #43609b;
+    height: 815px;
+}
+
+.left-form img {
+    width: 430px;
+    height: auto;
+}
+
+.left-description {
+    text-align: center;
+    padding: 50px 5px;
+}
+
+.left-form h4{
+    color: #ffff;
+    font-size: 1.1em;
+}
+
+/* right form */
+.right-form {
+    background-color: #dfdfdf;
+}
+
+#lost-form {
+    padding: 20px 20px;
+}

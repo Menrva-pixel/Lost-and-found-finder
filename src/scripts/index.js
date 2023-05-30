@@ -5,6 +5,8 @@ import '../styles/menu-button.css';
 import '../styles/responsive.css';
 import '../styles/search-bar.css';
 import '../styles/credit.css';
+import '../styles/_banner.css';
+import '../styles/_form.css';
 import './views/components/_hero-element';
 import App from './views/app';
 

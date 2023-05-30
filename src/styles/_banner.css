@@ -1,0 +1,83 @@
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    padding: 20px 320px;
+  }
+  
+  .hero-text {
+    flex: 1;
+    padding-right: 20px;
+  }
+
+  .hero-text h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 5.2em;
+    color: #43609b;
+    margin: 0px 20px 20px 0px;
+    line-height: 1.125;
+  }
+
+  .hero-text h3 {
+    margin: 0px 0px -10px 0px;
+    font-size: 1.8em;
+  }
+
+  .btn-lapor {
+    padding: 15px 40px 15px 40px;
+    color: #d3d3d3;
+    font-weight: 400;
+    font-size: 1.4em;
+    border: none;
+    background: #333;
+  }
+  
+  button:hover {
+    background-color: #43609b;
+  }
+  
+  button:active {
+    transform: translateY(2px);
+  }
+  
+  .hero-text p {
+    font-family: 'Montserrat', sans-serif;
+    color: #1c1a1a;
+    font-weight: 600;
+    font-size: 1.2em;
+  }
+  
+  .bg-image {
+    max-width: 750px;
+    height: auto;
+    overflow: hidden;
+  }
+  
+  .bg-image img {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.51);
+    backdrop-filter: blur(1.9px);
+    -webkit-backdrop-filter: blur(1.9px);
+    border-radius: 50px 0 50px 0;
+    object-fit: cover;
+  }
+
+  #information-section {
+    background-color: #333;
+    color: #ffff;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #information-section p {
+    margin: 50px;
+  }
+
+  .syarat:hover {
+    text-decoration: none;
+    cursor: pointer;
+  }
