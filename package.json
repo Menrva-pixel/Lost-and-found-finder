@@ -30,6 +30,7 @@
     "bootstrap": "^5.2.3",
     "express": "^4.18.2",
     "mysql": "^2.18.1",
-    "regenerator-runtime": "^0.13.11"
+    "regenerator-runtime": "^0.13.11",
+    "sweetalert2": "^11.7.8"
   }
 }

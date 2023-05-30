@@ -323,7 +323,6 @@ information-section {
   backdrop-filter: blur(2.5px);
   margin: 50px 0 0 0;
   width: 100%;
-  border: 2px solid white;
 }
 
 information-section h2 {
@@ -638,24 +637,15 @@ button:active {
 }
 
 /* terms of use */
-
-h1 {
-  font-size: 24px;
-  margin-top: 0;
-}
-
-h3 {
-  font-size: 18px;
-}
-
 #terms-of-use {
   font-family: 'Montserrat', sans-serif;
-  max-width: 1350px;
-  margin: 50px auto;
+  max-width: 1250px;
+  height: auto;
+  margin: 20px auto;
   box-shadow: 5px 5px 12px #43609b;
-  background-color: #43609b;
   padding:  25px 150px;
   border-radius: 10px;
+  border: 1px solid #131517;
 }
 
 .tou-title h1 {
@@ -663,6 +653,7 @@ h3 {
   margin: 20px;
   font-weight: 600;
 }
+
 ol {
   overflow: auto;
   height: 600px;
@@ -676,13 +667,15 @@ ul {
 
 .tou-list {
   padding-bottom: 20px;
+  margin-left: 20px;
+  padding-left:20px;
   font-size: 1.1em;
   text-align: justify;
 }
 
 #terms-of-use p {
   font-weight: 600;
-  color: #b9b9b9;
+  color: #5a5a5a;
   line-height: 1.5;
 }
 
@@ -690,9 +683,9 @@ ul {
  font-weight: bold;
 }
 
-.tou-title {
-  font-size: 1.4em;
-  color: #fcfcfc;
+.tou-title h1 {
+  font-size: 2.4em;
+  color: #1f1f1f;
 }
 
 a {
@@ -707,25 +700,53 @@ a:hover {
 ul li {
   list-style-type: disc;
   font-weight: 600;
-  color: #b9b9b9;
+  color: #5a5a5a;
 }
 
 .tou-update {
  color: #007bff;
 }
 
-.tou-button button {
-  padding: 10px;
-  background-color: #79a05f;
-  border-radius: 10px;
+.tou-button {
+ display: flex;
+ flex-direction: row;
+ align-content: center;
+ gap: 20px;
+ justify-content: center;
+ margin-top: 10px;
+}
+
+#cancel {
+  background-color: transparent;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  color: #202020;
+}
+
+#cancel:hover {
+  background-color: #ec2323;
+}
+
+#accept {
+  border-radius: 5px;
+  background-color: #202020;
+}
+
+#accept:hover {
+  background-color: rgb(60, 201, 42);
+  color: #202020;
+  cursor: pointer;
 }
 
 /* kebijakan privasi */
 
 #kebijakan-privasi {
-  max-width: 800px;
-  margin: 50px auto;
-  overflow: auto;
-  height: 500px;
+  font-family: 'Montserrat', sans-serif;
+  max-width: 1150px;
+  margin: 20px auto;
+  box-shadow: 5px 5px 12px #43609b;
+  padding:  25px 150px;
+  border-radius: 10px;
+  border: 1px solid #131517;
 }
 

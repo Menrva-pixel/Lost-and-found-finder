@@ -1,6 +1,8 @@
+/* eslint-disable no-alert */
 /* eslint-disable no-use-before-define */
 /* eslint-disable class-methods-use-this */
 /* eslint-disable no-unused-vars */
+import Swal from 'sweetalert2';
 import './_kebijakan-privasi';
 
 class TermsOfUse extends HTMLElement {
@@ -9,11 +11,16 @@ class TermsOfUse extends HTMLElement {
     const privacyLink = this.querySelector('.privacy-link');
     privacyLink.addEventListener('click', () => this.showPrivacyPolicy());
 
-    const button = document.getElementById('cancel');
-
-    button.addEventListener('click', () => {
+    const cancelButton = this.querySelector('#cancel');
+    cancelButton.addEventListener('click', () => {
       window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
     });
+
+    const acceptButton = this.querySelector('#accept');
+    acceptButton.addEventListener('click', this.handleAcceptButtonClick.bind(this));
+
+    const termsContainer = this.querySelector('#terms-of-use');
+    termsContainer.addEventListener('scroll', this.handleTermsScroll.bind(this));
   }
 
   render() {
@@ -25,9 +32,11 @@ class TermsOfUse extends HTMLElement {
     <ol>
         <li class="tou-list">
             <h3 class="tou-title">Ketentuan Penggunaan</h3>
-            <p>Dengan mengakses dan menggunakan Lost and Found Finder Website, Anda dianggap telah membaca, memahami, 
+            <ul>
+            <li> <p>Dengan mengakses dan menggunakan Lost and Found Finder Website, Anda dianggap telah membaca, memahami, 
                 dan menerima semua syarat dan ketentuan yang dijelaskan di bawah ini. Jika Anda tidak setuju dengan syarat 
-                dan ketentuan ini, Anda tidak diperbolehkan menggunakan website ini.</p>
+                dan ketentuan ini, Anda tidak diperbolehkan menggunakan website ini.</p></li>
+            </ul>
         </li>
         <li class="tou-list">
             <h3 class="tou-title">Penggunaan Website</h3>
@@ -77,14 +86,15 @@ class TermsOfUse extends HTMLElement {
         </li>
         <li class="tou-list">
             <h3 class="tou-title">Perubahan Syarat dan Ketentuan</h3>
-            <p>Lost and Found Finder Website berhak untuk mengubah syarat dan ketentuan ini sesuai kebijakan yang dianggap perlu. Perubahan akan diumumkan di website ini. Pengguna diharapkan untuk secara berkala memeriksa syarat dan ketentuan yang berlaku.<br>
-                Harap diingat bahwa syarat dan ketentuan ini hanya merupakan contoh umum dan sebaiknya Anda berkonsultasi dengan ahli hukum atau pengacara untuk menyusun syarat dan ketentuan yang sesuai dengan kebutuhan khusus Anda.</p>
+            <ul>
+            <li><p>Lost and Found Finder Website berhak untuk mengubah syarat dan ketentuan ini sesuai kebijakan yang dianggap perlu. Perubahan akan diumumkan di website ini. Pengguna diharapkan untuk secara berkala memeriksa syarat dan ketentuan yang berlaku.<br>
+               </p></li>
+            </ul>
         </li>
     </ol>
-
     <div class="tou-button">
         <button id="cancel">tidak setuju</button>
-        <button>Setuju</button>
+        <button id="accept">Setuju</button>
     </div>
 </div>
       `;
@@ -92,6 +102,35 @@ class TermsOfUse extends HTMLElement {
 
   showPrivacyPolicy() {
     this.innerHTML = '<kebijakan-privasi></kebijakan-privasi>';
+  }
+
+  handleAcceptButtonClick() {
+    const acceptButton = this.querySelector('#accept');
+    if (!acceptButton.disabled) {
+      Swal.fire({
+        title: 'Terms Accepted',
+        text: 'Gunakan website kami dengan bijak sesuai dengan persetujuan',
+        icon: 'success',
+        confirmButtonText: 'OK',
+      }).then((result) => {
+        if (result.isConfirmed) {
+          window.location.href = '#';
+        }
+      });
+    }
+  }
+
+  handleTermsScroll() {
+    const termsContainer = this.querySelector('#terms-of-use');
+    const acceptButton = this.querySelector('#accept');
+
+    if (termsContainer.scrollTop + termsContainer.clientHeight === termsContainer.scrollHeight) {
+      // User has scrolled to the bottom of the terms and conditions
+      acceptButton.disabled = false;
+    } else {
+      // User has not scrolled to the bottom of the terms and conditions
+      acceptButton.disabled = true;
+    }
   }
 }
 
