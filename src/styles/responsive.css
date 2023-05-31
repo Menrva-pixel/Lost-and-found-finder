@@ -41,10 +41,6 @@
     flex-direction: row;
   }
 
-  function-section button{
-    padding: 10px 20px;
-  }
-
   .containerCard{
     padding-inline: 50px;
     padding-block: 10px 30px;

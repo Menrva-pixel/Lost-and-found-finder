@@ -261,6 +261,10 @@ function-section {
   grid-template-columns: 1fr 1fr;
 }
 
+function-section button{
+  padding: 10px 20px;
+}
+
 function-section h2 {
   color: #43609b;
   -webkit-text-stroke-width: 0.4px;
