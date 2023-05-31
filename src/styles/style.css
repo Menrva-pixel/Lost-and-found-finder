@@ -626,3 +626,47 @@ button:hover {
   background-color: #252525;
   color: #cacaca;
 }
+
+/* item detail */
+#detail-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 80px auto;
+}
+
+.detail-image {
+  min-width: 600px;
+  min-height: auto;
+}
+
+.detail-information p {
+  max-width: 500px;
+  text-align: justify;
+}
+
+.detail-information h3 {
+  margin-bottom: 35px;
+}
+
+.detail-function {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 90px;
+}
+
+.detail-function button {
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px #333;
+  border: 0.4px solid #ffff;
+}
+
+#date {
+  font-size: 0.8em;
+  font-weight: 600;
+  color: #295cc4;
+}

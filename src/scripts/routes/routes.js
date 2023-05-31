@@ -5,7 +5,8 @@ import FoundForm from '../views/pages/found-form';
 import Tou from '../views/pages/tou-page';
 import LostItemService from '../views/pages/lost-item-service';
 import FoundItemService from '../views/pages/found-item-service';
-import DetailItemsService from '../views/pages/detail-item-service';
+import ListItemsService from '../views/pages/list-item-service';
+import DetailItems from '../views/pages/detail-item';
 
 const routes = {
   '/': Home, // default page
@@ -16,7 +17,8 @@ const routes = {
   '/terms-of-use': Tou,
   '/lost-item-service': LostItemService,
   '/found-item-service': FoundItemService,
-  '/detail-item-service': DetailItemsService,
+  '/list-item-service': ListItemsService,
+  '/item-detail': DetailItems,
 };
 
 export default routes;
