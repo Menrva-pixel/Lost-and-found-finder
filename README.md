@@ -8,10 +8,6 @@
 
 Dicoding Capstone Project 
   
-## Authors
-  ### Team ID : `C23-R4104`
- [@bherdyanto](https://github.com/Menrva-pixel) | [@Mahendra](https://github.com/OmMahen) | [@VickyPratama](https://github.com/VickyPratama87) | [@IbnuHasyim](https://github.com/IbnuHs)
-
 ## Features
 
  Interactive | PWA | Multi Platform
@@ -27,16 +23,16 @@ Dicoding Capstone Project
 ![badge](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)
 ![badge](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white) 
   
-  
+ ### Team ID : `C23-R4104`
 | Tema : `Solusi Utilitas`  |  Judul Project : `Lost and Found Finder` |
  ----------------------------- |----------------------------------- 
  ### Capstone Team
  | ID | NAMA |
   ----------------|------------------
-  F047XB403 | Barkah Herdyanto Sejati
-  F007XA007 | Ibnu Hasyim Surianto
-  F008XB035 | Vicky Pratama Setya Mahardika
-  F009XA009 | Mahendra Putra Raharja
+  F047XB403 | [Barkah Herdyanto Sejati](https://github.com/Menrva-pixel)
+  F007XA007 | [Ibnu Hasyim Surianto](https://github.com/IbnuHs)
+  F008XB035 | [Vicky Pratama Setya Mahardika](https://github.com/VickyPratama87)
+  F009XA009 | [Mahendra Putra Raharja](https://github.com/OmMahen)
 
 
   ## Executive Summary 
