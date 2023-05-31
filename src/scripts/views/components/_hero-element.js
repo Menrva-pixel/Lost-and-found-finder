@@ -11,6 +11,21 @@ class BannerElement extends HTMLElement {
 
   connectedCallback() {
     this.render();
+    this.addEventListeners();
+  }
+
+  addEventListeners() {
+    const buttonLapor = this.shadowRoot.querySelector('.btn-lapor');
+    const reportSection = document.querySelector('#report');
+
+    buttonLapor.addEventListener('click', (event) => {
+      console.log('button pressed');
+      event.preventDefault();
+      reportSection.scrollIntoView({
+        behavior: 'smooth',
+        block: 'center',
+      });
+    });
   }
 
   render() {
@@ -113,18 +128,18 @@ class BannerElement extends HTMLElement {
     
       
     </style>
+
     <div class="hero">
-    <div class="hero-text">
-       <h3>Finder</h3>
-      <h1>Selamat Datang di Lost & Found</h1>
-      <p>Kami menyediakan platform untuk membantu anda melaporkan<br>
-       atau mencari barang yang hilang!</p>
-      <button class="btn-lapor" href="#">Buat Laporan</button>
+      <div class="hero-text">
+        <h3>Finder</h3>
+        <h1>Selamat Datang di Lost & Found</h1>
+        <p>Kami menyediakan platform untuk membantu anda melaporkan<br>atau mencari barang yang hilang!</p>
+        <button class="btn-lapor">Buat Laporan</button>
+      </div>
+      <div class="hero-image">
+        <img src="${bannerImage}" alt="Hero Image">
+      </div>
     </div>
-    <div class="hero-image">
-      <img src="${bannerImage}" alt="Hero Image">
-    </div>
-  </div>
     `;
   }
 }

@@ -5,7 +5,7 @@ const DetailItems = {
     return `
         <div id="detail-item">
             <div class="detail-image">
-                <img href="${ImgDetail}" alt="item-detail-img">
+                <img src="${ImgDetail}" alt="item-detail-img">
             </div>
             <div class="detail-information">
                 <a id ="date">01-01-2023</a>
