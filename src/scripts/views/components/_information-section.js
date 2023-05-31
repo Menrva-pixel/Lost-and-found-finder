@@ -17,7 +17,7 @@ class information extends HTMLElement {
             ${createLostItemCard()}
         </div>
         <button id="scrollRight"><i class="bi bi-caret-right-fill"></i></button>
-        <h3><a href="#/lost-items">Lihat Semua..</a></h3>
+        <h3><a href="#/detail-item-service">Lihat Semua..</a></h3>
 
         `;
   }
