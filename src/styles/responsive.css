@@ -97,6 +97,9 @@
     .boxCard{
       flex-direction: row;
     }
+    #detail-item {
+      flex-direction: row;
+    }
 }
 
 @media screen and (min-width: 1270px) {
