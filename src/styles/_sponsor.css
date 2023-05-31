@@ -1,0 +1,18 @@
+.sponsor-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;;
+    margin: 50px 10px;
+}
+
+.university {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.university img {
+    max-width: 250px;
+    height: auto;
+}

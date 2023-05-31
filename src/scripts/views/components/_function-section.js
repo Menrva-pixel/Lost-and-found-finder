@@ -9,7 +9,7 @@ class findAndLost extends HTMLElement {
     const findButton = this.querySelector('.findButton button');
 
     lostButton.addEventListener('click', () => {
-      window.location.hash = '#/lost-form';
+      window.location.hash = '#/lost-item-service';
     });
 
     findButton.addEventListener('click', () => {

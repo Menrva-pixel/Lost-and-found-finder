@@ -1,4 +1,4 @@
-import lostWallet from '../../../public/images/lost-wallet.jpg';
+import lostWallet from '../../../public/images/lostnfound.png';
 
 class SiteDescriptionElement extends HTMLElement {
   connectedCallback() {

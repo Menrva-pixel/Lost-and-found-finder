@@ -1,15 +1,43 @@
+/* eslint-disable class-methods-use-this */
 /* eslint-disable no-use-before-define */
-const LostForm = {
-  async render() {
-    return `
+import img from '../../../public/images/img-missing.png';
+
+class LostForm extends HTMLElement {
+  connectedCallback() {
+    this.render();
+    this.addEventListener();
+  }
+
+  addEventListener() {
+    const syarat = this.querySelector('.syarat');
+
+    syarat.addEventListener('click', () => {
+      window.location.hash = '#/terms-of-use';
+    });
+  }
+
+  render() {
+    this.innerHTML = `
       <h2 class="form-title">Form Kehilangan Barang</h2>
       <div class="card form-container">
-        <form id="lost-form">
-
-          <div class="mb-3">
-            <label for="user-name">Nama Lengkap</label>
-            <input type="text" class="form-control" id="user-name" placeholder="Masukkan nama lengkap">
+        <div class="left-form">
+          <img src="${img}">
+          <div class="left-description">
+            <h4>Masukan Data dan Informasi Kehilangan</h4>
+            <p>Pastikan data dan Informasi kehilangan sesuai<br> dengan kriteria,
+            dan data diri pribadi harus jelas<br> dan benar</p>
+            <br><hr>
+            <h4> Menemukan Barang ? </h4>
+            <p>Selain melaporkan kehilangan,<br>Anda juga bisa menjadi
+            penolong<br> dengan melaporkan barang yang ditemukan <br><a href="#/found-item-service">disini!</a></p>
           </div>
+        </div>
+        <div class="right-form">
+          <form id="lost-form">
+            <div class="mb-3">
+              <label for="user-name">Nama Lengkap</label>
+              <input type="text" class="form-control" id="user-name" placeholder="Masukkan nama lengkap">
+            </div>
 
           <div class="mb-3">
             <label for="user-email">Email</label>
@@ -53,14 +81,15 @@ const LostForm = {
           <div class="submit-btn">
           <div class="form-check mb-3">
             <input class="form-check-input" type="checkbox" id="agreement">
-            <label class="form-check-label" for="agreement">Saya setuju dengan ketentuan dan persyaratan.</label>
+            <label class="form-check-label" for="agreement">Saya setuju dengan <a class="syarat">ketentuan dan persyaratan</a>.</label>
           </div>
           <button type="submit" class="btn btn-primary">Submit</button>
           </div>
         </form>
+        </div>
       </div>
     `;
-  },
+  }
 
   async afterRender() {
     const uploadElement = document.getElementById('upload');
@@ -98,7 +127,7 @@ const LostForm = {
       const lossLocation = document.getElementById('loss-location').value;
       const agreementChecked = agreementCheckbox.checked;
 
-      // Perform your form validation logic here
+      // validation logic
       if (
         userName.trim() === ''
         || userEmail.trim() === ''
@@ -109,12 +138,12 @@ const LostForm = {
         || lossLocation.trim() === ''
         || !agreementChecked
       ) {
-        return false; // Form validation failed
+        return false;
       }
 
-      return true; // Form validation passed
+      return true;
     }
-  },
-};
+  }
+}
 
-export default LostForm;
+customElements.define('lost-form', LostForm);

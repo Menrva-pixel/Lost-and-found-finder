@@ -4,6 +4,8 @@ import '../components/_information-section';
 import '../components/_services-element';
 import '../components/_nav-bar';
 import '../components/_footer-element';
+import '../components/_terms-of-use';
+import '../components/_lost-form';
 
 const Home = {
   async render() {
@@ -19,7 +21,6 @@ const Home = {
   },
 
   async afterRender() {
-    // Fungsi ini akan dipanggil setelah render()
     const leftscroll = document.querySelector('#scrollLeft');
     const rightscroll = document.querySelector('#scrollRight');
     leftscroll.addEventListener('click', () => {
