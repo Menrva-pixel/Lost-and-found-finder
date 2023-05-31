@@ -1,32 +1,32 @@
 /* Form */
 .form-container {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    align-items: strech;
     justify-content: center;
 }
 
 .form-title {
     text-align: center;
     margin: 30px;
-    font-size: 3.2em;
+    font-size: 2.2em;
     font-weight: 600;
 }
   
 .left-form {
     position: relative;
     background-color: #43609b;
-    height: 812px;
+    text-align: center;
 }
 
 .left-form img {
     width: 430px;
     height: auto;
+    display: none;
 }
 
 .left-description {
-    text-align: center;
-    padding: 50px 5px;
+    padding: 50px 5px 0px 5px;
 }
 
 .left-form h4{
@@ -53,3 +53,17 @@
 
 /* form Button */
 
+@media screen and (min-width: 900px) {
+    .form-container {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .left-form img {
+        display: inline;
+    }
+    .form-title {
+        font-size: 3.2em;
+    }
+}

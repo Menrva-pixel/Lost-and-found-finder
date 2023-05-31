@@ -1,19 +1,17 @@
 .hero {
     display: flex;
     align-items: center;
-    justify-content: center;  
-    padding: 20px 320px;
-  }
-  
-  .hero-text {
-    flex: 1;
-    padding-right: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 20px;
   }
 
   .hero-text h1 {
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
-    font-size: 5.2em;
+    font-size: 4.2em;
     color: #43609b;
     margin: 0px 20px 20px 0px;
     line-height: 1.125;
@@ -52,6 +50,7 @@
     min-width:550px;
     height: auto;
     overflow: hidden;
+    display: none;
   }
   
   .bg-image img {
@@ -68,7 +67,6 @@
     background-color: #333;
     color: #ffff;
     margin: 50px auto;
-    padding: 0 180px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -77,6 +75,7 @@
   #information-section p {
     margin: 50px;
     text-align: justify;
+    max-width: 1200px;
   }
 
   #information-section p::first-letter {
@@ -87,3 +86,15 @@
     text-decoration: none;
     cursor: pointer;
   }
+
+  @media screen and (min-width: 1140px) {
+    .bg-image {
+      display: block;
+    }
+  }
+
+@media screen and (min-width: 500px) {
+  .hero-text h1 {
+    font-size: 5.2em;
+  }
+}
