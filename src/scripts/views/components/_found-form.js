@@ -1,8 +1,8 @@
 /* eslint-disable class-methods-use-this */
 /* eslint-disable no-use-before-define */
-import img from '../../../public/images/img-missing.png';
+import img from '../../../public/images/img-finder.png';
 
-class LostForm extends HTMLElement {
+class FoundForm extends HTMLElement {
   connectedCallback() {
     this.render();
     this.addEventListener();
@@ -18,18 +18,17 @@ class LostForm extends HTMLElement {
 
   render() {
     this.innerHTML = `
-      <h2 class="form-title">Form Kehilangan Barang</h2>
+      <h2 class="form-title">Form Penemuan Barang</h2>
       <div class="card form-container">
         <div class="left-form">
           <img src="${img}">
           <div class="left-description">
-            <h4>Masukan Data dan Informasi Kehilangan</h4>
-            <p>Pastikan data dan Informasi kehilangan sesuai<br> dengan kriteria,
-            dan data diri pribadi harus jelas<br> dan benar</p>
+            <h4>Masukan Data dan Informasi penemuan</h4>
+            <p>Pastikan data dan Informasi penemuan sesuai<br> dengan kriteria,
+            dan data diri pribadi harus jelas<br> dan benar!</p>
             <br><hr>
-            <h4> Menemukan Barang ? </h4>
-            <p>Selain melaporkan kehilangan,<br>Anda juga bisa menjadi
-            penolong<br> dengan melaporkan barang yang ditemukan <br><a href="#/found-item-service">disini!</a></p>
+            <h4> Kehilangan Barang ? </h4>
+            <p>Jika anda merasa kehilangan barang <br> anda juga bisa membuat laporan kehilangan <br><a href="#/lost-item-service">disini!</a></p>
           </div>
         </div>
         <div class="right-form">
@@ -60,13 +59,13 @@ class LostForm extends HTMLElement {
           </div>
 
           <div class="mb-3">
-            <label for="loss-date">Tanggal Kehilangan</label>
+            <label for="loss-date">Tanggal penemuan</label>
             <input type="date" class="form-control" id="loss-date">
           </div>
 
           <div class="mb-3">
-            <label for="loss-location">Lokasi Kehilangan</label>
-            <input type="text" class="form-control" id="loss-location" placeholder="Masukkan lokasi kehilangan">
+            <label for="find-location">Lokasi Penemuan</label>
+            <input type="text" class="form-control" id="find-location" placeholder="Masukkan lokasi penemuan">
           </div>
 
           <div class="mb-3">
@@ -124,7 +123,7 @@ class LostForm extends HTMLElement {
       const itemName = document.getElementById('item-name').value;
       const itemDescription = document.getElementById('item-description').value;
       const lossDate = document.getElementById('loss-date').value;
-      const lossLocation = document.getElementById('loss-location').value;
+      const lossLocation = document.getElementById('find-location').value;
       const agreementChecked = agreementCheckbox.checked;
 
       // validation logic
@@ -146,4 +145,4 @@ class LostForm extends HTMLElement {
   }
 }
 
-customElements.define('lost-form', LostForm);
+customElements.define('found-form', FoundForm);

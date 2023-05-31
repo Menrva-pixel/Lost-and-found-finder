@@ -5,11 +5,18 @@
     align-items: center;
     justify-content: center;
 }
+
+.form-title {
+    text-align: center;
+    margin: 30px;
+    font-size: 3.2em;
+    font-weight: 600;
+}
   
 .left-form {
     position: relative;
     background-color: #43609b;
-    height: 815px;
+    height: 812px;
 }
 
 .left-form img {
@@ -35,3 +42,14 @@
 #lost-form {
     padding: 20px 20px;
 }
+
+
+/* input area */
+
+#item-description {
+    resize: none;
+}
+
+
+/* form Button */
+

@@ -1,5 +1,4 @@
 .credit {
-  /* background-color: royalblue; */
   width: 100%;
   height: auto;
   padding: 50px 70px;
@@ -11,7 +10,6 @@
 }
 
 .credit .credit-list {
-  /* background-color: salmon; */
   display: flex;
   padding: 10px;
   display: flex;
@@ -21,15 +19,11 @@
 }
 
 .credit .credit-list .credit-item {
-  /* background-color: greenyellow; */
   width: 24%;
   padding: 10px;
-  border: 1px solid #adadad;
-  border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 5px 5px 5px #adadad;
   overflow: hidden;
   transition-timing-function: ease-in-out;
   cursor: pointer;
@@ -41,6 +35,6 @@
 }
 
 .credit .credit-list .credit-item img {
-  width: 60%;
+  width: 20%;
 
 }

@@ -33,11 +33,11 @@
     background: #333;
   }
   
-  button:hover {
+  .btn-lapor button:hover {
     background-color: #43609b;
   }
   
-  button:active {
+  .btn-lapor button:active {
     transform: translateY(2px);
   }
   
@@ -49,7 +49,7 @@
   }
   
   .bg-image {
-    max-width: 750px;
+    min-width:550px;
     height: auto;
     overflow: hidden;
   }
@@ -68,6 +68,7 @@
     background-color: #333;
     color: #ffff;
     margin: 50px auto;
+    padding: 0 180px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,6 +76,11 @@
 
   #information-section p {
     margin: 50px;
+    text-align: justify;
+  }
+
+  #information-section p::first-letter {
+    font-size: 1.8em;
   }
 
   .syarat:hover {

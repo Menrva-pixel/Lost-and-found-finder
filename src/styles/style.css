@@ -181,19 +181,11 @@ site-description-element .desc-container {
   grid-gap: 20px;
   padding: 20px;
   margin: 110px auto;
-  max-width: 1200px;
+  max-width: 1350px;
   align-items: center;
   position: relative;
   overflow: hidden;
-  background-position: center;
-  background-repeat: no-repeat;
-  backdrop-filter: blur(1.9px);
   border-radius: 10px;
-}
-
-.description h2 {
-  font-weight: bold;
-  font-size: 3.5em;
 }
 
 .desc-container img {
@@ -207,17 +199,17 @@ site-description-element .desc-container {
   color: #0c0c0c;
   text-align: justify;
   word-break: break-all;
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 
 .desc-container .description p::first-letter {
-  padding-left: 2.2em;
+  padding-left: 1.1em;
 }
 
 .desc-container .description h2 {
   color: #43609b;
   padding-bottom: 20px;
-  font-size: 2.4em !important;
+  font-size: 3.2em !important;
   font-weight: bold;
 }
 
@@ -226,9 +218,10 @@ site-description-element .desc-container {
   padding: 0 auto;
 }
 
+
 .services-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   grid-gap: 20px;
 }
 
@@ -623,3 +616,13 @@ ul li {
   border: 1px solid #131517;
 }
 
+/* default Button */
+button {
+  border: none;
+  background-color: #43609b;
+}
+
+button:hover {
+  background-color: #252525;
+  color: #cacaca;
+}

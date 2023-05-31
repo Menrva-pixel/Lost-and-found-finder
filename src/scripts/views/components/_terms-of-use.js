@@ -114,7 +114,7 @@ class TermsOfUse extends HTMLElement {
         confirmButtonText: 'OK',
       }).then((result) => {
         if (result.isConfirmed) {
-          window.location.href = '#';
+          window.location.href = '#/lost-item-service';
         }
       });
     }

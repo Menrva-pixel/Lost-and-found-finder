@@ -1,4 +1,4 @@
-import pictIcon from '../../../public/icon.png';
+import pictDev1 from '../../../public/images/dev/man-1.jpg';
 import pictCreditHtml from '../../../public/images/credit/html5-logo.png';
 import pictCreditCss from '../../../public/images/credit/css3-logo.png';
 import pictCreditJavaScript from '../../../public/images/credit/javascript-logo.png';
@@ -8,13 +8,16 @@ import pictCreditGit from '../../../public/images/credit/git-logo.png';
 import pictCreditGithub from '../../../public/images/credit/github-logo.png';
 import pictCreditExpress from '../../../public/images/credit/express-logo.png';
 
+import '../components/_sponsor-section';
+
 const About = {
   async render() {
     return `
         <h2 class ="About">About</h2>
         <div class="Latar">
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aut in possimus minus earum tenetur quo. Consequuntur cumque ullam, porro alias nihil corporis mollitia, necessitatibus dolor odio, sed culpa dolores. Optio dolorem, est nulla provident deserunt modi iusto cupiditate et, eum odio minima quasi maxime ex sequi! Unde, reiciendis voluptas? Repudiandae saepe qui iure optio necessitatibus nostrum ut ipsa accusamus? Inventore neque perspiciatis sapiente nihil laboriosam error alias id commodi eos, itaque quibusdam voluptatum quos architecto ratione perferendis, aliquid laudantium aliquam voluptatem temporibus dolore reiciendis dolor libero explicabo? Commodi, consectetur!
+                Website ini dibuat untuk memenuhi tugas capstone project dari SIB Cycle 4 Dicoding Academy, bertemakan solusi utilitas dengan fitur pencarian dan penemuan barang hilang
+                yang diharapkan dapat membantu masyarakat menemukan barang berharga yang hilang!.
             </p>
         </div>
 
@@ -24,58 +27,54 @@ const About = {
                 <div class="profile">
                     <div class ="imageProfile">
                         <div class ="imageProfile">
-                        <img src="${pictIcon}" alt="">
+                        <img src="${pictDev1}" alt="">
                     </div>
                     </div>
-                    <h4>Om Mahen</h4>
+                    <h4>Mahendra</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nobis nam consectetur officia a ipsum odit delectus Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     
                     <div class="socialMedia">
                         <a href=""><i class="bi bi-github"></i></a>
                         <a href=""><i class="bi bi-linkedin"></i></a>
-                        <a href=""><i class="bi bi-envelope-at-fill"></i></a>
                     </div>
                 </div>
 
                 <div class="profile">
                     <div class ="imageProfile">
-                        <img src="${pictIcon}" alt="">
+                        <img src="${pictDev1}" alt="">
                     </div>
-                    <h4>David Slebeww</h4>
+                    <h4>Herdyanto</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nobis nam consectetur officia a ipsum odit delectus Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     
                     <div class="socialMedia">
                         <a href=""><i class="bi bi-github"></i></a>
                         <a href=""><i class="bi bi-linkedin"></i></a>
-                        <a href=""><i class="bi bi-envelope-at-fill"></i></a>
                     </div>
                 </div>
 
                 <div class="profile">
                     <div class ="imageProfile">
-                        <img src="${pictIcon}" alt="">
+                        <img src="${pictDev1}" alt="">
                     </div>
-                    <h4>David Slebeww</h4>
+                    <h4>Ibnu Hasyim</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nobis nam consectetur officia a ipsum odit delectus Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     
                     <div class="socialMedia">
                         <a href=""><i class="bi bi-github"></i></a>
                         <a href=""><i class="bi bi-linkedin"></i></a>
-                        <a href=""><i class="bi bi-envelope-at-fill"></i></a>
                     </div>
                 </div>
 
                 <div class="profile">
                     <div class ="imageProfile">
-                        <img src="${pictIcon}" alt="">
+                        <img src="${pictDev1}" alt="">
                     </div>
-                    <h4>David Slebeww</h4>
+                    <h4>Vicky</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nobis nam consectetur officia a ipsum odit delectus Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     
                     <div class="socialMedia">
                         <a href=""><i class="bi bi-github"></i></a>
                         <a href=""><i class="bi bi-linkedin"></i></a>
-                        <a href=""><i class="bi bi-envelope-at-fill"></i></a>
                     </div>
                 </div>
             </div>
@@ -83,7 +82,7 @@ const About = {
         </div>
 
         <div class="credit">
-            <h2>Credit</h2>
+            <h2>Technology</h2>
             <div class="credit-list">
                 <div class="credit-item">
                     <img src="${pictCreditHtml}" alt="">
@@ -117,9 +116,8 @@ const About = {
                     <img src="${pictCreditExpress}" alt="">
                 </div>
             </div>
-
         </div>
-        
+            <sponsor-section></sponsor-section>
     </div>
       `;
   },

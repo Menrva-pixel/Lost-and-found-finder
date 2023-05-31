@@ -10,10 +10,10 @@ class NavigationBar extends HTMLElement {
           <ul>
             <li><a class="nav-link" href="#/home">HOME</a></li>
             <li class="dropdown">
-              <a href="#" class="dropbtn nav-link">SERVICE</a>
+              <a href="javascript:void(0)" class="dropbtn nav-link">SERVICE</a>
               <div class="dropdown-content">
-                <a href="#/terms-of-use">Terms of use</a>
-                <a href="#/service2">Service 2</a>
+                <a href="#/lost-item-service">Seeker</a>
+                <a href="#/found-item-service">Finder</a>
               </div>
             </li>
             <li><a class="btn-abt nav-link" href="#/about">ABOUT</a></li>

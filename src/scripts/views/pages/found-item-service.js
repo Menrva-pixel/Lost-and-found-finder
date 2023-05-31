@@ -1,16 +1,16 @@
 /* eslint-disable no-empty-function */
-import '../components/_lost-form';
+import '../components/_found-form';
 
-import bgImg from '../../../public/images/img-finder.png';
+import bgImg from '../../../public/images/img-writing.png';
 
-const LostItemService = {
+const FoundItemService = {
   async render() {
     return `
     <div class="hero">
     <div class="hero-text">
        <h3>Halo!</h3>
-      <h1>Kehilangan Barang?</h1>
-      <p>Buat laporan agar orang lain atau finder dapat menemukan barang mu yang hilang!</p>
+      <h1>Menemukan Barang?</h1>
+      <p>Laporkan penemuan mu disini, agar sang pemilik dapat menemukan barangnya!</p>
     </div>
     <div class="bg-image">
       <img src="${bgImg}" alt="Hero Image">
@@ -22,7 +22,7 @@ const LostItemService = {
     Terima kasih atas kerjasamanya!</p>
  </div>
   <div id="form-section">
-    <lost-form></lost-form>
+    <found-form></found-form>
     </div>
     `;
   },
@@ -30,4 +30,4 @@ const LostItemService = {
   async afterRender() {
   },
 };
-export default LostItemService;
+export default FoundItemService;
