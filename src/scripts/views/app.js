@@ -24,6 +24,10 @@ class App {
     const url = UrlParser.parseActiveUrlWithCombiner();
     const page = routes[url];
     this._content.innerHTML = await page.render();
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
     await page.afterRender();
   }
 }

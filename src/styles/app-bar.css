@@ -1,12 +1,16 @@
 .app-bar {
-  padding: 8px 16px;
   background-color: transparent;
-  display: grid;
-  grid-template-columns: auto 1fr auto;
   position: sticky;
   top: 0;
   z-index: 99;
   transition: background-color 0.3s ease-in-out;
+}
+
+.app-bar .container {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  max-width: 1200px;
+  padding: 8px 16px;
 }
 
 .app-bar--scrolled {
