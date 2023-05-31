@@ -14,6 +14,7 @@ class NavigationBar extends HTMLElement {
               <div class="dropdown-content">
                 <a href="#/lost-item-service">Seeker</a>
                 <a href="#/found-item-service">Finder</a>
+                <a href="#/detail-item-service">Item List</a>
               </div>
             </li>
             <li><a class="btn-abt nav-link" href="#/about">ABOUT</a></li>

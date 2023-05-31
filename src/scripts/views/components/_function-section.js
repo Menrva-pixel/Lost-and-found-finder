@@ -13,7 +13,7 @@ class findAndLost extends HTMLElement {
     });
 
     findButton.addEventListener('click', () => {
-      window.location.hash = '#/found-form';
+      window.location.hash = '#/found-item-service';
     });
   }
 
