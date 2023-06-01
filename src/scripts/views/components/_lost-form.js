@@ -26,12 +26,14 @@ class LostForm extends HTMLElement {
             <h4>Masukan Data dan Informasi Kehilangan</h4>
             <p>Pastikan data dan Informasi kehilangan sesuai<br> dengan kriteria,
             dan data diri pribadi harus jelas<br> dan benar</p>
-            <br><hr>
+            <br>
             <h4> Menemukan Barang ? </h4>
             <p>Selain melaporkan kehilangan,<br>Anda juga bisa menjadi
-            penolong<br> dengan melaporkan barang yang ditemukan <br><a href="#/found-item-service">disini!</a></p>
+            penolong<br> dengan melaporkan barang yang ditemukan <br>
+            <span class="disini"><a href="#/found-item-service">disini!</a></span></p>
           </div>
         </div>
+
         <div class="right-form">
           <form id="lost-form">
             <div class="mb-3">
@@ -56,7 +58,7 @@ class LostForm extends HTMLElement {
 
           <div class="mb-3">
             <label for="item-description">Deskripsi Barang</label>
-            <textarea class="form-control" id="item-description" rows="3" placeholder="Masukkan deskripsi barang"></textarea>
+            <textarea class="form-control" id="item-description" rows="4" placeholder="Masukkan deskripsi barang"></textarea>
           </div>
 
           <div class="mb-3">
@@ -78,12 +80,13 @@ class LostForm extends HTMLElement {
             <img id="imageResult" src="#" alt="" class="img-fluid rounded shadow-sm mx-auto d-block">
           </div>
 
-          <div class="submit-btn">
-          <div class="form-check mb-3">
-            <input class="form-check-input" type="checkbox" id="agreement">
-            <label class="form-check-label" for="agreement">Saya setuju dengan <a class="syarat">ketentuan dan persyaratan</a>.</label>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <div class="">
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" id="agreement">
+              <label class="form-check-label" for="agreement">Saya setuju dengan <a class="syarat">ketentuan dan persyaratan</a>.</label>
+            </div>
+            <button type="submit" class="btn btn-submit">Submit</button>
+            <button type="reset" class="btn btn-danger">Batal</button>
           </div>
         </form>
         </div>

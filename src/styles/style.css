@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
 
 * {
   padding: 0;
@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);
   background-size: cover;
   min-height: 100vh;
@@ -55,7 +55,7 @@ main {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  text-align: center;
+  text-align: right;
   margin: 0 !important;
 }
 
@@ -63,116 +63,9 @@ main {
   display: block;
 }
 
-
-/* footer */
-.footer-top {
-  padding: 60px 0;
-  background: #252525;
-  color: #aaa;
-}
-
-.footer-top h3 {
-  padding-bottom: 10px;
-  color: #fff;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.footer-about img.logo-footer {
-  max-width: 200px;
-  margin-top: 0;
-  margin-bottom: 18px;
-  filter: drop-shadow(0 3px 1px rgb(0, 0, 0));
-}
-
-.footer-about p a {
-  border: 0;
-}
-
-.footer-about p a:hover,
-.footer-about p a:focus {
-  border: 0;
-}
-
-.footer-contact p {
-  word-wrap: break-word;
-}
-
-.footer-contact i {
-  padding-right: 10px;
-  font-size: 18px;
-  color: #666;
-}
-
-.footer-contact p a {
-  border: 0;
-}
-
-.footer-contact p a:hover,
-.footer-contact p a:focus {
-  border: 0;
-}
-
-.footer-links a {
-  color: #aaa;
-  border: 0;
-  text-decoration: none;
-}
-
-.footer-links a:hover,
-.footer-links a:focus {
-  color: #295cc4;
-}
-
-.footer-bottom {
-  padding: 15px 0 17px 0;
-  background: #131517;
-  text-align: left;
-  color: #aaa;
-}
-
-.footer-social {
-  padding-top: 3px;
-  text-align: right;
-}
-
-.footer-social a {
-  margin-left: 20px;
-  color: #777;
-  border: 0;
-}
-
-.footer-social a:hover,
-.footer-social a:focus {
-  color: #79a05f;
-  border: 0;
-}
-
-.footer-social i {
-  font-size: 24px;
-  vertical-align: middle;
-}
-
-.footer-copyright {
-  padding-top: 5px;
-}
-
-.footer-copyright a {
-  color: #fff;
-  border: 0;
-}
-
-.footer-copyright a:hover,
-.footer-copyright a:focus {
-  color: #aaa;
-  border: 0;
-}
-
-
 /* Site Description */
 site-description-element div {
-  background-color: transparent;
   padding: 10px;
-  word-break: break-all;
 }
 
 site-description-element .desc-container {
@@ -188,28 +81,23 @@ site-description-element .desc-container {
   border-radius: 10px;
 }
 
-.desc-container img {
+site-description-element .desc-container img {
   max-width: 100%;
   height: auto;
   border-radius: 15px;
   vertical-align: middle;
 }
 
-.desc-container .description p {
+site-description-element .desc-container .description p {
   color: #0c0c0c;
-  text-align: justify;
-  word-break: break-all;
-  font-size: 1.4em;
+  font-size: 22px;
 }
 
-.desc-container .description p::first-letter {
-  padding-left: 1.1em;
-}
-
-.desc-container .description h2 {
+site-description-element .desc-container .description h2 {
+  margin: 40px auto;
   color: #43609b;
   padding-bottom: 20px;
-  font-size: 3.2em !important;
+  font-size: 49px;
   font-weight: bold;
 }
 
@@ -218,29 +106,31 @@ site-description-element .desc-container {
   padding: 0 auto;
 }
 
+.services h1 {
+  color: #43609b;
+  text-align: center;
+  margin: 50px;
+  font-size: 49px;
+  font-weight: bold;
+}
 
-.services-list {
+.services .services-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   grid-gap: 20px;
 }
 
-.services-list li {
+.services .services-list li {
   padding: 20px;
   list-style: none;
   border-radius: 0;
   margin: 20px;
   border: 1px solid rgb(24, 24, 24);
-  box-shadow: 6px 6px 2px #000000;
+  box-shadow: 6px 6px 2px #adadad;
 }
 
-
-.services h1 {
-  color: #43609b;
-  text-align: center;
-  margin: 50px;
-  font-size: 3.8em;
-  font-weight: bold;
+.services .services-list li p {
+  font-size: 16px;
 }
 
 .services h2 {
@@ -254,14 +144,14 @@ site-description-element .desc-container {
   color: #295cc4;
 }
 
-
 /* function section */
 function-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding: 60px;
 }
 
-function-section button{
+function-section button {
   padding: 10px 20px;
 }
 
@@ -274,9 +164,8 @@ function-section h2 {
 }
 
 .banner-img {
-  min-width: 500px;
+  min-width: 300px;
   min-height: 650px;
-  ;
 }
 
 .banner-img img {
@@ -285,16 +174,15 @@ function-section h2 {
 }
 
 .left-side {
-  margin-bottom: -70px;
-  padding: 0 !important;
+  width: 100%;
 }
+
 .left-side img {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* width: 100%; */
   margin: auto;
-  /* max-width: 700px; */
+  width: 600px;
 }
 
 .right-side {
@@ -306,17 +194,20 @@ function-section h2 {
   gap: 40px;
 }
 
+.right-side p {
+  font-size: 20px;
+}
 
 /* information section */
 information-section {
+  width: 100%;
+  margin: 50px 0 0 0;
   position: relative;
   padding: 80px;
   display: inline-block;
   background: #131517;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(2.5px);
-  margin: 50px 0 0 0;
-  width: 100%;
 }
 
 information-section h2 {
@@ -324,7 +215,8 @@ information-section h2 {
   font-weight: 600;
   font-size: 2.5em;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
+  font-size: 49px;
 }
 
 information-section h3 {
@@ -339,23 +231,25 @@ information-section a {
 information-section a:hover {
   transform: translate(1.4px);
   color: #c99c26;
+  text-decoration: none;
 }
 
-#scrollLeft,#scrollRight {
+#scrollLeft,
+#scrollRight {
   position: absolute;
-  top: 35%;
+  top: 40%;
   margin: 0 50px;
   background-color: #00000000;
-  /* bottom: 50%; */
   font-size: 2.5em;
 }
-#scrollLeft{
-  
+#scrollLeft {
   left: 0;
 }
-#scrollRight{
+
+#scrollRight {
   right: 0;
 }
+
 .containerCard {
   position: relative;
   margin: auto;
@@ -369,17 +263,17 @@ information-section a:hover {
   scroll-behavior: smooth;
 }
 
-.containerCard::-webkit-scrollbar {
+/* .containerCard::-webkit-scrollbar {
   width: 2px;
-}
+} */
 
-.containerCard::-webkit-scrollbar-thumb {
+/* .containerCard::-webkit-scrollbar-thumb {
   background-color: #4B68A3;
   height: 5px;
   width: 5px;
   border-radius: 5px;
   border: 3px solid white;
-}
+} */
 
 .containerCard::-webkit-scrollbar-track {
   background-color: rgba(255, 255, 255, 0);
@@ -388,9 +282,8 @@ information-section a:hover {
 
 .card {
   margin-bottom: 30px;
-  border: none !important;
-  border-radius: 0 !important;
-  background-color: transparent !important;
+  border-radius: 5px;
+  /* background-color: transparent !important; */
 }
 
 .home-card {
@@ -420,11 +313,9 @@ information-section a:hover {
   color: #cacaca;
 }
 
-
 .more-icon-container {
   display: flex;
   align-items: center;
-  /* Align items vertically */
 }
 
 /* About page */
@@ -508,12 +399,12 @@ information-section a:hover {
 
 /* terms of use */
 #terms-of-use {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   max-width: 1250px;
   height: auto;
   margin: 20px auto;
   box-shadow: 5px 5px 12px #43609b;
-  padding:  55px 150px;
+  padding: 55px 150px;
   border-radius: 10px;
   border: 1px solid #131517;
 }
@@ -538,7 +429,7 @@ ul {
 .tou-list {
   padding-bottom: 20px;
   margin-left: 20px;
-  padding-left:20px;
+  padding-left: 20px;
   font-size: 1.1em;
   text-align: justify;
 }
@@ -550,7 +441,7 @@ ul {
 }
 
 #terms-of-use h3 {
- font-weight: bold;
+  font-weight: bold;
 }
 
 .tou-title h1 {
@@ -574,16 +465,16 @@ ul li {
 }
 
 .tou-update {
- color: #007bff;
+  color: #007bff;
 }
 
 .tou-button {
- display: flex;
- flex-direction: row;
- align-content: center;
- gap: 20px;
- justify-content: center;
- margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 10px;
 }
 
 #cancel {
@@ -609,13 +500,12 @@ ul li {
 }
 
 /* kebijakan privasi */
-
 #kebijakan-privasi {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   max-width: 1150px;
   margin: 20px auto;
   box-shadow: 5px 5px 12px #43609b;
-  padding:  25px 150px;
+  padding: 25px 150px;
   border-radius: 10px;
   border: 1px solid #131517;
 }
@@ -624,6 +514,10 @@ ul li {
 button {
   border: none;
   background-color: #43609b;
+  color: #cacaca;
+  transition: 0.3s;
+  border-radius: 5px;
+  font-weight: 500;
 }
 
 button:hover {
@@ -674,4 +568,109 @@ button:hover {
   font-size: 0.8em;
   font-weight: 600;
   color: #295cc4;
+}
+
+/* footer */
+.footer-top {
+  padding: 60px 0;
+  background: #252525;
+  color: #aaa;
+}
+
+.footer-top h3 {
+  padding-bottom: 10px;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer-about img.logo-footer {
+  max-width: 200px;
+  margin-top: 0;
+  margin-bottom: 18px;
+  filter: drop-shadow(0 3px 1px rgb(0, 0, 0));
+}
+
+.footer-about p a {
+  border: 0;
+  color: #43609b;
+  text-decoration: none;
+}
+
+.footer-about p a:hover,
+.footer-about p a:focus {
+  border: 0;
+}
+
+.footer-contact p {
+  word-wrap: break-word;
+}
+
+.footer-contact i {
+  padding-right: 10px;
+  font-size: 18px;
+  color: #666;
+}
+
+.footer-contact p a {
+  border: 0;
+}
+
+.footer-contact p a:hover,
+.footer-contact p a:focus {
+  border: 0;
+}
+
+.footer-links a {
+  color: #aaa;
+  border: 0;
+  text-decoration: none;
+}
+
+.footer-links a:hover,
+.footer-links a:focus {
+  color: #295cc4;
+}
+
+.footer-bottom {
+  padding: 15px 0 17px 0;
+  background: #131517;
+  text-align: left;
+  color: #aaa;
+}
+
+.footer-social {
+  padding-top: 3px;
+  text-align: right;
+}
+
+.footer-social a {
+  margin-left: 20px;
+  color: #777;
+  border: 0;
+}
+
+.footer-social a:hover,
+.footer-social a:focus {
+  color: #79a05f;
+  border: 0;
+}
+
+.footer-social i {
+  font-size: 24px;
+  vertical-align: middle;
+}
+
+.footer-copyright {
+  padding-top: 5px;
+}
+
+.footer-copyright a {
+  color: #fff;
+  border: 0;
+}
+
+.footer-copyright a:hover,
+.footer-copyright a:focus {
+  color: #aaa;
+  border: 0;
 }
