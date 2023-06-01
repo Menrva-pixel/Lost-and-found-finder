@@ -20,14 +20,13 @@
 }
 
 .btn-abt {
-  border: 2px solid #43609B;
-  border-radius: 30px;
-  transition: .3s;
+  background-color: initial;
+  color: initial !important;
+  border-radius: initial;
 }
 
 .btn-abt:hover {
-  background-color: #43609B;
-  color: #d3d3d3 !important;
+  transform: none;
 }
 
 .app-bar .app-bar__menu {
@@ -97,7 +96,7 @@
 }
 
 .app-bar__navigation ul li a:hover {
-  color: #43609B;
+  color: #295cc4;
 }
 
 dl,

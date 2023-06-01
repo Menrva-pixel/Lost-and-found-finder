@@ -35,6 +35,7 @@ class BannerElement extends HTMLElement {
       display: flex;
       align-items: center;
       justify-content: center;  
+      padding: 20px 320px;
     }
     
     .hero-text {
@@ -63,8 +64,6 @@ class BannerElement extends HTMLElement {
       font-size: 1.4em;
       border: none;
       background: #333;
-      border-radius: 5px;
-      cursor: pointer;
     }
     
     button:hover {
@@ -83,7 +82,7 @@ class BannerElement extends HTMLElement {
     }
     
     .hero-image {
-      width: 450px;
+      min-width: 450px;
       height: auto;
       overflow: hidden;
     }
@@ -123,13 +122,18 @@ class BannerElement extends HTMLElement {
         padding: 120px 120px;
       }
     }
+
+
+      
+    
+      
     </style>
 
     <div class="hero">
       <div class="hero-text">
         <h3>Finder</h3>
         <h1>Selamat Datang di Lost & Found</h1>
-        <p>Kami menyediakan platform untuk membantu anda melaporkan atau mencari barang yang hilang!</p>
+        <p>Kami menyediakan platform untuk membantu anda melaporkan<br>atau mencari barang yang hilang!</p>
         <button class="btn-lapor">Buat Laporan</button>
       </div>
       <div class="hero-image">

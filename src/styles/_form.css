@@ -4,15 +4,12 @@
     flex-direction: column;
     align-items: strech;
     justify-content: center;
-    background-color: transparent;
-    border: none;
-    border-radius: 5px;
 }
 
 .form-title {
     text-align: center;
     margin: 30px;
-    font-size: 49em;
+    font-size: 2.2em;
     font-weight: 600;
 }
   
@@ -20,8 +17,6 @@
     position: relative;
     background-color: #43609b;
     text-align: center;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
 }
 
 .left-form img {
@@ -39,40 +34,25 @@
     font-size: 1.1em;
 }
 
-.disini a {
-    text-decoration: none;
-    color: #dfdfdf;
-    font-weight: bolder;
-}
-
 /* right form */
 .right-form {
     background-color: #dfdfdf;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
 }
 
 #lost-form {
     padding: 20px 20px;
 }
 
+
 /* input area */
+
 #item-description {
     resize: none;
 }
 
-.btn-submit {
-    background-color: #43609B;
-    color: #dfdfdf;
-    margin-right: 5px;
-}
-
-.btn-submit:hover {
-    background-color: #6486ca;
-    color: #dfdfdf;
-}
 
 /* form Button */
+
 @media screen and (min-width: 900px) {
     .form-container {
         flex-direction: row;
