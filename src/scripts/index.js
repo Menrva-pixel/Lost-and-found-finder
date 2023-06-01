@@ -3,13 +3,15 @@ import 'regenerator-runtime';
 import '../styles/style.css';
 import '../styles/app-bar.css';
 import '../styles/menu-button.css';
-import '../styles/responsive.css';
 import '../styles/search-bar.css';
 import '../styles/credit.css';
 /*  components CSS */
 import '../styles/_banner.css';
 import '../styles/_form.css';
 import '../styles/_sponsor.css';
+import '../styles/_services.css';
+
+import '../styles/responsive.css';
 
 import './views/components/_hero-element';
 import App from './views/app';

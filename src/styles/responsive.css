@@ -102,11 +102,10 @@
     }
 }
 
-@media screen and (min-width: 1270px) {
-  .services {
-    padding: 0 320px ;
+@media screen and (min-width: 1000px) {
+  .services-list {
+    grid-template-columns: 1fr 1fr 1fr;
   }
-  
 }
 
 @media screen and (max-width: 700px) {
