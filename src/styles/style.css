@@ -213,48 +213,6 @@ site-description-element .desc-container {
   font-weight: bold;
 }
 
-/* Services */
-.services {
-  padding: 0 auto;
-}
-
-
-.services-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  grid-gap: 20px;
-}
-
-.services-list li {
-  padding: 20px;
-  list-style: none;
-  border-radius: 0;
-  margin: 20px;
-  border: 1px solid rgb(24, 24, 24);
-  box-shadow: 6px 6px 2px #000000;
-}
-
-
-.services h1 {
-  color: #43609b;
-  text-align: center;
-  margin: 50px;
-  font-size: 3.8em;
-  font-weight: bold;
-}
-
-.services h2 {
-  color: #43609b;
-  font-weight: 500;
-  cursor: pointer;
-}
-
-.services h2:hover {
-  transform: translateY(1.4px);
-  color: #295cc4;
-}
-
-
 /* function section */
 function-section {
   display: grid;
@@ -379,6 +337,11 @@ information-section a:hover {
   width: 5px;
   border-radius: 5px;
   border: 3px solid white;
+  display: none;
+}
+
+.containerCard::-webkit-scrollbar-thumb:hover {
+  display: block;
 }
 
 .containerCard::-webkit-scrollbar-track {
