@@ -26,10 +26,9 @@ class FoundForm extends HTMLElement {
             <h4>Masukan Data dan Informasi penemuan</h4>
             <p>Pastikan data dan Informasi penemuan sesuai<br> dengan kriteria,
             dan data diri pribadi harus jelas<br> dan benar!</p>
-            <br>
+            <br><hr>
             <h4> Kehilangan Barang ? </h4>
-            <p>Jika anda merasa kehilangan barang <br> anda juga bisa membuat laporan kehilangan <br>
-            <span class="disini"><a href="#/lost-item-service">disini!</a></span></p>
+            <p>Jika anda merasa kehilangan barang <br> anda juga bisa membuat laporan kehilangan <br><a href="#/lost-item-service">disini!</a></p>
           </div>
         </div>
         <div class="right-form">
@@ -78,13 +77,12 @@ class FoundForm extends HTMLElement {
             <img id="imageResult" src="#" alt="" class="img-fluid rounded shadow-sm mx-auto d-block">
           </div>
 
-          <div class="">
+          <div class="submit-btn">
           <div class="form-check mb-3">
             <input class="form-check-input" type="checkbox" id="agreement">
             <label class="form-check-label" for="agreement">Saya setuju dengan <a class="syarat">ketentuan dan persyaratan</a>.</label>
           </div>
-          <button type="submit" class="btn btn-submit">Submit</button>
-          <button type="reset" class="btn btn-danger">Batal</button>
+          <button type="submit" class="btn btn-primary">Submit</button>
           </div>
         </form>
         </div>

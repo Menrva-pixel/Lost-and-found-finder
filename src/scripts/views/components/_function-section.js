@@ -19,22 +19,23 @@ class findAndLost extends HTMLElement {
 
   render() {
     this.innerHTML = `
+
     <div class="left-side">
         <img src="images/guy2.png" alt="pointing guy">
-    </div>
-
-    <div class="right-side">
-      <h2>Seeker ?</h2>
-      <div class="lostButton">
-          <p>Merasa kehilangan barang? coba buat laporan disini !!</p>
-          <button>Cari Barang</button>
+        </div>
       </div>
-      <h2>Finder / Helper ?</h2>
-      <div class="findButton">
-          <p>Menemukan barang? laporkan penemuan disini !!</p>
-          <button>Lapor Penemuan</button>
-      </div>
-    </div>
+      <div class="right-side">
+      <h2>Seeker?</h2>
+        <div class="lostButton">
+            <p>Merasa kehilangan barang? coba buat laporan disini !!</p>
+            <button>Cari Barang</button>
+        </div>
+        <h2>Finder / Helper ?</h2>
+        <div class="findButton">
+            <p>Menemukan barang? laporkan penemuan disini !!</p>
+            <button>Lapor Penemuan</button>
+        </div>
+        </div>
         `;
   }
 }
