@@ -568,7 +568,6 @@ a:hover {
 }
 
 ul li {
-  list-style-type: disc;
   font-weight: 600;
   color: #5a5a5a;
 }
@@ -642,9 +641,9 @@ button:hover {
   padding: 20px;
 }
 
-.detail-image {
-  min-width: 600px;
-  min-height: auto;
+.detail-image img{
+  width: 100%;
+  max-width: 600px;
 }
 
 .detail-information p {
