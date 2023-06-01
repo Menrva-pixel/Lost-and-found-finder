@@ -2,8 +2,6 @@
   
   <a href="https://ibb.co/pxpCNDc"><img src="https://i.ibb.co/Nszwfh5/banner.jpg" alt="banner" border="0" /></a>
   
-
-  
 # Lost & Found 
 
 Dicoding Capstone Project 
@@ -22,6 +20,7 @@ Dicoding Capstone Project
 ![badge](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 ![badge](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)
 ![badge](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white) 
+![badge](https://img.shields.io/badge/eslint-3A33D1?style=for-the-badge&logo=eslint&logoColor=white)
   
  ### Team ID : `C23-R4104`
 | Tema : `Solusi Utilitas`  |  Judul Project : `Lost and Found Finder` |
