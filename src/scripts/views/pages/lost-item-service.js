@@ -31,8 +31,7 @@ const LostItemService = {
     </div>
 
     <div id="information-section">
-        <p>Harap pastikan untuk membaca dan memahami <a class="syarat">Syarat dan Ketentuan</a> website kami guna menghindari penggunaan yang tidak tepat atau melanggar prosedur. 
-        Setelah Anda memahami syarat dan ketentuan tersebut, silakan manfaatkan fitur-fitur website kami sebaik mungkin. Kami berharap dengan tulus agar barang-barang yang hilang segera ditemukan dan dikembalikan kepada pemiliknya. 
+        <p> Harap pastikan untuk membaca dan memahami <b>Syarat dan Ketentuan</b> website kami guna menghindari penggunaan yang tidak tepat atau melanggar prosedur. Setelah Anda memahami syarat dan ketentuan tersebut, silakan manfaatkan fitur-fitur website kami sebaik mungkin. Kami berharap dengan tulus agar barang-barang yang hilang segera ditemukan dan dikembalikan kepada pemiliknya. 
         Terima kasih atas kerjasamanya!</p>
     </div>
 
@@ -42,7 +41,6 @@ const LostItemService = {
     `;
   },
 
-  async afterRender() {
-  },
+  async afterRender() {},
 };
 export default LostItemService;

@@ -29,7 +29,6 @@ const FoundItemService = {
     `;
   },
 
-  async afterRender() {
-  },
+  async afterRender() {},
 };
 export default FoundItemService;

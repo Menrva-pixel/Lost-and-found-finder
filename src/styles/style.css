@@ -400,9 +400,9 @@ information-section a:hover {
 /* terms of use */
 #terms-of-use {
   font-family: "Montserrat", sans-serif;
-  max-width: 1250px;
+  max-width: 900px;
   height: auto;
-  margin: 20px auto;
+  margin: 30px auto;
   box-shadow: 5px 5px 12px #43609b;
   padding: 55px 150px;
   border-radius: 10px;
@@ -417,7 +417,7 @@ information-section a:hover {
 
 ol {
   overflow: auto;
-  height: 600px;
+  /* height: 600px; */
   padding: 20px;
 }
 
@@ -430,7 +430,7 @@ ul {
   padding-bottom: 20px;
   margin-left: 20px;
   padding-left: 20px;
-  font-size: 1.1em;
+  font-size: 16px;
   text-align: justify;
 }
 
@@ -465,7 +465,7 @@ ul li {
 }
 
 .tou-update {
-  color: #007bff;
+  color: #43609b;
 }
 
 .tou-button {
@@ -477,37 +477,40 @@ ul li {
   margin-top: 10px;
 }
 
-#cancel {
-  background-color: transparent;
-  border: 2px solid #000000;
-  border-radius: 5px;
-  color: #202020;
+.tou-button .btn-submit {
+  padding: 5px;
+  background-color: #43609b;
+  color: #dfdfdf;
+  margin-right: 5px;
 }
 
-#cancel:hover {
-  background-color: #ec2323;
-}
-
-#accept {
-  border-radius: 5px;
-  background-color: #202020;
-}
-
-#accept:hover {
-  background-color: rgb(60, 201, 42);
-  color: #202020;
-  cursor: pointer;
+.btn-submit:hover {
+  background-color: #6486ca;
+  color: #dfdfdf;
 }
 
 /* kebijakan privasi */
 #kebijakan-privasi {
   font-family: "Montserrat", sans-serif;
-  max-width: 1150px;
-  margin: 20px auto;
+  max-width: 900px;
+  margin: 30px auto;
   box-shadow: 5px 5px 12px #43609b;
   padding: 25px 150px;
   border-radius: 10px;
   border: 1px solid #131517;
+}
+
+#kebijakan-privasi h3 {
+  margin-top: 20px;
+}
+
+#kebijakan-privasi .kbj-button {
+  text-align: center;
+}
+
+#kebijakan-privasi .kbj-button a {
+  text-decoration: none;
+  color: #dfdfdf;
 }
 
 /* default Button */
