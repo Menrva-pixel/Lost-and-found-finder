@@ -1,6 +1,7 @@
 /* eslint-disable class-methods-use-this */
 /* eslint-disable no-use-before-define */
 import img from '../../../public/images/img-finder.png';
+import { createModalElement } from '../template/template-creator';
 
 class FoundForm extends HTMLElement {
   connectedCallback() {
@@ -9,15 +10,16 @@ class FoundForm extends HTMLElement {
   }
 
   addEventListener() {
-    const syarat = this.querySelector('.syarat');
+    // const syarat = this.querySelector('.syarat');
 
-    syarat.addEventListener('click', () => {
-      window.location.hash = '#/terms-of-use';
-    });
+    // syarat.addEventListener('click', () => {
+    //   window.location.hash = '#/terms-of-use';
+    // });
   }
 
   render() {
     this.innerHTML = `
+      ${createModalElement}
       <h2 class="form-title">Form Penemuan Barang</h2>
       <div class="card form-container">
         <div class="left-form">
@@ -80,7 +82,7 @@ class FoundForm extends HTMLElement {
           <div class="submit-btn">
           <div class="form-check mb-3">
             <input class="form-check-input" type="checkbox" id="agreement">
-            <label class="form-check-label" for="agreement">Saya setuju dengan <a class="syarat">ketentuan dan persyaratan</a>.</label>
+            <label class="form-check-label" for="agreement">Saya setuju dengan <a class="syarat" data-bs-toggle="modal" data-bs-target="#exampleModal">ketentuan dan persyaratan</a>.</label>
           </div>
           <button type="submit" class="btn btn-primary">Submit</button>
           </div>
