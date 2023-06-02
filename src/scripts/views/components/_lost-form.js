@@ -19,7 +19,7 @@ class LostForm extends HTMLElement {
 
   render() {
     this.innerHTML = `
-      ${createModalElement}
+      ${createModalElement()}
       <h2 class="form-title">Form Kehilangan Barang</h2>
       <div class="card form-container">
         <div class="left-form">
