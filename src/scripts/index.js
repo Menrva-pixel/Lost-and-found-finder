@@ -10,6 +10,7 @@ import '../styles/_banner.css';
 import '../styles/_form.css';
 import '../styles/_sponsor.css';
 import '../styles/_services.css';
+import '../styles/_modal.css';
 
 import '../styles/responsive.css';
 

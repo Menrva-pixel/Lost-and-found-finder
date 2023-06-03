@@ -1,0 +1,127 @@
+/* terms of use */
+/* #terms-of-use {
+  font-family: 'Montserrat', sans-serif;
+  max-width: 1250px;
+  height: auto;
+  margin: 20px auto;
+  box-shadow: 5px 5px 12px #43609b;
+  padding:  55px 150px;
+  border-radius: 10px;
+  border: 1px solid #131517;
+} */
+
+.tou-title h1 {
+  text-align: center;
+  margin: 20px;
+  font-weight: 600;
+}
+
+.modal-body ol {
+  overflow: auto;
+  height: 600px;
+  padding: 1rem !important;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.tou-list {
+  padding-bottom: 20px;
+  margin-left: 20px;
+  padding-left: 20px;
+  font-size: 1.1em;
+  text-align: justify;
+}
+
+#terms-of-use p {
+  font-weight: 600;
+  color: #5a5a5a;
+  line-height: 1.5;
+}
+
+#terms-of-use h3 {
+  font-weight: bold;
+}
+
+.tou-title h1 {
+  font-size: 2.4em;
+  color: #1f1f1f;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul li {
+  font-weight: 600;
+  color: #5a5a5a;
+}
+
+.tou-update {
+  color: #007bff;
+}
+
+.tou-button {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/* #cancel {
+    background-color: transparent;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    color: #202020;
+  }
+  
+  #cancel:hover {
+    background-color: #ec2323;
+  }
+  
+  #accept {
+    border-radius: 5px;
+    background-color: #202020;
+  }
+  
+  #accept:hover {
+    background-color: rgb(60, 201, 42);
+    color: #202020;
+    cursor: pointer;
+  } */
+
+/* kebijakan privasi */
+
+/* #kebijakan-privasi {
+    font-family: 'Montserrat', sans-serif;
+    max-width: 1150px;
+    margin: 20px auto;
+    box-shadow: 5px 5px 12px #43609b;
+    padding:  25px 150px;
+    border-radius: 10px;
+    border: 1px solid #131517;
+  } */
+
+/* default Button */
+button {
+  border: none;
+  background-color: #43609b;
+}
+
+button:hover {
+  background-color: #252525;
+  color: #cacaca;
+}
+
+.kbj-button {
+  margin-top: 0.5rem;
+}
