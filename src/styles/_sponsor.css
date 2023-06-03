@@ -1,18 +1,41 @@
+.sponsor-title h2 {
+	text-align: center;
+	margin-top: 20px;
+}
+
 .sponsor-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;;
-    margin: 50px 10px;
+	width: 100%;
+	margin: 50px 0;
+	padding: 10px 50px;
+	/* background-color: red; */
 }
 
 .university {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	row-gap: 20px;
+	/* background-color: yellow; */
 }
 
-.university img {
-    max-width: 250px;
-    height: auto;
+.sponsor-container img {
+	width: 230px;
+	height: auto;
+}
+
+@media only screen and (max-width: 500px) {
+	.sponsor-container {
+		width: 200px;
+	}
+
+	.university {
+		justify-content: center;
+	}
+}
+
+@media only screen and (max-width: 804px) {
+	.university {
+		justify-content: space-evenly;
+	}
 }

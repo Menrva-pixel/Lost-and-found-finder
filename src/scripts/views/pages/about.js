@@ -11,8 +11,8 @@ import pictCreditExpress from '../../../public/images/credit/express-logo.png';
 import '../components/_sponsor-section';
 
 const About = {
-  async render() {
-    return `
+	async render() {
+		return `
         <h2 class ="About">About</h2>
         <div class="Latar">
             <p>
@@ -120,11 +120,11 @@ const About = {
             <sponsor-section></sponsor-section>
     </div>
       `;
-  },
+	},
 
-  async afterRender() {
-    // Fungsi ini akan dipanggil setelah render()
-  },
+	async afterRender() {
+		// Fungsi ini akan dipanggil setelah render()
+	},
 };
 
 export default About;
