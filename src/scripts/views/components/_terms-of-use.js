@@ -11,21 +11,20 @@ class TermsOfUse extends HTMLElement {
     const privacyLink = this.querySelector('.privacy-link');
     privacyLink.addEventListener('click', () => this.showPrivacyPolicy());
 
-    const cancelButton = this.querySelector('#cancel');
+    const cancelButton = document.querySelector('#cancel');
     cancelButton.addEventListener('click', () => {
       window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
     });
 
-    const acceptButton = this.querySelector('#accept');
+    const acceptButton = document.querySelector('#accept');
     acceptButton.addEventListener('click', this.handleAcceptButtonClick.bind(this));
 
-    const termsContainer = this.querySelector('#terms-of-use');
-    termsContainer.addEventListener('scroll', this.handleTermsScroll.bind(this));
+    // const termsContainer = this.querySelector('#terms-of-use');
+    // termsContainer.addEventListener('scroll', this.handleTermsScroll.bind(this));
   }
 
   render() {
     this.innerHTML = `
-    <div id="terms-of-use">
     <div class="tou-update">
         <h3>Last Updated: May 30, 2023</h3>
     </div>
@@ -92,20 +91,16 @@ class TermsOfUse extends HTMLElement {
             </ul>
         </li>
     </ol>
-    <div class="tou-button">
-        <button id="cancel">tidak setuju</button>
-        <button id="accept">Setuju</button>
-    </div>
-</div>
       `;
   }
 
   showPrivacyPolicy() {
-    this.innerHTML = '<kebijakan-privasi></kebijakan-privasi>';
+    const modalBody = document.querySelector('.modal-body');
+    modalBody.innerHTML = '<kebijakan-privasi></kebijakan-privasi>';
   }
 
   handleAcceptButtonClick() {
-    const acceptButton = this.querySelector('#accept');
+    const acceptButton = document.querySelector('#accept');
     if (!acceptButton.disabled) {
       Swal.fire({
         title: 'Terms Accepted',
@@ -120,18 +115,18 @@ class TermsOfUse extends HTMLElement {
     }
   }
 
-  handleTermsScroll() {
-    const termsContainer = this.querySelector('#terms-of-use');
-    const acceptButton = this.querySelector('#accept');
+  // handleTermsScroll() {
+  //   const termsContainer = this.querySelector('#terms-of-use');
+  //   const acceptButton = this.querySelector('#accept');
 
-    if (termsContainer.scrollTop + termsContainer.clientHeight === termsContainer.scrollHeight) {
-      // User has scrolled to the bottom of the terms and conditions
-      acceptButton.disabled = false;
-    } else {
-      // User has not scrolled to the bottom of the terms and conditions
-      acceptButton.disabled = true;
-    }
-  }
+  //   if (termsContainer.scrollTop + termsContainer.clientHeight === termsContainer.scrollHeight) {
+  //     // User has scrolled to the bottom of the terms and conditions
+  //     acceptButton.disabled = false;
+  //   } else {
+  //     // User has not scrolled to the bottom of the terms and conditions
+  //     acceptButton.disabled = true;
+  //   }
+  // }
 }
 
 // Define the custom element
