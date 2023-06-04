@@ -120,29 +120,51 @@
 }
 
 /* information section */
-
 @media screen and (max-width: 870px) {
   information-section {
     padding: 100px 10px;
-    /* width: 500px; */
+  }
+  information-section h2{
+    font-size: 2.4em;
+    margin-bottom: 60px;
   }
   #scrollLeft,#scrollRight{
     display: none;
   }
+  .containerCard {
+    overflow-x: scroll;
+  }
   
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 600px) {
   information-section {
-    padding: 10px 5px;
+    padding: 90px 30px;
   }
-
+  information-section h2{
+    font-size: 2em;
+    margin-bottom: 60px;
+  }
   .containerCard {
-    width: 75%;
+    width: 70%;
+    padding: 0 9px;
   }
 
   .desc-container .description h2 {
     font-size: 2.2em;
+  }
+}
+@media only screen and (max-width: 450px){
+  .containerCard {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 400px){
+  information-section {
+    padding: 90px 30px;
+  }
+  .containerCard {
+    width: 100%;
   }
 }
 
