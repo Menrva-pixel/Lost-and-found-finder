@@ -25,12 +25,12 @@ const Home = {
     const rightscroll = document.querySelector('#scrollRight');
     leftscroll.addEventListener('click', () => {
       const containerCard = document.querySelector('.containerCard');
-      containerCard.scrollBy(-250, 0);
+      containerCard.scrollBy(-380, 0);
     });
 
     rightscroll.addEventListener('click', () => {
       const containerCard = document.querySelector('.containerCard');
-      containerCard.scrollBy(250, 0);
+      containerCard.scrollBy(380, 0);
     });
   },
 };
