@@ -4,20 +4,29 @@
 }
 
 .sponsor-container {
-    display: flex;
-    flex-direction: row;
+    width: full;
+    padding: 20px;
     align-items: center;
-    justify-content: center;;
-    margin: 50px 10px;
+    /* background-color: red; */
+    margin: 20px 0;
 }
 
 .university {
+    padding: 20px;
     display: flex;
-    flex-direction: row;
-    gap: 20px;
+    justify-content: space-evenly;
+    gap: 15px;
+    /* background-color: blue; */
+    flex-wrap: wrap;
 }
 
 .university img {
-    max-width: 250px;
-    height: auto;
+    max-width: 275px;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 500px) {
+  .sponsor-container .university img {
+    width: 100%;
+  }
 }
