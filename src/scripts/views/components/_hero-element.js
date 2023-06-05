@@ -64,6 +64,8 @@ class BannerElement extends HTMLElement {
       font-size: 1.4em;
       border: none;
       background: #333;
+      border-radius: 5px;
+      cursor: pointer;
     }
     
     button:hover {
