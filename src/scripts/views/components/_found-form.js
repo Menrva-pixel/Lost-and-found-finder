@@ -61,8 +61,8 @@ class FoundForm extends HTMLElement {
           </div>
 
           <div class="mb-3">
-            <label for="loss-date">Tanggal penemuan</label>
-            <input type="date" class="form-control" id="loss-date">
+            <label for="found-date">Tanggal penemuan</label>
+            <input type="date" class="form-control" id="found-date">
           </div>
 
           <div class="mb-3">

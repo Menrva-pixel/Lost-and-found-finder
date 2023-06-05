@@ -1,5 +1,5 @@
 import LostAndFoundAPI from '../../data/lost-and-found-api';
-import { createLostItemCardForResult } from '../template/template-creator';
+import { createFoundItemCardForResult, createLostItemCardForResult } from '../template/template-creator';
 
 const DetailItems = {
   async render() {
@@ -64,9 +64,24 @@ const DetailItems = {
 
   async afterRender() {
     const lostItems = await LostAndFoundAPI.lostItemList();
+    const foundItems = await LostAndFoundAPI.foundItemList();
+
+    const mergedItems = lostItems.map((item) => ({ ...item, type: 'lost' }))
+      .concat(foundItems.map((item) => ({ ...item, type: 'found' })));
+
+    mergedItems.sort((item1, item2) => {
+      const date1 = new Date(item1.loss_date || item1.found_date);
+      const date2 = new Date(item2.loss_date || item2.found_date);
+      return date1 - date2;
+    });
+
     const itemListContainer = document.querySelector('#item-list');
-    lostItems.forEach((item) => {
-      itemListContainer.innerHTML += `<div class="col">${createLostItemCardForResult(item)}</div>`;
+    mergedItems.forEach((item) => {
+      if (item.type === 'found') {
+        itemListContainer.innerHTML += `<div class="col">${createFoundItemCardForResult(item)}</div>`;
+      } else {
+        itemListContainer.innerHTML += `<div class="col">${createLostItemCardForResult(item)}</div>`;
+      }
     });
   },
 };

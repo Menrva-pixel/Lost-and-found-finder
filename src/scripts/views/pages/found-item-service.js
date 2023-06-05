@@ -2,6 +2,7 @@
 import '../components/_found-form';
 
 import bgImg from '../../../public/images/img-writing.png';
+import onSubmitFoundForm from '../../utils/found-form-handler';
 
 const FoundItemService = {
   async render() {
@@ -28,6 +29,8 @@ const FoundItemService = {
   },
 
   async afterRender() {
+    const submitButton = document.querySelector('.submit-btn button');
+    submitButton.addEventListener('click', onSubmitFoundForm);
   },
 };
 export default FoundItemService;
