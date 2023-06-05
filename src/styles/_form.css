@@ -39,7 +39,7 @@
     background-color: #dfdfdf;
 }
 
-#lost-form {
+#lost-form, #found-form {
     padding: 20px 20px;
 }
 

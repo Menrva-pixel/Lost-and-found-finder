@@ -75,6 +75,11 @@
 
 /* List Item Service */
 
+#item-list {
+  max-height: 1300px;
+  overflow: auto;
+}
+
 .location {
   margin-left: -20px !important;
   display: flex;
