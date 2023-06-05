@@ -440,32 +440,48 @@ information-section a:hover {
   align-items: center;
 }
 
-/* About page */
-.About {
-  margin: 50px 0;
+/* about page */
+.about {
+  margin: 25px 0 20px;
   text-align: center;
 }
 
-.Latar {
+.latar {
   width: 70%;
   margin: auto;
 }
 
-.Latar p {
-  line-height: 32px;
+.latar p {
+  line-height: 28px;
 }
 
-.ourTeam {
-  padding: 10px;
-  margin: 40px;
+hr {
+  /* width: 200px; */
+  border: 3px solid #747272;
+  margin: 0 auto 50px;
+  border-radius: 5px;
 }
 
-.ourTeam h2 {
+.line-about{
+  width: 150px;
+} 
+
+.our-team {
+  padding: 20px;
+  background-color: #D8D8D8;
+  margin-top: 100px;
+}
+
+.line-our-team {
+  width: 200px;
+}
+
+.our-team h2 {
   text-align: center;
-  margin: 50px 0;
+  margin: 50px 0 20px;
 }
 
-.boxCard {
+.box-card {
   margin: auto;
   padding: 0 30px;
   justify-content: space-around;
@@ -475,13 +491,15 @@ information-section a:hover {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.ourTeam .profile {
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+.our-team .profile {
+  box-shadow: rgba(0, 0, 2, 0.24) 0px 3px 8px;
   padding: 30px;
   min-height: 430px;
+  background-color: #fff;
+  border-radius: 5px;
 }
 
-.ourTeam .profile img {
+.our-team .profile img {
   width: 100px;
   border: 1px solid black;
   border-radius: 50%;
@@ -493,25 +511,25 @@ information-section a:hover {
   justify-content: center;
 }
 
-.ourTeam .profile h4 {
+.our-team .profile h4 {
   margin: 8px;
   text-align: center;
 }
 
-.ourTeam .socialMedia {
+.our-team .socialMedia {
   text-align: center;
   margin-top: 20px;
 }
 
-.ourTeam .socialMedia a {
+.our-team .socialMedia a {
   padding: 10px;
 }
 
-.ourTeam .socialMedia i {
+.our-team .socialMedia i {
   font-size: 1.5em;
 }
 
-.ourTeam .socialMedia a:hover i {
+.our-team .socialMedia a:hover i {
   transform: scale(1.2);
 }
 
