@@ -16,8 +16,7 @@ const About = {
         <h2 class ="About">About</h2>
         <div class="Latar">
             <p>
-                Website ini dibuat untuk memenuhi tugas capstone project dari SIB Cycle 4 Dicoding Academy, bertemakan solusi utilitas dengan fitur pencarian dan penemuan barang hilang
-                yang diharapkan dapat membantu masyarakat menemukan barang berharga yang hilang!.
+                Website ini dibuat untuk memenuhi tugas Capstone Project dari SIB Cycle 4 Dicoding Academy, yang bertemakan solusi utilitas dengan fitur pencarian dan penemuan barang yang hilang sehingga dapat membantu masyarakat menemukannya kembali. Kami juga memberikan fitur pelaporan kehilangan barang, di mana Anda dapat mengunggah foto, memberikan deskripsi yang rinci, dan memasukkan informasi penting seperti lokasi kehilangan, waktu kehilangan, dan kontak yang dapat dihubungi. Informasi ini akan membantu orang lain yang menemukan barang yang hilang untuk menghubungi Anda dan mengembalikannya dengan mudah.
             </p>
         </div>
 
