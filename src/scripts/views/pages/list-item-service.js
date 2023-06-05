@@ -1,3 +1,4 @@
+import LostAndFoundAPI from '../../data/lost-and-found-api';
 import { createLostItemCardForResult } from '../template/template-creator';
 
 const DetailItems = {
@@ -50,11 +51,7 @@ const DetailItems = {
           </div>
 
           <div class="container mb-3">
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3">
-              <div class="col">${createLostItemCardForResult()}</div>
-              <div class="col">${createLostItemCardForResult()}</div>
-              <div class="col">${createLostItemCardForResult()}</div>
-              <div class="col">${createLostItemCardForResult()}</div>
+            <div id="item-list" class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3">
             </div>
           </div>
           
@@ -66,7 +63,11 @@ const DetailItems = {
   },
 
   async afterRender() {
-    // Fungsi ini akan dipanggil setelah render()
+    const lostItems = await LostAndFoundAPI.lostItemList();
+    const itemListContainer = document.querySelector('#item-list');
+    lostItems.forEach((item) => {
+      itemListContainer.innerHTML += `<div class="col">${createLostItemCardForResult(item)}</div>`;
+    });
   },
 };
 

@@ -1,3 +1,5 @@
+import CONFIG from '../../globals/config';
+
 const createLostItemCard = () => `
 <div class="card home-card" style="width: 18rem;">
     <img src="https://placehold.co/600x400" class="card-img-top" alt="...">
@@ -8,13 +10,13 @@ const createLostItemCard = () => `
     </div>
 </div>`;
 
-const createLostItemCardForResult = () => `
+const createLostItemCardForResult = (lostItem) => `
 <div class="card">
-    <img src="https://placehold.co/600x400" class="card-img-top" alt="...">
+    <img src="${CONFIG.BASE_IMAGE_URL}${lostItem.iditem_image}" class="card-img-top" alt="...">
     <div class="card-body">
-        <p class="location"><i class="material-icons">place</i>Location </p>
-        <h5><a href="#/item-detail">Item Name</a></h5>
-        <p class="card-text">Item Description goes here....</p>
+        <p class="location"><i class="material-icons">place</i>${lostItem.loss_location}</p>
+        <h5><a href="#/item-detail">${lostItem.item_name}</a></h5>
+        <p class="card-text">${lostItem.item_description}</p>
     </div>
 </div>`;
 
