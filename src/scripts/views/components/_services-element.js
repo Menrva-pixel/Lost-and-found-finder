@@ -1,3 +1,8 @@
+/* eslint-disable import/no-duplicates */
+import srcImg1 from '../../../public/images/img-missing-1.jpg';
+import srcImg2 from '../../../public/images/img-finder-2.jpg';
+import srcImg3 from '../../../public/images/missing-item-2.jpg';
+
 class ServiceElement extends HTMLElement {
   connectedCallback() {
     this.render();
@@ -6,20 +11,26 @@ class ServiceElement extends HTMLElement {
   render() {
     this.innerHTML = `
       <div id="services" class="services">
-        <h1> Which one are you ? </h1>
+        <h1> Siapakah Kamu ? </h1>
         <div class="services-list">
-          <div class="service-item">
-            <h2>Finder</h2>
-            <p>Finder / Penemu adalah seseorang yang menemukan atau menemui suatu barang atau objek yang hilang. Mereka memainkan peran penting dalam proses mencari dan mungkin mengembalikan barang yang hilang kepada pemiliknya.</p>
+          <div class="service-item1">
+              <img src="${srcImg1}">
+              <a href="#" class="role-title">Finder</a>
+              <p class="role-desc">Menemukan barang milik orang lain ?</p>
           </div>
-          <div class="service-item">
-            <h2>Helper</h2>
-            <p>Helper merujuk pada individu yang menawarkan bantuan atau dukungan kepada mereka yang membutuhkannya. Dalam konteks situs web ini, seorang helper bisa menjadi seseorang yang memberikan panduan, nasihat, atau bantuan praktis kepada penemu dan pencari dalam upaya mereka untuk menemukan atau mendapatkan kembali barang yang hilang.</p>
-          </div>
-          <div class="service-item">
-            <h2>Seeker</h2>
-            <p>Seeker / Pencari adalah seseorang yang sedang aktif mencari barang yang hilang atau hilang. Mereka mencari informasi, sumber daya, atau layanan yang dapat membantu mereka dalam menemukan barang yang hilang tersebut. Pencari mengandalkan bantuan dan alat yang disediakan oleh situs web untuk meningkatkan peluang mereka dalam menemukan barang yang hilang.</p>
-          </div>
+
+          <div class="service-item2">
+              <img src="${srcImg2}">
+              <a href="#" class="role-title">Helper</a>
+              <p class="role-desc">Ingin menolong orang mencari atau<br> menemukan barang yang hilang ?</p>
+            </div>
+
+          <div class="service-item3">
+              <img src="${srcImg3}">
+              <a href="#" class="role-title">Seeker</a>
+              <p class="role-desc">Kamu merasa kehilangan barang ?</p>
+            </div>
+
         </div>
       </div>
       `;

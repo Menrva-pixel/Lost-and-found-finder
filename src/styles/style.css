@@ -12,8 +12,7 @@ html {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);
-  background-size: cover;
+background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);  background-size: cover;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -199,7 +198,7 @@ site-description-element .desc-container {
   color: #0c0c0c;
   text-align: justify;
   word-break: break-all;
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 
 .desc-container .description p::first-letter {
