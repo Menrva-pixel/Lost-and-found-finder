@@ -1,5 +1,5 @@
 /* eslint-disable import/no-duplicates */
-import sponsor1 from '../../../public/images/sponsor/univ-bsi.jpg';
+import sponsor1 from '../../../public/images/sponsor/logo-unram.png';
 import sponsor2 from '../../../public/images/sponsor/logo-unesa.png';
 import sponsor3 from '../../../public/images/sponsor/univ-bsi.jpg';
 import sponsor4 from '../../../public/images/sponsor/univ-bsi.jpg';
