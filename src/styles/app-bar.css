@@ -23,6 +23,7 @@
   background-color: initial;
   color: initial !important;
   border-radius: initial;
+  text-transform: uppercase;
 }
 
 .btn-abt:hover {
