@@ -378,8 +378,16 @@ information-section a:hover {
   font-weight: 600;
 }
 
-.card-img-top img {
+.card-img {
   border-radius: 0 !important;
+  max-width: 450px !important;
+  min-height: auto !important;
+}
+
+.card-img-top {
+  max-width: 450px;
+  height: 250px;
+  object-fit: fill;
 }
 
 .card-text {

@@ -52,6 +52,10 @@ const DetailItems = {
 
           <div class="container mb-3">
             <div id="item-list" class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3">
+            <div class="loading-container">
+              <div class="loading-spinner"></div>
+              <div class="loading-text">Loading item list...</div>
+            </div>
             </div>
           </div>
           
@@ -63,27 +67,41 @@ const DetailItems = {
   },
 
   async afterRender() {
-    const lostItems = await LostAndFoundAPI.lostItemList();
-    const foundItems = await LostAndFoundAPI.foundItemList();
-
-    const mergedItems = lostItems.map((item) => ({ ...item, type: 'lost' }))
-      .concat(foundItems.map((item) => ({ ...item, type: 'found' })));
-
-    mergedItems.sort((item1, item2) => {
-      const date1 = new Date(item1.loss_date || item1.found_date);
-      const date2 = new Date(item2.loss_date || item2.found_date);
-      return date1 - date2;
-    });
-
     const itemListContainer = document.querySelector('#item-list');
-    mergedItems.forEach((item) => {
-      if (item.type === 'found') {
-        itemListContainer.innerHTML += `<div class="col">${createFoundItemCardForResult(item)}</div>`;
-      } else {
-        itemListContainer.innerHTML += `<div class="col">${createLostItemCardForResult(item)}</div>`;
-      }
-    });
+    itemListContainer.innerHTML = `
+    <div class="loading-container">
+      <div class="loading-spinner"></div>
+      <div class="loading-text">Loading item list...</div>
+      </div>
+    `;
+
+    try {
+      const lostItems = await LostAndFoundAPI.lostItemList();
+      const foundItems = await LostAndFoundAPI.foundItemList();
+
+      const mergedItems = lostItems.map((item) => ({ ...item, type: 'lost' }))
+        .concat(foundItems.map((item) => ({ ...item, type: 'found' })));
+
+      mergedItems.sort((item1, item2) => {
+        const date1 = new Date(item1.loss_date || item1.found_date);
+        const date2 = new Date(item2.loss_date || item2.found_date);
+        return date1 - date2;
+      });
+
+      itemListContainer.innerHTML = '';
+
+      mergedItems.forEach((item) => {
+        if (item.type === 'found') {
+          itemListContainer.innerHTML += `<div class="col">${createFoundItemCardForResult(item)}</div>`;
+        } else {
+          itemListContainer.innerHTML += `<div class="col">${createLostItemCardForResult(item)}</div>`;
+        }
+      });
+    } catch (error) {
+      itemListContainer.innerHTML = '<div class="error-message">Failed to fetch data. Please try again later.</div>';
+    }
   },
+
 };
 
 export default DetailItems;
