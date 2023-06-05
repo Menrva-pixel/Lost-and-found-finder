@@ -15,11 +15,15 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  row-gap: 20px;
+  row-gap: 15px;
 }
 
+/* .credit-item {
+  background-color: yellow;
+} */
+
 .credit .credit-list .credit-item {
-  width: 24%;
+  width: 25%;
   padding: 10px;
   display: flex;
   justify-content: center;
@@ -27,11 +31,6 @@
   overflow: hidden;
   transition-timing-function: ease-in-out;
   cursor: pointer;
-}
-
-.credit .credit-list .credit-item img:hover {
-  transition-duration: 1s;
-  transform: scale(120%);
 }
 
 .credit .credit-list .credit-item img {

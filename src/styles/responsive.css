@@ -220,9 +220,14 @@
   }
 }
 
+@media only screen and (max-width: 500px) {
+  .credit .credit-list .credit-item img {
+    width: 100%;
+  }
+}
+
 
 /* footer section */
-
 @media only screen and (max-width: 766px) {
   .footer-top {
     text-align: center;
