@@ -14,7 +14,7 @@
 }
 
 .app-bar--scrolled {
-  background: rgba(0, 0, 0, 0.58);
+  background: rgba(0, 0, 0, 0.747);
   backdrop-filter: blur(5.7px);
   -webkit-backdrop-filter: blur(5.7px);
 }

@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-use-before-define */
 /* eslint-disable no-plusplus */
 import routes from '../routes/routes';
 import UrlParser from '../routes/url-parser';
@@ -49,5 +51,20 @@ window.addEventListener('scroll', () => {
     link.classList.toggle('a--scrolled', scrolled);
   });
 });
+
+window.onscroll = function () { scrollFunction(); };
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById('backToTopBtn').style.display = 'block';
+  } else {
+    document.getElementById('backToTopBtn').style.display = 'none';
+  }
+}
+
+function scrollToTop() {
+  document.body.scrollTop = 0; // Untuk Safari
+  document.documentElement.scrollTop = 0; // Untuk Chrome, Firefox, IE, dan Opera
+}
 
 export default App;
