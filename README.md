@@ -21,6 +21,7 @@ Dicoding Capstone Project
 ![badge](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)
 ![badge](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white) 
 ![badge](https://img.shields.io/badge/eslint-3A33D1?style=for-the-badge&logo=eslint&logoColor=white)
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
   
  ### Team ID : `C23-R4104`
 | Tema : `Solusi Utilitas`  |  Judul Project : `Lost and Found Finder` |
