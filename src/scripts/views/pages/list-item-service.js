@@ -17,8 +17,8 @@ const DetailItems = {
               <label for="status">Status:</label>
               <select class="form-control" id="status">
                 <option value="">Semua</option>
-                <option value="ditemukan">Ditemukan</option>
-                <option value="kehilangan">Kehilangan</option>
+                <option value="found">Ditemukan</option>
+                <option value="lost">Kehilangan</option>
               </select>
             </div>
 
@@ -44,7 +44,7 @@ const DetailItems = {
           <hr>
 
           <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Search Anything" aria-describedby="basic-addon2">
+            <input id="search-input" type="text" class="form-control" placeholder="Search Anything" aria-describedby="basic-addon2">
             <div class="input-group-append">
               <button class="btn btn-outline-secondary search-button" type="button"><img width="20" height="20" src="https://img.icons8.com/ios/20/search--v1.png" alt="search--v1"/></button>
             </div>
@@ -67,29 +67,61 @@ const DetailItems = {
   },
 
   async afterRender() {
-    const itemListContainer = document.querySelector('#item-list');
-    itemListContainer.innerHTML = `
-    <div class="loading-container">
-      <div class="loading-spinner"></div>
-      <div class="loading-text">Loading item list...</div>
-      </div>
-    `;
+    const statusFilter = document.getElementById('status');
+    const fromDateInput = document.getElementById('fromDate');
+    const toDateInput = document.getElementById('toDate');
+    const searchInput = document.querySelector('#search-input');
+    const itemContainer = document.querySelector('#item-list');
 
-    try {
-      const items = await LostAndFoundAPI.itemList();
+    const items = await LostAndFoundAPI.itemList();
 
-      itemListContainer.innerHTML = '';
+    function filterItems() {
+      const selectedStatus = statusFilter.value;
+      const fromDate = new Date(fromDateInput.value);
+      const toDate = new Date(toDateInput.value);
+
+      itemContainer.innerHTML = '';
+      let hasDisplayedItems = false;
 
       items.forEach((item) => {
+        if (selectedStatus && item.status !== selectedStatus) {
+          return;
+        }
+
+        const itemDate = new Date(item.item_date);
+        // eslint-disable-next-line max-len
+        if ((fromDateInput.value && itemDate < fromDate) || (toDateInput.value && itemDate > toDate)) {
+          return;
+        }
+
+        const searchTerm = searchInput.value.toLowerCase();
+        if (searchTerm && !item.item_name.toLowerCase().includes(searchTerm)) {
+          return;
+        }
+
+        hasDisplayedItems = true;
+
         if (item.status === 'found') {
-          itemListContainer.innerHTML += `<div class="col">${createFoundItemCardForResult(item)}</div>`;
+          itemContainer.innerHTML += `<div class="col">${createFoundItemCardForResult(item)}</div>`;
         } else {
-          itemListContainer.innerHTML += `<div class="col">${createLostItemCardForResult(item)}</div>`;
+          itemContainer.innerHTML += `<div class="col">${createLostItemCardForResult(item)}</div>`;
         }
       });
-    } catch (error) {
-      itemListContainer.innerHTML = '<div class="error-message">Failed to fetch data. Please try again later.</div>';
+
+      if (!hasDisplayedItems) {
+        // No items matched the filter criteria
+        itemContainer.innerHTML = '<div class="no-items">No items found.</div>';
+      }
     }
+
+    filterItems();
+    // Tambahkan event listener untuk tombol filter dan tombol pencarian
+    const filterButton = document.querySelector('.btn-primary');
+    const searchButton = document.querySelector('.search-button');
+
+    filterButton.addEventListener('click', filterItems);
+    searchButton.addEventListener('click', filterItems);
+    searchInput.addEventListener('input', filterItems);
   },
 
 };
