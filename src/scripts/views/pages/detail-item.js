@@ -4,19 +4,36 @@ const DetailItems = {
   async render() {
     return `
         <div id="detail-item">
-            <div class="detail-image">
-                <img src="${ImgDetail}" alt="item-detail-img">
+          <div class="detail-image">
+            <img src="${ImgDetail}" alt="item-detail-img">
+          </div>
+
+          <div class="detail-information">
+            <div class="detail-title">
+              <h3>Hilang / Ditemukan Barang</h3>
             </div>
-            <div class="detail-information">
-                <a id ="date">01-01-2023</a>
-                <h1>Item name</h1>
-                <h3>Item Tag / Category</h3>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus porttitor massa odio, at congue quam hendrerit id. Aenean diam ipsum, ornare sed quam nec, pharetra lobortis est. Mauris eget consequat enim. Nam arcu nulla, sollicitudin nec mollis eget, euismod in justo. Nam euismod elit sed pretium pretium. Curabitur mollis a ligula eget dignissim. Vestibulum ac nibh vitae neque venenatis elementum id non quam. Suspendisse interdum enim et lacus vehicula, non tincidunt diam ullamcorper. Proin nunc nisl, scelerisque iaculis mattis at, pharetra egestas dolor. Donec pulvinar eros a felis venenatis, non tincidunt diam condimentum. Quisque molestie nunc a molestie feugiat. Phasellus.  </p>
-                <div class="detail-function">
-                    <button>claim</button>
-                    <a href="#">Hubungi finder</a>
-                </div>
+
+            <div class="detail-body">
+              <div class="information-person">
+                <img width="20" height="20" src="https://img.icons8.com/ios-glyphs/20/person-male.png" alt="person-male"/>
+                <p>Dipublish oleh : Nama</p>
+              </div>
+              <div class="information-time">
+                <img width="20" height="20" src="https://img.icons8.com/ios/50/calendar--v1.png" alt="calendar--v1"/>
+                <p>12 Desember 2001</p>
+              </div>
+              <div class="information-place">
+                <img width="20" height="20" src="https://img.icons8.com/ios/30/marker--v1.png" alt="marker--v1"/>
+                <p>Lapangan Bola</p>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus porttitor massa odio, at congue quam hendrerit id. Aenean diam ipsum, ornare sed quam nec, pharetra lobortis est. Mauris eget consequat enim. Nam arcu nulla, sollicitudin nec mollis eget, euismod in justo. Nam euismod elit sed pretium pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <div class="detail-function">
+                <button>Hubungi pelapor</button>
+              </div>
             </div>
+          </div>
         </div>
      `;
   },
