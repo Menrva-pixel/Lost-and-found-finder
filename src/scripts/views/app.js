@@ -52,19 +52,26 @@ window.addEventListener('scroll', () => {
   });
 });
 
-window.onscroll = function () { scrollFunction(); };
+window.onscroll = () => { scrollFunction(); };
 
 function scrollFunction() {
+  const backToTopBtn = document.getElementById('backToTopBtn');
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById('backToTopBtn').style.display = 'block';
+    backToTopBtn.style.opacity = '1';
+    backToTopBtn.style.pointerEvents = 'auto';
   } else {
-    document.getElementById('backToTopBtn').style.display = 'none';
+    backToTopBtn.style.opacity = '0';
+    backToTopBtn.style.pointerEvents = 'none';
   }
 }
 
-function scrollToTop() {
-  document.body.scrollTop = 0; // Untuk Safari
-  document.documentElement.scrollTop = 0; // Untuk Chrome, Firefox, IE, dan Opera
-}
+document.getElementById('backToTopBtn').style.transition = 'opacity 0.3s ease';
+
+document.getElementById('backToTopBtn').addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+});
 
 export default App;
