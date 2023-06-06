@@ -1,4 +1,5 @@
 /* eslint-disable camelcase */
+import swal from 'sweetalert2';
 import LostAndFoundAPI from '../data/lost-and-found-api';
 
 const onSubmitLostForm = async (event) => {
@@ -8,28 +9,59 @@ const onSubmitLostForm = async (event) => {
   const user_phone = document.getElementById('user-phone').value;
   const item_name = document.getElementById('item-name').value;
   const item_description = document.getElementById('item-description').value;
-  const loss_date = document.getElementById('loss-date').value;
-  const loss_location = document.getElementById('loss-location').value;
+  const item_date = document.getElementById('loss-date').value;
+  const item_location = document.getElementById('loss-location').value;
   const image = document.getElementById('upload').files[0];
 
-  const imgResponse = await LostAndFoundAPI.uploadImage(image);
-  const iditem_image = imgResponse.imageId;
+  console.log('Wait data lagi di upload');
+  const submitButton = document.getElementById('submit-btn');
+  const formElement = document.getElementById('lost-form');
+  submitButton.disabled = true;
+  submitButton.innerHTML = 'Submitting...';
+  submitButton.classList.add('loading');
 
-  const userData = {
-    user_name,
-    user_email,
-    user_phone,
-    item_name,
-    item_description,
-    loss_date,
-    loss_location,
-    iditem_image,
-  };
+  try {
+    // Simulate API request delay (replace with actual API request)
+    const imgResponse = await LostAndFoundAPI.uploadImage(image);
+    const iditem_image = imgResponse.imageId;
 
-  console.log(userData);
+    const userData = {
+      user_name,
+      user_email,
+      user_phone,
+      item_name,
+      item_description,
+      item_date,
+      item_location,
+      status: 'lost',
+      iditem_image,
+    };
 
-  const response = await LostAndFoundAPI.createLostItem(userData);
-  console.log(response);
+    await LostAndFoundAPI.createItem(userData);
+
+    // Submit form
+    console.log('Form submitted!');
+    formElement.reset();
+    swal.fire({
+      title: 'Success',
+      text: 'Form submitted!',
+      icon: 'success',
+    }).then(() => {
+      window.location.reload();
+    });
+  } catch (error) {
+    console.log('Form submission failed!', error);
+    swal.fire({
+      title: 'Error',
+      text: 'Form submission failed!',
+      icon: 'error',
+    });
+  } finally {
+    // Enable submit button and restore its text
+    submitButton.disabled = false;
+    submitButton.classList.remove('loading');
+    submitButton.innerHTML = 'Submit';
+  }
 };
 
 export default onSubmitLostForm;

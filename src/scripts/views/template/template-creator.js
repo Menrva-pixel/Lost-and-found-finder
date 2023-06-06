@@ -14,7 +14,7 @@ const createLostItemCardForResult = (lostItem) => `
 <div class="card">
     <img src="${CONFIG.BASE_IMAGE_URL}${lostItem.iditem_image}" class="card-img-top" alt="...">
     <div class="card-body">
-        <p class="location"><i class="material-icons">place</i>${lostItem.loss_location}</p>
+        <p class="location"><i class="material-icons">place</i>${lostItem.item_location}</p>
         <h5><a href="#/item-detail">${lostItem.item_name}</a></h5>
         <p class="card-text">${lostItem.item_description}</p>
     </div>
@@ -24,7 +24,7 @@ const createFoundItemCardForResult = (foundItem) => `
 <div class="card">
     <img src="${CONFIG.BASE_IMAGE_URL}${foundItem.iditem_image}" class="card-img-top" alt="...">
     <div class="card-body">
-        <p class="location"><i class="material-icons">place</i>${foundItem.found_location}</p>
+        <p class="location"><i class="material-icons">place</i>${foundItem.item_location}</p>
         <h5><a href="#/item-detail" style="color: red;">${foundItem.item_name}</a></h5>
         <p class="card-text">${foundItem.item_description}</p>
     </div>
