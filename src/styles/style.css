@@ -263,6 +263,10 @@ function-section h2 {
   gap: 40px;
 }
 
+.right-side .btn-cari,
+.right-side .btn-lapor-penemuan {
+  border-radius: 5px;
+}
 
 /* information section */
 information-section {

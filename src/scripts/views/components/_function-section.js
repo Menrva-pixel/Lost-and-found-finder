@@ -28,12 +28,12 @@ class findAndLost extends HTMLElement {
       <h2>Seeker?</h2>
         <div class="lostButton">
             <p>Merasa kehilangan barang? coba buat laporan disini !!</p>
-            <button>Cari Barang</button>
+            <button class="btn-cari">Cari Barang</button>
         </div>
         <h2>Finder / Helper ?</h2>
         <div class="findButton">
             <p>Menemukan barang? laporkan penemuan disini !!</p>
-            <button>Lapor Penemuan</button>
+            <button class="btn-lapor-penemuan">Lapor Penemuan</button>
         </div>
         </div>
         `;
