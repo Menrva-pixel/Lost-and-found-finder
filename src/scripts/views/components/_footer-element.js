@@ -12,7 +12,7 @@ class FooterElement extends HTMLElement {
                 <div class="col-md-3 footer-about wow fadeInUp">
                     <img class="logo-footer" src="https://i.ibb.co/17tVGNd/icon.png" alt="logo-footer">
                     <p>
-                        We are a young company always looking for new and creative ideas to help you with our products in your everyday work.
+                    "We are participants of Dicoding Academy's SIB Cycle 4 cohort. Our team strives to create an innovative project that is user-friendly for everyone."
                     </p>
                     <p><a href="#/about">Our Team</a></p>
                 </div>
@@ -23,24 +23,24 @@ class FooterElement extends HTMLElement {
                     <p><i class="fas fa-envelope"></i> Email: <a href="mailto:hello@domain.com">lostandfound@gmail.com</a></p>
                 </div>
                 <div class="col-md-4 footer-links wow fadeInUp">
-                    <div class="row">
-                        <div class="col">
-                            <h3>Links</h3>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <p><a class="scroll-link" href="#top-content">Home</a></p>
-                            <p><a href="#">Features</a></p>
-                            <p><a href="#">How it works</a></p>
-                        </div>
-                        <div class="col-md-6">
-                            <p><a href="#">Plans &amp; pricing</a></p>
-                            <p><a href="#">Affiliates</a></p>
-                            <p><a href="#">Terms</a></p>
-                        </div>
+                <div class="row">
+                    <div class="col">
+                        <h3>Sponsored By</h3>
                     </div>
                 </div>
+                <div class="row">
+                <div class="footer-sponsor col-md-4 col-sm-6">
+                    <img src="images/sponsor/merdeka-logo.png" class="img-fluid">
+                </div>
+                <div class="footer-sponsor col-md-4 col-sm-6">
+                    <img src="images/sponsor/msib-logo.png" class="img-fluid">
+                </div>
+                <div class="footer-sponsor col-md-4 col-sm-6">
+                    <img src="images/sponsor/dicoding-logo-white.png" class="img-fluid">
+                </div>
+            </div>
+            
+            </div>
             </div>
         </div>
     </div>
