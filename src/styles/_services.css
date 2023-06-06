@@ -1,10 +1,11 @@
 /* Services */
 .services {
   padding: 0 auto;
+  text-align: center;
 }
 
 .services-list {
-  display: grid;
+  display: inline-grid;
   grid-template-columns: 1fr;
   grid-gap: 40px;
   margin: 80px auto;
@@ -20,6 +21,7 @@
   max-height: 450px;
   display: flex;
   flex-direction: column;
+  min-width: 0;
 }
 
 .service-item3 {

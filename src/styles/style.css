@@ -564,7 +564,7 @@ information-section a:hover {
 /* back to top */
 
 #backToTopBtn {
-  display: none; /* Tombol tidak terlihat saat halaman sedang di atas */
+  /* Tombol tidak terlihat saat halaman sedang di atas */
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -576,6 +576,8 @@ information-section a:hover {
   cursor: pointer;
   padding: 15px;
   border-radius: 10px;
+  opacity: 0;
+  pointer-events: none;
 }
 
 #backToTopBtn:hover {
