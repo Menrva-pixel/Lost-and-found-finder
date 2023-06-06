@@ -1,6 +1,6 @@
 /* eslint-disable class-methods-use-this */
 /* eslint-disable no-use-before-define */
-import swal from 'sweetalert2';
+// import swal from 'sweetalert2';
 import img from '../../../public/images/img-missing.png';
 import { createModalElement } from '../template/template-creator';
 
@@ -106,28 +106,28 @@ class LostForm extends HTMLElement {
       }
     });
 
-    formElement.addEventListener('submit', (event) => {
-      event.preventDefault();
-      if (validateForm()) {
-        // Submit form
-        console.log('Form submitted!');
-        formElement.reset();
-        swal.fire({
-          title: 'Success',
-          text: 'Form submitted!',
-          icon: 'success',
-        }).then(() => {
-          window.location.reload();
-        });
-      } else {
-        console.log('Form validation failed!');
-        swal.fire({
-          title: 'Error',
-          text: 'Form validation failed!',
-          icon: 'error',
-        });
-      }
-    });
+    // formElement.addEventListener('submit', (event) => {
+    //   event.preventDefault();
+    //   if (validateForm()) {
+    //     // Submit form
+    //     console.log('Form submitted!');
+    //     formElement.reset();
+    //     swal.fire({
+    //       title: 'Success',
+    //       text: 'Form submitted!',
+    //       icon: 'success',
+    //     }).then(() => {
+    //       window.location.reload();
+    //     });
+    //   } else {
+    //     console.log('Form validation failed!');
+    //     swal.fire({
+    //       title: 'Error',
+    //       text: 'Form validation failed!',
+    //       icon: 'error',
+    //     });
+    //   }
+    // });
 
     formElement.addEventListener('input', () => {
       if (validateForm()) {
