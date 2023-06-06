@@ -12,7 +12,7 @@ html {
 
 body {
   font-family: 'Montserrat', sans-serif;
-background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);  background-size: cover;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);  background-size: cover;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -244,10 +244,9 @@ function-section button{
 
 function-section h2 {
   color: #43609b;
-  -webkit-text-stroke-width: 0.4px;
-  -webkit-text-stroke-color: black;
   line-height: 1.1592;
   margin-bottom: -20px;
+  font-weight: 600;
 }
 
 .banner-img {

@@ -26,7 +26,8 @@
 }
 
 .btn-abt:hover {
-  transform: none;
+  transform: none !important;
+  background-color: #1e386b;
 }
 
 .app-bar .app-bar__menu {

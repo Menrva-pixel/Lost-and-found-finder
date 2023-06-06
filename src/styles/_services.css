@@ -31,7 +31,7 @@
 .service-item1 img, .service-item2 img, .service-item3 img {
   max-width: 350px;
   height: auto;
-  filter: opacity(65%);
+  filter: opacity(85%);
   border-radius: 380px 40px 20px 20px;
 }
 
