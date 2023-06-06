@@ -1,7 +1,7 @@
 /* eslint-disable no-promise-executor-return */
 /* eslint-disable class-methods-use-this */
 /* eslint-disable no-use-before-define */
-import swal from 'sweetalert2';
+// import swal from 'sweetalert2';
 import img from '../../../public/images/img-finder.png';
 import { createModalElement } from '../template/template-creator';
 
@@ -103,50 +103,19 @@ class FoundForm extends HTMLElement {
       }
     });
 
-    formElement.addEventListener('submit', async (event) => {
-      event.preventDefault();
-      if (validateForm()) {
-        // Disable submit button and show loading state
-        submitButton.disabled = true;
-        submitButton.innerHTML = 'Submitting...';
-        submitButton.classList.add('loading');
-
-        try {
-          // Simulate API request delay (replace with actual API request)
-          await new Promise((resolve) => setTimeout(resolve, 2000));
-
-          // Submit form
-          console.log('Form submitted!');
-          formElement.reset();
-          swal.fire({
-            title: 'Success',
-            text: 'Form submitted!',
-            icon: 'success',
-          }).then(() => {
-            window.location.reload();
-          });
-        } catch (error) {
-          console.log('Form submission failed!', error);
-          swal.fire({
-            title: 'Error',
-            text: 'Form submission failed!',
-            icon: 'error',
-          });
-        } finally {
-          // Enable submit button and restore its text
-          submitButton.disabled = false;
-          submitButton.classList.remove('loading');
-          submitButton.innerHTML = 'Submit';
-        }
-      } else {
-        console.log('Form validation failed!');
-        swal.fire({
-          title: 'Error',
-          text: 'Form validation failed!',
-          icon: 'error',
-        });
-      }
-    });
+    // formElement.addEventListener('submit', async (event) => {
+    //   event.preventDefault();
+    //   if (validateForm()) {
+    //     // Disable submit button and show loading state
+    //   } else {
+    //     console.log('Form validation failed!');
+    //     swal.fire({
+    //       title: 'Error',
+    //       text: 'Form validation failed!',
+    //       icon: 'error',
+    //     });
+    //   }
+    // });
 
     formElement.addEventListener('input', () => {
       if (validateForm()) {
