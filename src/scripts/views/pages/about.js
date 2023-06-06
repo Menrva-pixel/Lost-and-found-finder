@@ -32,54 +32,54 @@ const about = {
             <hr class="line-our-team"/>
             <div class="box-card">
                 <div class="profile">
-                    <div class ="imageProfile">
-                        <div class ="imageProfile">
+                    <div class ="image-profile">
+                        <div class ="image-profile">
                         <img src="${pictDev1}" alt="">
                     </div>
                     </div>
                     <h4>Mahendra</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nobis nam consectetur officia a ipsum odit delectus Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     
-                    <div class="socialMedia">
+                    <div class="social-media">
                         <a href=""><i class="bi bi-github"></i></a>
                         <a href=""><i class="bi bi-linkedin"></i></a>
                     </div>
                 </div>
 
                 <div class="profile">
-                    <div class ="imageProfile">
+                    <div class ="image-profile">
                         <img src="${pictDev1}" alt="">
                     </div>
                     <h4>Herdyanto</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nobis nam consectetur officia a ipsum odit delectus Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     
-                    <div class="socialMedia">
+                    <div class="social-media">
                         <a href=""><i class="bi bi-github"></i></a>
                         <a href=""><i class="bi bi-linkedin"></i></a>
                     </div>
                 </div>
 
                 <div class="profile">
-                    <div class ="imageProfile">
+                    <div class ="image-profile">
                         <img src="${pictDev1}" alt="">
                     </div>
                     <h4>Ibnu Hasyim</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nobis nam consectetur officia a ipsum odit delectus Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     
-                    <div class="socialMedia">
+                    <div class="social-media">
                         <a href=""><i class="bi bi-github"></i></a>
                         <a href=""><i class="bi bi-linkedin"></i></a>
                     </div>
                 </div>
 
                 <div class="profile">
-                    <div class ="imageProfile">
+                    <div class ="image-profile">
                         <img src="${pictDev1}" alt="">
                     </div>
                     <h4>Vicky</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nobis nam consectetur officia a ipsum odit delectus Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     
-                    <div class="socialMedia">
+                    <div class="social-media">
                         <a href=""><i class="bi bi-github"></i></a>
                         <a href=""><i class="bi bi-linkedin"></i></a>
                     </div>
