@@ -564,22 +564,56 @@ information-section a:hover {
 /* back to top */
 
 #backToTopBtn {
-  /* Tombol tidak terlihat saat halaman sedang di atas */
   position: fixed;
   bottom: 20px;
   right: 20px;
   z-index: 99;
   border: none;
   outline: none;
-  background-color: #555;
+  background-color: transparent;
   color: white;
   cursor: pointer;
   padding: 15px;
   border-radius: 10px;
   opacity: 0;
   pointer-events: none;
+  animation: bounce 2s infinite;
 }
 
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+
 #backToTopBtn:hover {
-  background-color: #333;
+  animation: shake 1s infinite; 
+}
+
+@keyframes shake {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-10px);
+  }
+  40% {
+    transform: translateY(10px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+  80% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
