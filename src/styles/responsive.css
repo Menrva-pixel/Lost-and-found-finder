@@ -243,5 +243,11 @@
   #item-list {
     min-height: 0;
   }
-};
+}
   
+@media only screen and (max-width: 495px) {
+  .logo-filler {
+    display: none;
+  }
+}
+
