@@ -441,6 +441,7 @@ information-section a:hover {
 }
 
 .item-found-tag img, .item-lost-tag img {
+  filter: invert(100%);
   -webkit-filter: invert(100%);
 }
 
@@ -480,7 +481,7 @@ information-section a:hover {
 }
 
 .card-img-top {
-  max-width: 450px;
+  max-width: 550px;
   height: 250px;
   object-fit: fill;
 }
