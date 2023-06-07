@@ -1,11 +1,11 @@
 import CONFIG from '../../globals/config';
 
-const createLostItemCard = () => `
+const createLostItemCard = (item) => `
 <div class="card home-card" style="width: 18rem;">
-    <img src="https://placehold.co/600x400" class="card-img-top" alt="...">
+    <img src="${CONFIG.BASE_IMAGE_URL}${item.iditem_image}" class="card-img-top" alt="...">
     <div class="card-body">
-        <h5><a href="#/item-detail">Item Name</a></h5>
-        <p class="card-text">Item Description goes here....</p>
+        <h5><a href="#/item-detail/${item.id}">${item.item_name}</a></h5>
+        <p class="card-text">${item.item_description}</p>
     </div>
 </div>`;
 
