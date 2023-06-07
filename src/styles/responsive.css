@@ -99,7 +99,7 @@
     site-description-element .desc-container {
         grid-template-columns: 1fr 1fr;
     }
-    .boxCard{
+    .box-card{
       flex-direction: row;
     }
     #detail-item {
@@ -170,7 +170,7 @@
 
 /* about */
 @media screen and (max-width: 1200px){
-  .boxCard {
+  .box-card {
     width: 90%;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
@@ -194,7 +194,7 @@
 }
 
 @media screen and (max-width: 750px){
-  .boxCard {
+  .box-card {
     width: 320px;
     grid-template-columns: 1fr;
   }
@@ -202,10 +202,10 @@
 }
 
 @media only screen and (max-width: 375px) {
-  .boxCard {
+  .box-card {
     width: 100%;
   }
-  .ourTeam {
+  .our-team {
     padding: 15px;
     margin: 0px;
     background-color: #b1b1b196;
