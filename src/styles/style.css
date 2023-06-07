@@ -338,15 +338,19 @@ information-section a:hover {
   transition: .1s;
   z-index: 2;
 }
+
 #scrollLeft:hover ,#scrollRight:hover {
   transform: scale(1.1);
 }
+
 #scrollLeft{
   left: 0;
 }
+
 #scrollRight{
   right: 0;
 }
+
 .containerCard {
   padding: 30px;
   position: relative;
@@ -391,24 +395,82 @@ information-section a:hover {
   border-radius: 5px;
 }
 
-.card {
+.item-card {
   margin-bottom: 30px;
   border: none !important;
   border-radius: 0 !important;
-  background-color: transparent !important;
+  background-color: #cacaca;
+  min-height: 420px;
+  max-height: 420px;
+  position: relative;
+}
+
+.card-date {
+  margin-left: 10px;
+  font-size: 0.8em;
+}
+
+.item-found-tag {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  color: #f3f3f3;
+  font-weight: 600;
+  font-size: 1.0em;
+  background-color: #21b61cad;
+  margin: 5px 10px;
+  padding: 5px;
+  border-radius: 2px;
+  cursor: default;
+  display: flex;
+}
+
+.item-lost-tag {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  color: #f3f3f3;
+  font-weight: 600;
+  font-size: 1.0em;
+  background-color: #e22b2bad;
+  margin: 5px 10px;
+  padding: 5px;
+  border-radius: 2px;
+  cursor: default;
+  display: flex;
+}
+
+.item-found-tag img, .item-lost-tag img {
+  -webkit-filter: invert(100%);
 }
 
 .home-card {
   min-width: 18rem;
 }
 
-.card:hover {
+.item-card:hover {
   transform: translateY(1.2);
 }
 
-.card h5 {
+.item-card h5 a {
   padding: 0 5px;
   font-weight: 600;
+  color: #202224 !important;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.card-body h5{
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.card-body h5 a:hover {
+  text-decoration: none !important;
+  transform: scale(1.2px);
+  color: #295cc4 !important;
 }
 
 .card-img {
@@ -424,13 +486,35 @@ information-section a:hover {
 }
 
 .card-text {
+  text-align: justify;
+  word-break: break-all;
   padding: 5px;
   display: -webkit-box;
-  -webkit-line-clamp: 4;
-  line-clamp: 4;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  color: #cacaca;
+  max-height: 100px;
+  color: #222222;
+}
+
+.year {
+  color: rgb(44, 44, 44);
+}
+
+.day {
+  color: red;
+}
+
+.location {
+  position: absolute;
+  bottom: 165px;
+  right: 5px;
+  color: rgb(241, 241, 241);
+  background-color: #131517c4;
+  padding: 5px;
+  font-size: 0.8em;
+  border-radius: 5px;
 }
 
 .more-icon-container {
