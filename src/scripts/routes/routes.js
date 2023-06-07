@@ -18,7 +18,7 @@ const routes = {
   '/lost-item-service': LostItemService,
   '/found-item-service': FoundItemService,
   '/list-item-service': ListItemsService,
-  '/item-detail': DetailItems,
+  '/item-detail/:id': DetailItems,
 };
 
 export default routes;
