@@ -79,6 +79,7 @@
 
 #item-list {
   max-height: 1300px;
+  min-height: 1300px;
   overflow: auto;
 }
 
