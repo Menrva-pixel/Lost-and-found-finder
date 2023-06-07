@@ -214,15 +214,13 @@ site-description-element .desc-container {
   vertical-align: middle;
 }
 
-.desc-container .description p {
-  color: #0c0c0c;
-  text-align: justify;
-  word-break: break-all;
-  font-size: 1.2em;
+.desc-container .description {
+  margin: auto;
 }
 
-.desc-container .description p::first-letter {
-  padding-left: 1.1em;
+.desc-container .description p {
+  color: #0c0c0c;
+  font-size: 18px;
 }
 
 .desc-container .description h2 {
@@ -289,9 +287,10 @@ function-section h2 {
 }
 
 .btn-cari, .btn-lapor-penemuan {
-  border: 2px solid rgb(54, 54, 54);
-  background-color: rgb(212, 91, 54);
+  border: 1px solid rgb(54, 54, 54);
+  background-color: #dd7160;
   font-weight: 500;
+  color: #fff;
 }
 
 /* information section */
@@ -518,38 +517,52 @@ information-section a:hover {
   border-radius: 5px;
 }
 
-
 .more-icon-container {
   display: flex;
   align-items: center;
 }
 
-/* About page */
-.About {
-  margin: 50px 0;
+/* about page */
+.about {
+  margin: 25px 0 20px;
   text-align: center;
 }
 
-.Latar {
+.latar {
   width: 70%;
   margin: auto;
 }
 
-.Latar p {
-  line-height: 32px;
+.latar p {
+  line-height: 28px;
 }
 
-.ourTeam {
-  padding: 10px;
-  margin: 40px;
+hr {
+  border: 3px solid #747272;
+  margin: 0 auto 50px;
+  border-radius: 5px;
 }
 
-.ourTeam h2 {
+.line-about{
+  width: 150px;
+} 
+
+.our-team {
+  padding: 20px;
+  background-color: #D8D8D8;
+  margin-top: 100px;
+}
+
+.line-our-team {
+  width: 200px;
+}
+
+.our-team h2 {
   text-align: center;
-  margin: 50px 0;
+  margin: 50px 0 20px;
 }
 
-.boxCard {
+.box-card {
   margin: auto;
   padding: 0 30px;
   justify-content: space-around;
@@ -559,69 +572,110 @@ information-section a:hover {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.ourTeam .profile {
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+.our-team .profile {
+  box-shadow: rgba(0, 0, 2, 0.24) 0px 3px 8px;
   padding: 30px;
   min-height: 430px;
+  background-color: #fff;
+  border-radius: 5px;
 }
 
-.ourTeam .profile img {
+.our-team .profile img {
   width: 100px;
   border: 1px solid black;
   border-radius: 50%;
   margin: 20px auto;
 }
 
-.imageProfile {
+.image-profile {
   display: flex;
   justify-content: center;
 }
 
-.ourTeam .profile h4 {
+.our-team .profile h4 {
   margin: 8px;
   text-align: center;
 }
 
-.ourTeam .socialMedia {
+.our-team .social-media {
   text-align: center;
   margin-top: 20px;
 }
 
-.ourTeam .socialMedia a {
+.our-team .social-media a {
   padding: 10px;
 }
 
-.ourTeam .socialMedia i {
+.our-team .social-media i {
   font-size: 1.5em;
 }
 
-.ourTeam .socialMedia a:hover i {
+.our-team .social-media a:hover i {
   transform: scale(1.2);
 }
 
 /* item detail */
 #detail-item {
+  max-height: 600px;
+  background-color: #f9f8f8;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px;
-  margin: 80px auto;
-  padding: 20px;
+  gap: 35px;
+  margin: 25px auto;
+  padding: 30px 20px;
+  overflow: hidden;
 }
 
 .detail-image img{
   width: 100%;
   max-width: 600px;
+  height: 430px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  border: 1px solid #adadad;
+  box-shadow: 2px 2px 2px #adadad;
+}
+
+.detail-title {
+  background-color: salmon;
+  padding: 5px ;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.detail-body {
+  padding: 20px;
+}
+
+.detail-information {
+  background-color: blue;
+  background-color: #f9f8f8;
+  border: 1px solid #adadad;
+  box-shadow: 2px 2px 2px #adadad;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .detail-information p {
   max-width: 500px;
-  text-align: justify;
 }
 
-.detail-information h3 {
-  margin-bottom: 35px;
+.information-person, .information-place, .information-time {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.information-person p, .information-place p, .information-time p {
+  display: flex;
+  margin: 0px;
 }
 
 .detail-function {
@@ -634,8 +688,8 @@ information-section a:hover {
 .detail-function button {
   padding: 10px;
   border-radius: 5px;
-  box-shadow: 2px 2px 2px #333;
-  border: 0.4px solid #ffff;
+  color: #fff;
+  text-transform: uppercase;
 }
 
 #date {
@@ -645,7 +699,6 @@ information-section a:hover {
 }
 
 /* back to top */
-
 #backToTopBtn {
   position: fixed;
   bottom: 20px;

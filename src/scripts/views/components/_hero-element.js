@@ -63,13 +63,13 @@ class BannerElement extends HTMLElement {
       font-weight: 400;
       font-size: 1.4em;
       border: none;
-      background: #333;
+      background-color: #dd7160;
       border-radius: 5px;
       cursor: pointer;
     }
     
     button:hover {
-      background-color: #43609b;
+      background-color: rgb(54, 54, 54);
     }
     
     button:active {
@@ -133,9 +133,9 @@ class BannerElement extends HTMLElement {
 
     <div class="hero">
       <div class="hero-text">
-        <h3>Finder</h3>
+        <h3>Finder !!!</h3>
         <h1>Selamat Datang di Lost & Found</h1>
-        <p>Kami menyediakan platform untuk membantu anda melaporkan<br>atau mencari barang yang hilang!</p>
+        <p>Kami menyediakan platform untuk membantu anda melaporkan atau mencari barang yang hilang!</p>
         <button class="btn-lapor">Buat Laporan</button>
       </div>
       <div class="hero-image">

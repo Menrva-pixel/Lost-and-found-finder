@@ -1,6 +1,12 @@
 import API_ENDPOINT from '../globals/api-endpoint';
 
 class LostAndFoundAPI {
+  static async item(id) {
+    const response = await fetch(API_ENDPOINT.DETAIL(id));
+    const responseJson = await response.json();
+    return responseJson;
+  }
+
   static async itemList() {
     const response = await fetch(API_ENDPOINT.ITEMS);
     const responseJson = await response.json();
