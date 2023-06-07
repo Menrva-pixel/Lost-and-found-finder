@@ -617,7 +617,6 @@ hr {
 
 /* item detail */
 #detail-item {
-  background-color: #f9f8f8;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -639,13 +638,24 @@ hr {
 }
 
 .detail-title {
-  background-color: #dd7160;
   color: rgb(48, 48, 48);
   padding: 10px;
   display: flex;
   align-items: center;
   align-content: center;
   justify-content: center;
+}
+
+.detail-function p {
+  margin-bottom: 0;
+}
+
+.detail-title.lost {
+  background-color: #e22b2bad;
+}
+
+.detail-title.found {
+  background-color: #21b61cad;
 }
 
 .detail-title h3 {

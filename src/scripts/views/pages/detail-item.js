@@ -10,9 +10,7 @@ const DetailItems = {
 
         </div>
         <div class="detail-function">
-          <p> Silahkan hubungi kontak yang tertera diatas, pastikan anda dapat membuktikan kepemilikan barang tersebut.<br>
-          Kehilangan, dan pencurian bukan tanggung jawab kami, jika masih tidak ada tanggapan<br>
-          silahkan hubungin pihak berwajib untuk menindak lanjuti.</p>   
+          <p></p>   
         </div>
      `;
   },
@@ -20,6 +18,17 @@ const DetailItems = {
   async afterRender() {
     const url = UrlParser.parseActiveUrlWithoutCombiner();
     const item = await LostAndFoundAPI.item(url.id);
+
+    let detailText = '';
+    if (item.status === 'found') {
+      detailText = `Silahkan hubungi kontak yang tertera diatas, pastikan anda dapat membuktikan kepemilikan barang tersebut.<br>
+      Kehilangan, dan pencurian bukan tanggung jawab kami, jika masih tidak ada tanggapan<br>
+      silahkan hubungin pihak berwajib untuk menindak lanjuti.`;
+    } else {
+      detailText = 'Silahkan hubungi kontak yang tertera diatas jika anda menemukan barang tersebut.';
+    }
+    document.querySelector('.detail-function p').innerHTML = detailText;
+
     const detailContainer = document.querySelector('#detail-item');
     detailContainer.innerHTML = `
       <div class="detail-image">
@@ -27,7 +36,7 @@ const DetailItems = {
       </div>
 
       <div class="detail-information">
-        <div class="detail-title">
+        <div class="detail-title ${item.status === 'lost' ? 'lost' : item.status === 'found' ? 'found' : ''}">
           <h3>${item.status === 'lost' ? 'Lost Item' : item.status === 'found' ? 'Found Item' : item.status}</h3>
         </div>
         <div class="detail-body">
