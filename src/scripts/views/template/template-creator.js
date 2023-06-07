@@ -15,7 +15,7 @@ const createLostItemCardForResult = (lostItem) => `
     <p class="item-lost-tag"><img width="24" height="24" src="https://img.icons8.com/material-outlined/24/treasure-map.png" alt="lost-item"/>Lost</p>
     <p class="location"><i class="material-icons">place</i>${lostItem.item_location}</p>
     <div class="card-body">
-        <h5><a href="#/item-detail">${lostItem.item_name}</a></h5>
+        <h5><a href="#/item-detail/${lostItem.id}">${lostItem.item_name}</a></h5>
         <p class="card-date">
         <span class="day">${new Date(lostItem.item_date).toLocaleDateString('id-ID', { day: 'numeric', month: 'long' })}</span>
          <span class="year">${new Date(lostItem.item_date).toLocaleDateString('id-ID', { year: 'numeric' })}</span>
@@ -30,7 +30,7 @@ const createFoundItemCardForResult = (foundItem) => `
         <p class="item-found-tag"><img width="25" height="25" src="https://img.icons8.com/pulsar-line/48/open-box.png" alt="found-item"/>Found</p>
         <p class="location"><i class="material-icons">place</i>${foundItem.item_location}</p>
     <div class="card-body">
-            <h5><a href="#/item-detail">${foundItem.item_name}</a></h5>
+            <h5><a href=#/item-detail/${foundItem.id}>${foundItem.item_name}</a></h5>
             <p class="card-date">
             <span class="day">${new Date(foundItem.item_date).toLocaleDateString('id-ID', { day: 'numeric', month: 'long' })}</span>
              <span class="year">${new Date(foundItem.item_date).toLocaleDateString('id-ID', { year: 'numeric' })}</span>
