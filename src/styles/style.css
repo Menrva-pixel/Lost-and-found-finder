@@ -616,7 +616,6 @@ hr {
 
 /* item detail */
 #detail-item {
-  max-height: 600px;
   background-color: #f9f8f8;
   display: flex;
   flex-direction: column;
@@ -630,8 +629,8 @@ hr {
 
 .detail-image img{
   width: 100%;
-  max-width: 600px;
-  height: 430px;
+  max-width: 500px;
+  height: 500px;
   border: 1px solid #000;
   border-radius: 5px;
   border: 1px solid #adadad;
@@ -639,13 +638,19 @@ hr {
 }
 
 .detail-title {
-  background-color: salmon;
-  padding: 5px ;
-  color: #fff;
+  background-color: #dd7160;
+  color: rgb(48, 48, 48);
+  padding: 10px;
   display: flex;
   align-items: center;
+  align-content: center;
   justify-content: center;
-  justify-items: center;
+}
+
+.detail-title h3 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  margin-bottom: 0px !important;
 }
 
 .detail-body {
@@ -658,14 +663,16 @@ hr {
   border: 1px solid #adadad;
   box-shadow: 2px 2px 2px #adadad;
   border-radius: 5px;
-  overflow: hidden;
+  width: 500px;
+  max-width: 500px;
+  height: 500px;
 }
 
 .detail-information p {
   max-width: 500px;
 }
 
-.information-person, .information-place, .information-time {
+.information-person, .information-place, .information-time, .information-email, .information-phone {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -673,24 +680,39 @@ hr {
   margin: 10px 0;
 }
 
-.information-person p, .information-place p, .information-time p {
+.information-person p, .information-place p, .information-time p, .information-email p, .information-phone p {
   display: flex;
   margin: 0px;
 }
 
-.detail-function {
+.logo-filler {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 90px;
+  align-items: center;
 }
 
-.detail-function button {
-  padding: 10px;
-  border-radius: 5px;
-  color: #fff;
-  text-transform: uppercase;
+.logo-filler img {
+  max-width: 350px;
+  filter: opacity(50%);
 }
+
+.detail-function {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #252525;
+  height: 60px;
+  padding: 50px;
+  border-radius: 5px;
+  margin: 20px;
+  overflow: hidden;
+}
+
+.detail-function p {
+  color: #bebebe;
+  font-size: 1.0em;
+  text-align: center;
+}
+
 
 #date {
   font-size: 0.8em;
