@@ -17,6 +17,8 @@
     position: relative;
     background-color: #43609b;
     text-align: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .left-form img {
@@ -25,8 +27,14 @@
     display: none;
 }
 
+.left-form .line-description {
+    border: 3px solid #fff;
+}
+
 .left-description {
     padding: 50px 5px 0px 5px;
+    color: #f08f85;
+    font-weight: bold;
 }
 
 .left-form h4{
@@ -37,12 +45,18 @@
 /* right form */
 .right-form {
     background-color: #dfdfdf;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 #lost-form, #found-form {
     padding: 20px 20px;
 }
 
+.submit-btn .btn-submit {
+    background-color: #43609b;
+    color: #fff;
+}
 
 /* input area */
 

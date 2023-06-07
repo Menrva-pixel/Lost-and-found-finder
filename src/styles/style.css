@@ -214,15 +214,13 @@ site-description-element .desc-container {
   vertical-align: middle;
 }
 
-.desc-container .description p {
-  color: #0c0c0c;
-  text-align: justify;
-  word-break: break-all;
-  font-size: 1.2em;
+.desc-container .description {
+  margin: auto;
 }
 
-.desc-container .description p::first-letter {
-  padding-left: 1.1em;
+.desc-container .description p {
+  color: #0c0c0c;
+  font-size: 18px;
 }
 
 .desc-container .description h2 {
@@ -289,9 +287,10 @@ function-section h2 {
 }
 
 .btn-cari, .btn-lapor-penemuan {
-  border: 2px solid rgb(54, 54, 54);
-  background-color: rgb(212, 91, 54);
+  border: 1px solid rgb(54, 54, 54);
+  background-color: #dd7160;
   font-weight: 500;
+  color: #fff;
 }
 
 /* information section */
