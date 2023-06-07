@@ -21,7 +21,8 @@ class LostForm extends HTMLElement {
             <h4>Masukan Data dan Informasi Kehilangan</h4>
             <p>Pastikan data dan Informasi kehilangan sesuai<br> dengan kriteria,
             dan data diri pribadi harus jelas<br> dan benar</p>
-            <br><hr>
+            <br>
+            <hr class="line-description">
             <h4> Menemukan Barang ? </h4>
             <p>Selain melaporkan kehilangan,<br>Anda juga bisa menjadi
             penolong<br> dengan melaporkan barang yang ditemukan <br><a href="#/found-item-service">disini!</a></p>
@@ -74,11 +75,11 @@ class LostForm extends HTMLElement {
           </div>
 
           <div class="submit-btn">
-          <div class="form-check mb-3">
-            <input class="form-check-input" type="checkbox" id="agreement">
-            <label class="form-check-label" for="agreement">Saya setuju dengan <a class="syarat" data-bs-toggle="modal" data-bs-target="#exampleModal">ketentuan dan persyaratan</a>.</label>
-          </div>
-          <button type="submit" class="btn btn-primary" id="submit-btn" disabled>Submit</button>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" id="agreement">
+              <label class="form-check-label" for="agreement">Saya setuju dengan <a class="syarat" data-bs-toggle="modal" data-bs-target="#exampleModal">ketentuan dan persyaratan</a>.</label>
+            </div>
+            <button type="submit" class="btn btn-submit" id="submit-btn">Submit</button>
           </div>
         </form>
         </div>

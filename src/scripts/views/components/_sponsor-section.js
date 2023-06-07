@@ -11,17 +11,22 @@ class SponsorSection extends HTMLElement {
 
   render() {
     this.innerHTML = `
-    <div class="sponsor-title">
-      <h2>Sponsored By</h2>
-    </div>
-    <div class="sponsor-container">
-      <div class="university">
-        <img src="${sponsor1}">
-        <img src="${sponsor2}">
-        <img src="${sponsor3}">
-        <img src="${sponsor4}">
+    <div class="sponsor">
+      <div class="sponsor-title">
+        <h2>Sponsored By</h2>
+        <hr class="line-sponsor"/>
       </div>
-    <div class="sponsor-add">     
+      <div class="sponsor-container">
+      <marquee>
+        <div class="university">
+          <img src="${sponsor1}">
+          <img src="${sponsor2}">
+          <img src="${sponsor3}">
+          <img src="${sponsor4}">
+        </div>
+      </marquee>
+      </div>     
+    </div>
     `;
   }
 }
