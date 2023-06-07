@@ -11,7 +11,7 @@ const createLostItemCard = () => `
 
 const createLostItemCardForResult = (lostItem) => `
 <div class="item-card">
-    <img src="${CONFIG.BASE_IMAGE_URL}${lostItem.iditem_image}" class="card-img-top" alt="...">
+    <img data-src="${CONFIG.BASE_IMAGE_URL}${lostItem.iditem_image}" class="card-img-top lazyload" alt="...">
     <p class="item-lost-tag"><img width="24" height="24" src="https://img.icons8.com/material-outlined/24/treasure-map.png" alt="lost-item"/>Lost</p>
     <p class="location"><i class="material-icons">place</i>${lostItem.item_location}</p>
     <div class="card-body">
@@ -26,7 +26,7 @@ const createLostItemCardForResult = (lostItem) => `
 
 const createFoundItemCardForResult = (foundItem) => `
 <div class="item-card">
-        <img src="${CONFIG.BASE_IMAGE_URL}${foundItem.iditem_image}" class="card-img-top" alt="...">
+        <img data-src="${CONFIG.BASE_IMAGE_URL}${foundItem.iditem_image}" class="card-img-top lazyload" alt="...">
         <p class="item-found-tag"><img width="25" height="25" src="https://img.icons8.com/pulsar-line/48/open-box.png" alt="found-item"/>Found</p>
         <p class="location"><i class="material-icons">place</i>${foundItem.item_location}</p>
     <div class="card-body">
