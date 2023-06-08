@@ -52,7 +52,7 @@ const createModalElement = () => `
                     <terms-of-use></terms-of-use>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button id="close-modal-button" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     <button type="button" id="cancel" class="btn btn-danger">tidak setuju</button>
                     <button type="button" id="accept" class="btn btn-success">Setuju</button>
                 </div>

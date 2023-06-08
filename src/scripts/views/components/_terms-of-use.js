@@ -109,7 +109,11 @@ class TermsOfUse extends HTMLElement {
         confirmButtonText: 'OK',
       }).then((result) => {
         if (result.isConfirmed) {
-          window.location.href = '#/lost-item-service';
+          const element = document.getElementById('close-modal-button');
+          const event = new Event('click');
+          element.dispatchEvent(event);
+          const checkbox = document.getElementById('agreement');
+          checkbox.checked = true;
         }
       });
     }
