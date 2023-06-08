@@ -1,6 +1,8 @@
 /* eslint-disable camelcase */
 import swal from 'sweetalert2';
 import LostAndFoundAPI from '../data/lost-and-found-api';
+import successImage from '../../public/images/success.png';
+import errorImage from '../../public/images/error.png';
 
 const onSubmitLostForm = async (event) => {
   event.preventDefault();
@@ -43,8 +45,9 @@ const onSubmitLostForm = async (event) => {
     console.log('Form submitted!');
     formElement.reset();
     swal.fire({
-      title: 'Success',
-      text: 'Form submitted!',
+      title: 'Berhasil!',
+      text: 'Form telah berhasil di submit!',
+      iconHtml: `<img src="${successImage}" alt="Custom Icon">`,
       icon: 'success',
     }).then(() => {
       window.location.reload();
@@ -52,8 +55,9 @@ const onSubmitLostForm = async (event) => {
   } catch (error) {
     console.log('Form submission failed!', error);
     swal.fire({
-      title: 'Error',
-      text: 'Form submission failed!',
+      title: 'Oopss..',
+      text: 'Silahkan isi data terlebih dahulu!',
+      iconHtml: `<img src="${errorImage}" alt="Custom Icon">`,
       icon: 'error',
     });
   } finally {
