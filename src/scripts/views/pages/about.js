@@ -33,16 +33,16 @@ const about = {
             <div class="box-card">
                 <div class="profile">
                     <div class ="image-profile">
-                        <div class ="image-profile">
                         <img src="${pictDev1}" alt="">
                     </div>
-                    </div>
-                    <h4>Mahendra</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nobis nam consectetur officia a ipsum odit delectus Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    
-                    <div class="social-media">
+                    <div class="image-detail">
+                        <h4>Mahendra</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nobis nam consectetur officia a ipsum odit delectus Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        
+                        <div class="social-media">
                         <a href="https://github.com/OmMahen"><i class="bi bi-github"></i></a>
                         <a href="https://www.linkedin.com/in/mahendra-putra-raharja/"><i class="bi bi-linkedin"></i></a>
+                        </div>
                     </div>
                 </div>
 
@@ -50,12 +50,14 @@ const about = {
                     <div class ="image-profile">
                         <img src="${pictDev1}" alt="">
                     </div>
-                    <h4>Herdyanto</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nobis nam consectetur officia a ipsum odit delectus Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    
-                    <div class="social-media">
+                    <div class="image-detail">
+                        <h4>Herdyanto</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nobis nam consectetur officia a ipsum odit delectus Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        
+                        <div class="social-media">
                         <a href="https://github.com/Menrva-pixel"><i class="bi bi-github"></i></a>
                         <a href="https://www.linkedin.com/in/barkah-herdyanto-sejati-636840258/"><i class="bi bi-linkedin"></i></a>
+                        </div>
                     </div>
                 </div>
 
@@ -63,12 +65,14 @@ const about = {
                     <div class ="image-profile">
                         <img src="${pictDev1}" alt="">
                     </div>
-                    <h4>Ibnu Hasyim</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nobis nam consectetur officia a ipsum odit delectus Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    
-                    <div class="social-media">
+                    <div class="image-detail">
+                        <h4>Ibnu Hasyim</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nobis nam consectetur officia a ipsum odit delectus Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        
+                        <div class="social-media">
                         <a href="https://github.com/IbnuHs"><i class="bi bi-github"></i></a>
                         <a href=""><i class="bi bi-linkedin"></i></a>
+                        </div>
                     </div>
                 </div>
 
@@ -76,12 +80,14 @@ const about = {
                     <div class ="image-profile">
                         <img src="${pictDev1}" alt="">
                     </div>
-                    <h4>Vicky</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nobis nam consectetur officia a ipsum odit delectus Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    
-                    <div class="social-media">
+                    <div class="image-detail">
+                        <h4>Vicky</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nobis nam consectetur officia a ipsum odit delectus Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        
+                        <div class="social-media">
                         <a href="https://github.com/VickyPratama87"><i class="bi bi-github"></i></a>
                         <a href="https://www.linkedin.com/in/vicky-pratama/"><i class="bi bi-linkedin"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>

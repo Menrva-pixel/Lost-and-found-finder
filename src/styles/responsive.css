@@ -198,7 +198,7 @@
   .box-card {
     width: 90%;
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    gap: 80px;
     padding: 10px;
   }
 
@@ -206,6 +206,11 @@
     margin: auto;
     max-width: 350px;
     min-width: 300px;
+  }
+
+  .image-profile {
+    top: -70px;
+    left: 100px;
   }
 
   .profile p{
