@@ -1,20 +1,13 @@
 /* eslint-disable class-methods-use-this */
 /* eslint-disable no-use-before-define */
+// import swal from 'sweetalert2';
 import img from '../../../public/images/img-missing.png';
 import { createModalElement } from '../template/template-creator';
 
 class LostForm extends HTMLElement {
   connectedCallback() {
     this.render();
-    this.addEventListener();
-  }
-
-  addEventListener() {
-    // const syarat = this.querySelector('.syarat');
-
-    // syarat.addEventListener('click', () => {
-    //   window.location.hash = '#/terms-of-use';
-    // });
+    this.afterRender();
   }
 
   render() {
@@ -28,7 +21,8 @@ class LostForm extends HTMLElement {
             <h4>Masukan Data dan Informasi Kehilangan</h4>
             <p>Pastikan data dan Informasi kehilangan sesuai<br> dengan kriteria,
             dan data diri pribadi harus jelas<br> dan benar</p>
-            <br><hr>
+            <br>
+            <hr class="line-description">
             <h4> Menemukan Barang ? </h4>
             <p>Selain melaporkan kehilangan,<br>Anda juga bisa menjadi
             penolong<br> dengan melaporkan barang yang ditemukan <br><a href="#/found-item-service">disini!</a></p>
@@ -58,7 +52,7 @@ class LostForm extends HTMLElement {
 
           <div class="mb-3">
             <label for="item-description">Deskripsi Barang</label>
-            <textarea class="form-control" id="item-description" rows="3" placeholder="Masukkan deskripsi barang"></textarea>
+            <textarea class="form-control" id="item-description" rows="3" placeholder="max 150 karakter.." maxlength="150"></textarea>
           </div>
 
           <div class="mb-3">
@@ -81,11 +75,11 @@ class LostForm extends HTMLElement {
           </div>
 
           <div class="submit-btn">
-          <div class="form-check mb-3">
-            <input class="form-check-input" type="checkbox" id="agreement">
-            <label class="form-check-label" for="agreement">Saya setuju dengan <a class="syarat" data-bs-toggle="modal" data-bs-target="#exampleModal">ketentuan dan persyaratan</a>.</label>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" id="agreement">
+              <label class="form-check-label" for="agreement">Saya setuju dengan <a class="syarat" data-bs-toggle="modal" data-bs-target="#exampleModal">ketentuan dan persyaratan</a>.</label>
+            </div>
+            <button type="submit" class="btn btn-submit" id="submit-btn">Submit</button>
           </div>
         </form>
         </div>
@@ -97,6 +91,7 @@ class LostForm extends HTMLElement {
     const uploadElement = document.getElementById('upload');
     const agreementCheckbox = document.getElementById('agreement');
     const formElement = document.getElementById('lost-form');
+    const submitButton = document.getElementById('submit-btn');
 
     uploadElement.addEventListener('change', () => {
       if (uploadElement.files && uploadElement.files[0]) {
@@ -104,18 +99,42 @@ class LostForm extends HTMLElement {
         reader.onload = (e) => {
           const imageResult = document.getElementById('imageResult');
           imageResult.src = e.target.result;
+          submitButton.disabled = false;
         };
         reader.readAsDataURL(uploadElement.files[0]);
+      } else {
+        submitButton.disabled = true;
       }
     });
 
-    formElement.addEventListener('submit', (event) => {
-      event.preventDefault();
+    // formElement.addEventListener('submit', (event) => {
+    //   event.preventDefault();
+    //   if (validateForm()) {
+    //     // Submit form
+    //     console.log('Form submitted!');
+    //     formElement.reset();
+    //     swal.fire({
+    //       title: 'Success',
+    //       text: 'Form submitted!',
+    //       icon: 'success',
+    //     }).then(() => {
+    //       window.location.reload();
+    //     });
+    //   } else {
+    //     console.log('Form validation failed!');
+    //     swal.fire({
+    //       title: 'Error',
+    //       text: 'Form validation failed!',
+    //       icon: 'error',
+    //     });
+    //   }
+    // });
+
+    formElement.addEventListener('input', () => {
       if (validateForm()) {
-        // Submit form
-        console.log('Form submitted!');
+        submitButton.disabled = false;
       } else {
-        console.log('Form validation failed!');
+        submitButton.disabled = true;
       }
     });
 

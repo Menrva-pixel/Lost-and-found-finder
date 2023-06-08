@@ -84,8 +84,21 @@
   .right-side {
     margin: auto;
   }
+
+  .role-desc {
+    font-size: 0.8em;
+  }
+
+  .footer-copyright {
+    font-size: 1.1em;
+  }
 }
 
+@media screen and (min-width: 1000px) {
+  .services-list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 /*
   Site Description
 */
@@ -94,19 +107,18 @@
     site-description-element .desc-container {
         grid-template-columns: 1fr 1fr;
     }
-    .boxCard{
+    .box-card{
       flex-direction: row;
     }
     #detail-item {
       flex-direction: row;
     }
+    .desc-container .description h2 {
+      text-align: center;
+    }
+
 }
 
-@media screen and (min-width: 1000px) {
-  .services-list {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
 
 @media screen and (max-width: 700px) {
   site-description-element div {
@@ -159,6 +171,19 @@
     width: 100%;
   }
 }
+
+@media only screen and (max-width: 420px) {
+  .services h1 {
+    font-size: 2.8em;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  information-section {
+    padding: 90px 10px !important;
+}
+}
+
 @media only screen and (max-width: 400px){
   information-section {
     padding: 90px 30px;
@@ -170,10 +195,10 @@
 
 /* about */
 @media screen and (max-width: 1200px){
-  .boxCard {
+  .box-card {
     width: 90%;
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    gap: 80px;
     padding: 10px;
   }
 
@@ -181,6 +206,11 @@
     margin: auto;
     max-width: 350px;
     min-width: 300px;
+  }
+
+  .image-profile {
+    top: -70px;
+    left: 100px;
   }
 
   .profile p{
@@ -194,7 +224,7 @@
 }
 
 @media screen and (max-width: 750px){
-  .boxCard {
+  .box-card {
     width: 320px;
     grid-template-columns: 1fr;
   }
@@ -202,10 +232,10 @@
 }
 
 @media only screen and (max-width: 375px) {
-  .boxCard {
+  .box-card {
     width: 100%;
   }
-  .ourTeam {
+  .our-team {
     padding: 15px;
     margin: 0px;
     background-color: #b1b1b196;
@@ -220,9 +250,14 @@
   }
 }
 
+@media only screen and (max-width: 500px) {
+  .credit .credit-list .credit-item img {
+    width: 100%;
+  }
+}
+
 
 /* footer section */
-
 @media only screen and (max-width: 766px) {
   .footer-top {
     text-align: center;
@@ -232,3 +267,17 @@
     text-align: center;
   }
 }
+
+/* item list */
+@media only screen and (max-width: 575px) {
+  #item-list {
+    min-height: 0;
+  }
+}
+  
+@media only screen and (max-width: 495px) {
+  .logo-filler {
+    display: none;
+  }
+}
+

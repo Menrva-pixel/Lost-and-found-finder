@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-use-before-define */
 /* eslint-disable no-plusplus */
 import routes from '../routes/routes';
 import UrlParser from '../routes/url-parser';
@@ -47,6 +49,28 @@ window.addEventListener('scroll', () => {
 
   navigationLinks.forEach((link) => {
     link.classList.toggle('a--scrolled', scrolled);
+  });
+});
+
+window.onscroll = () => { scrollFunction(); };
+
+function scrollFunction() {
+  const backToTopBtn = document.getElementById('backToTopBtn');
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    backToTopBtn.style.opacity = '1';
+    backToTopBtn.style.pointerEvents = 'auto';
+  } else {
+    backToTopBtn.style.opacity = '0';
+    backToTopBtn.style.pointerEvents = 'none';
+  }
+}
+
+document.getElementById('backToTopBtn').style.transition = 'opacity 0.3s ease';
+
+document.getElementById('backToTopBtn').addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
   });
 });
 

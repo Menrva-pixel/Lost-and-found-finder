@@ -18,9 +18,19 @@ Dicoding Capstone Project
 ![badge](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![badge](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![badge](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
-![badge](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)
 ![badge](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white) 
 ![badge](https://img.shields.io/badge/eslint-3A33D1?style=for-the-badge&logo=eslint&logoColor=white)
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+
+  
+## API
+![badge](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)
+![Postgre](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white) 
+###
+[`Lost-and-Found API`](https://github.com/OmMahen/lost-and-found-api) |
+[`Lost-and-Found Image API`](https://github.com/OmMahen/lost-and-found-image-api)
+
+  
   
  ### Team ID : `C23-R4104`
 | Tema : `Solusi Utilitas`  |  Judul Project : `Lost and Found Finder` |

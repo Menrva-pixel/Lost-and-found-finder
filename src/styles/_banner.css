@@ -9,16 +9,16 @@
 }
 
 .hero-text h1 {
-  font-family: "Raleway", sans-serif;
   font-weight: bold;
   font-size: 2.2em;
   color: #43609b;
-  margin: 0px 20px 20px 0px;
+  margin-bottom: 20px;
+  margin-left: -5px;
   line-height: 1.125;
 }
 
 .hero-text h3 {
-  margin: 0px 0px -10px 0px;
+  margin: 0px 0px 10px 0px;
   font-size: 1.4em;
   padding-bottom: 5px;
 }
@@ -26,10 +26,10 @@
 .btn-lapor {
   padding: 15px 40px 15px 40px;
   color: #d3d3d3;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.4em;
   border: none;
-  background: #333;
+  background-color: #dd7160;
 }
 
 .btn-lapor button:hover {
@@ -41,9 +41,8 @@
 }
 
 .hero-text p {
-  font-family: "Montserrat", sans-serif;
   color: #1c1a1a;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 0.8em;
 }
 
@@ -67,7 +66,7 @@
 #information-section {
   background-color: #333;
   color: #ffff;
-  margin: 50px auto;
+  margin: 110px auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -80,7 +79,8 @@
 }
 
 #information-section p::first-letter {
-  font-size: 1.8em;
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
 .syarat:hover {

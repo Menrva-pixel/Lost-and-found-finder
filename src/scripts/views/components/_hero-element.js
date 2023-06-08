@@ -44,7 +44,6 @@ class BannerElement extends HTMLElement {
     }
 
     .hero-text h1 {
-      font-family: 'Raleway', sans-serif;
       font-weight: bold;
       font-size: 5.2em;
       color: #43609b;
@@ -63,11 +62,13 @@ class BannerElement extends HTMLElement {
       font-weight: 400;
       font-size: 1.4em;
       border: none;
-      background: #333;
+      background-color: #dd7160;
+      border-radius: 5px;
+      cursor: pointer;
     }
     
     button:hover {
-      background-color: #43609b;
+      background-color: rgb(54, 54, 54);
     }
     
     button:active {
@@ -77,7 +78,7 @@ class BannerElement extends HTMLElement {
     .hero-text p {
       font-family: 'Montserrat', sans-serif;
       color: #1c1a1a;
-      font-weight: 600;
+      font-weight: 500;
       font-size: 1.2em;
     }
     
@@ -111,6 +112,9 @@ class BannerElement extends HTMLElement {
       .hero-image {
       display: none;
       }
+      .hero-text {
+        padding-right: 0;
+      }
     }
 
     @media (max-width: 1367px) {
@@ -133,7 +137,7 @@ class BannerElement extends HTMLElement {
       <div class="hero-text">
         <h3>Finder</h3>
         <h1>Selamat Datang di Lost & Found</h1>
-        <p>Kami menyediakan platform untuk membantu anda melaporkan<br>atau mencari barang yang hilang!</p>
+        <p>Kami menyediakan platform untuk membantu anda melaporkan atau<br> mencari barang yang hilang!</p>
         <button class="btn-lapor">Buat Laporan</button>
       </div>
       <div class="hero-image">

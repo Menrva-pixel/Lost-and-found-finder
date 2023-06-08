@@ -1,4 +1,5 @@
-import { createLostItemCardForResult } from '../template/template-creator';
+import LostAndFoundAPI from '../../data/lost-and-found-api';
+import { createFoundItemCardForResult, createLostItemCardForResult } from '../template/template-creator';
 
 const DetailItems = {
   async render() {

@@ -17,6 +17,9 @@ import '../styles/responsive.css';
 import './views/components/_hero-element';
 import App from './views/app';
 
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
+
 // eslint-disable-next-line no-unused-vars
 const app = new App({
   button: document.querySelector('#hamburgerButton'),

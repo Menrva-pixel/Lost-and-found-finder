@@ -2,6 +2,7 @@
 import '../components/_lost-form';
 
 import bgImg from '../../../public/images/img-finder.png';
+import onSubmitLostForm from '../../utils/lost-form-handler';
 
 const LostItemService = {
   async render() {
@@ -28,6 +29,8 @@ const LostItemService = {
   },
 
   async afterRender() {
+    const submitButton = document.querySelector('.submit-btn button');
+    submitButton.addEventListener('click', onSubmitLostForm);
   },
 };
 export default LostItemService;
