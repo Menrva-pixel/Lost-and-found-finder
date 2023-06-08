@@ -616,6 +616,7 @@ hr {
 
 .line-our-team {
   width: 200px;
+  margin-bottom: 40px;
 }
 
 .our-team h2 {
@@ -625,6 +626,7 @@ hr {
 
 .box-card {
   margin: auto;
+  margin-top: 80px;
   padding: 40px 0 30px;
   justify-content: space-around;
   gap: 20px;
@@ -642,6 +644,7 @@ hr {
   cursor: pointer;
   position: relative;
   /* visibility: hidden; */
+  /* border: 2px solid black; */
 }
 
 .our-team .profile img {
@@ -656,7 +659,8 @@ hr {
   justify-content: center;
   position: absolute;
   top: -70px;
-  left: 90px;
+  left: 50%;
+  right: 50%;
 }
 
 .our-team .profile h4 {
@@ -673,10 +677,12 @@ hr {
 .our-team .social-media a {
   color: #f08f85;
   padding: 10px;
+  
 }
 
 .our-team .social-media i {
   font-size: 1.5em;
+  transition: .3s;
 }
 
 .our-team .social-media a:hover i {

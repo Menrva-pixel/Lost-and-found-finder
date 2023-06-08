@@ -40,8 +40,8 @@ const about = {
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nobis nam consectetur officia a ipsum odit delectus Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         
                         <div class="social-media">
-                        <a href="https://github.com/OmMahen"><i class="bi bi-github"></i></a>
-                        <a href="https://www.linkedin.com/in/mahendra-putra-raharja/"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/OmMahen" target="_blank"><i class="bi bi-github"></i></a>
+                        <a href="https://www.linkedin.com/in/mahendra-putra-raharja/" target="_blank"><i class="bi bi-linkedin"></i></a>
                         </div>
                     </div>
                 </div>
@@ -55,8 +55,8 @@ const about = {
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nobis nam consectetur officia a ipsum odit delectus Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         
                         <div class="social-media">
-                        <a href="https://github.com/Menrva-pixel"><i class="bi bi-github"></i></a>
-                        <a href="https://www.linkedin.com/in/barkah-herdyanto-sejati-636840258/"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/Menrva-pixel" target="_blank"><i class="bi bi-github"></i></a>
+                        <a href="https://www.linkedin.com/in/barkah-herdyanto-sejati-636840258/" target="_blank"><i class="bi bi-linkedin"></i></a>
                         </div>
                     </div>
                 </div>
@@ -70,8 +70,8 @@ const about = {
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nobis nam consectetur officia a ipsum odit delectus Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         
                         <div class="social-media">
-                        <a href="https://github.com/IbnuHs"><i class="bi bi-github"></i></a>
-                        <a href=""><i class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/IbnuHs" target="_blank"><i class="bi bi-github"></i></a>
+                        <a href="https://www.linkedin.com/in/ibnu-hasyim-surianto-277b84241/" target="_blank"><i class="bi bi-linkedin"></i></a>
                         </div>
                     </div>
                 </div>
@@ -85,8 +85,8 @@ const about = {
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nobis nam consectetur officia a ipsum odit delectus Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         
                         <div class="social-media">
-                        <a href="https://github.com/VickyPratama87"><i class="bi bi-github"></i></a>
-                        <a href="https://www.linkedin.com/in/vicky-pratama/"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/VickyPratama87" target="_blank"><i class="bi bi-github"></i></a>
+                        <a href="https://www.linkedin.com/in/vicky-pratama/" target="_blank"><i class="bi bi-linkedin"></i></a>
                         </div>
                     </div>
                 </div>
@@ -100,34 +100,42 @@ const about = {
             <div class="credit-list">
                 <div class="credit-item">
                     <img src="${pictCreditHtml}" alt="">
+                    <h6>HTML</h6>
                 </div>
 
                 <div class="credit-item">
                     <img src="${pictCreditCss}" alt="">
+                    <h6>CSS</h6>
                 </div>
 
                 <div class="credit-item">
                     <img src="${pictCreditJavaScript}" alt="">
+                    <h6>JavaScript</h6>
                 </div>
 
                 <div class="credit-item">
                     <img src="${pictCreditBootstrap}" alt="">
+                    <h6>Bootstrap</h6>
                 </div>
 
                 <div class="credit-item">
                     <img src="${pictCreditNodeJs}" alt="">
+                    <h6>Node Js</h6>
                 </div>
 
                 <div class="credit-item">
                     <img src="${pictCreditGit}" alt="">
+                    <h6>Git</h6>
                 </div>
 
-                <div class="credit-item">
+                <div class="credit-item Github">
                     <img src="${pictCreditGithub}" alt="">
+                    <h6>Github</h6>
                 </div>
 
-                <div class="credit-item">
+                <div class="credit-item express">
                     <img src="${pictCreditExpress}" alt="">
+                    <h6>Express Js</h6>
                 </div>
             </div>
         </div>
