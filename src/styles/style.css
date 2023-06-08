@@ -191,7 +191,6 @@ main {
 site-description-element div {
   background-color: transparent;
   padding: 10px;
-  text-align: justify;
   word-spacing: 0.2cm;
 }
 
@@ -222,6 +221,7 @@ site-description-element .desc-container {
 .desc-container .description p {
   color: #0c0c0c;
   font-size: 20px;
+  text-align: justify;
 }
 
 .desc-container .description h2 {
@@ -287,7 +287,7 @@ function-section h2 {
   border-radius: 5px;
 }
 
-.btn-cari, .btn-lapor-penemuan {
+.btn-cari, .btn-lapor-penemuan,.btn-primary, .btn-submit {
   border: 1px solid rgb(54, 54, 54);
   background-color: #dd7160;
   font-weight: 500;
@@ -400,7 +400,7 @@ information-section a:hover {
   margin-bottom: 30px;
   border: none !important;
   border-radius: 0 !important;
-  background-color: #cacaca;
+  background-color: #ffffff;
   min-height: 420px;
   max-height: 420px;
   position: relative;
@@ -679,6 +679,50 @@ hr {
   margin: 25px auto;
   padding: 30px 20px;
   overflow: hidden;
+}
+
+#search-input {
+  border: 1px solid #333 !important;
+  background-color: #dd7160;
+  border-radius: 15px 0 0 15px;
+}
+
+#search-input::placeholder {
+  color: #333;
+}
+
+#item-list {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.form-control {
+  border: 1px solid #333;
+  border-radius: 15px;
+  max-width: 450px;
+}
+
+.form-control:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.input-group-search {
+  display: flex !important;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.input-group-text {
+  background-color: #dbdbdb;
+  border-radius: 0 15px 15px 0;
+}
+
+.input-group-search .search-icon img {
+  width: 25px;
+  height: 25px;
 }
 
 .item-detail-header {

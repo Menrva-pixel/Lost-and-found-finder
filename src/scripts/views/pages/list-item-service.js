@@ -13,6 +13,13 @@ const DetailItems = {
           <hr>
 
           <form>
+
+          <div class="input-group-search mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text search-icon"><img src="https://img.icons8.com/dotty/80/search.png" alt="search-icon"></span>
+          </div>
+          <input id="search-input" type="text" class="form-control" placeholder="Cari barang.." aria-describedby="basic-addon2">
+        </div>
             <div class="form-group mb-3">
               <label for="status">Status:</label>
               <select class="form-control" id="status">
@@ -42,14 +49,6 @@ const DetailItems = {
 
           <h2><img width="40" height="40" src="https://img.icons8.com/material-outlined/30/check-document.png" alt="check-document"/> Result</h2>
           <hr>
-
-          <div class="input-group mb-3">
-            <input id="search-input" type="text" class="form-control" placeholder="Search Anything" aria-describedby="basic-addon2">
-            <div class="input-group-append">
-              <button class="btn btn-outline-secondary search-button" type="button"><img width="20" height="20" src="https://img.icons8.com/ios/20/search--v1.png" alt="search--v1"/></button>
-            </div>
-          </div>
-
           <div class="container mb-3">
             <div id="item-list" class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3">
             <div class="loading-container">
@@ -117,10 +116,8 @@ const DetailItems = {
     filterItems();
     // Tambahkan event listener untuk tombol filter dan tombol pencarian
     const filterButton = document.querySelector('.btn-primary');
-    const searchButton = document.querySelector('.search-button');
 
     filterButton.addEventListener('click', filterItems);
-    searchButton.addEventListener('click', filterItems);
     searchInput.addEventListener('input', filterItems);
   },
 

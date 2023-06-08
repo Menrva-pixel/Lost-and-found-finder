@@ -68,7 +68,7 @@
 #information-section {
   background-color: #333;
   color: #ffff;
-  margin: 50px auto;
+  margin: 110px auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -81,7 +81,8 @@
 }
 
 #information-section p::first-letter {
-  font-size: 1.8em;
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
 .syarat:hover {

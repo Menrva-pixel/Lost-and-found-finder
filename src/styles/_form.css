@@ -4,6 +4,8 @@
     flex-direction: column;
     align-items: strech;
     justify-content: center;
+    background-color: transparent !important;
+    border: none !important;
 }
 
 .form-title {
@@ -17,8 +19,6 @@
     position: relative;
     background-color: #43609b;
     text-align: center;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
 }
 
 .left-form img {
@@ -45,17 +45,10 @@
 /* right form */
 .right-form {
     background-color: #dfdfdf;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
 }
 
 #lost-form, #found-form {
     padding: 20px 20px;
-}
-
-.submit-btn .btn-submit {
-    background-color: #43609b;
-    color: #fff;
 }
 
 /* input area */
@@ -81,3 +74,40 @@
         font-size: 3.2em;
     }
 }
+
+/*sweet alert custom */
+
+.swal2-popup {
+    background-color: #f08f85 !important;
+  }
+  
+  .swal2-popup .swal2-content {
+    padding: 0;
+  }
+  
+  .swal2-popup .swal2-title {
+    font-size: 2.4em;
+    margin-bottom: 20px;
+    color: #dfdfdf !important;
+  }
+  
+  .swal2-popup .swal2-icon img {
+    max-width: 250px;
+    max-height: 250px;
+    margin-bottom: 10px;
+  }
+  
+  .swal2-popup .swal2-text {
+    font-size: 18px !important;
+  }
+  
+  .swal2-popup .swal2-actions {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .swal2-popup .swal2-confirm,
+  .swal2-popup .swal2-cancel {
+    padding: 10px 20px;
+    font-size: 26px;
+  }
