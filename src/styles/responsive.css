@@ -105,6 +105,9 @@
     #detail-item {
       flex-direction: row;
     }
+    .desc-container .description h2 {
+      text-align: left;
+    }
 }
 
 
@@ -159,6 +162,19 @@
     width: 100%;
   }
 }
+
+@media only screen and (max-width: 420px) {
+  .services h1 {
+    font-size: 2.8em;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  information-section {
+    padding: 90px 10px !important;
+}
+}
+
 @media only screen and (max-width: 400px){
   information-section {
     padding: 90px 30px;

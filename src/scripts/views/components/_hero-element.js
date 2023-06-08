@@ -113,6 +113,9 @@ class BannerElement extends HTMLElement {
       .hero-image {
       display: none;
       }
+      .hero-text {
+        padding-right: 0;
+      }
     }
 
     @media (max-width: 1367px) {
