@@ -75,7 +75,7 @@
   }
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 450px){
   .credit {
     margin: 10px auto;
     margin-bottom: 20px;
@@ -84,6 +84,12 @@
   }
   .credit .credit-list{
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 390px){
+  .credit {
+    margin: 50px auto;
   }
 }
 
