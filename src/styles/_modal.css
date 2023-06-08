@@ -1,14 +1,4 @@
 /* terms of use */
-/* #terms-of-use {
-  font-family: 'Montserrat', sans-serif;
-  max-width: 1250px;
-  height: auto;
-  margin: 20px auto;
-  box-shadow: 5px 5px 12px #43609b;
-  padding:  55px 150px;
-  border-radius: 10px;
-  border: 1px solid #131517;
-} */
 
 .tou-title h1 {
   text-align: center;
@@ -77,39 +67,6 @@ ul li {
   margin-top: 10px;
 }
 
-/* #cancel {
-    background-color: transparent;
-    border: 2px solid #000000;
-    border-radius: 5px;
-    color: #202020;
-  }
-  
-  #cancel:hover {
-    background-color: #ec2323;
-  }
-  
-  #accept {
-    border-radius: 5px;
-    background-color: #202020;
-  }
-  
-  #accept:hover {
-    background-color: rgb(60, 201, 42);
-    color: #202020;
-    cursor: pointer;
-  } */
-
-/* kebijakan privasi */
-
-/* #kebijakan-privasi {
-    font-family: 'Montserrat', sans-serif;
-    max-width: 1150px;
-    margin: 20px auto;
-    box-shadow: 5px 5px 12px #43609b;
-    padding:  25px 150px;
-    border-radius: 10px;
-    border: 1px solid #131517;
-  } */
 
 /* default Button */
 button {

@@ -44,7 +44,6 @@ class BannerElement extends HTMLElement {
     }
 
     .hero-text h1 {
-      font-family: 'Raleway', sans-serif;
       font-weight: bold;
       font-size: 5.2em;
       color: #43609b;
@@ -79,7 +78,7 @@ class BannerElement extends HTMLElement {
     .hero-text p {
       font-family: 'Montserrat', sans-serif;
       color: #1c1a1a;
-      font-weight: 600;
+      font-weight: 500;
       font-size: 1.2em;
     }
     
@@ -136,9 +135,9 @@ class BannerElement extends HTMLElement {
 
     <div class="hero">
       <div class="hero-text">
-        <h3>Finder !!!</h3>
+        <h3>Finder</h3>
         <h1>Selamat Datang di Lost & Found</h1>
-        <p>Kami menyediakan platform untuk membantu anda melaporkan atau mencari barang yang hilang!</p>
+        <p>Kami menyediakan platform untuk membantu anda melaporkan atau<br> mencari barang yang hilang!</p>
         <button class="btn-lapor">Buat Laporan</button>
       </div>
       <div class="hero-image">

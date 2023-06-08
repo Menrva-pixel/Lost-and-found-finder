@@ -1,5 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap');
+
+Pallete {
+  color: #dd7160, #43609b ;
+}
+
 
 * {
   padding: 0;
@@ -11,8 +15,8 @@ html {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
-    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);  background-size: cover;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -30,7 +34,6 @@ main {
 
 .dropbtn {
   font-size: 16px;
-  font-weight: bold;
   border: none;
   outline: none;
   color: #000000;
@@ -221,7 +224,7 @@ site-description-element .desc-container {
 .desc-container .description p {
   color: #0c0c0c;
   font-size: 20px;
-  text-align: justify;
+  text-align: center;  
 }
 
 .desc-container .description h2 {
@@ -532,6 +535,11 @@ information-section a:hover {
   background-color: #dd7160;
   border: 1.2px solid #333;
   position: relative;
+  box-shadow: 2px 2px 8px #333;
+}
+
+.home-card img {
+  padding: 10px;
 }
 
 .home-location {
@@ -540,9 +548,10 @@ information-section a:hover {
   left: 0;
   display: flex;
   margin: 5px;
-  background-color: #000000;
-  color: #cacaca;
+  background-color: #25232388;
+  color: #f0ebeb;
   padding: 5px;
+  margin: 10px;
 }
 
 .card-home-body {
@@ -551,7 +560,7 @@ information-section a:hover {
 
 .card-home-body h5 {
   text-align: center;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 1.5em;
 }
 
@@ -568,8 +577,8 @@ information-section a:hover {
   text-align: center;
   overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 2; 
-          line-clamp: 2; 
+  -webkit-line-clamp: 3; 
+          line-clamp: 3; 
   -webkit-box-orient: vertical;
   color: #fff;
 }

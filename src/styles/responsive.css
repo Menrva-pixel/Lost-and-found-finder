@@ -84,6 +84,14 @@
   .right-side {
     margin: auto;
   }
+
+  .role-desc {
+    font-size: 0.8em;
+  }
+
+  .footer-copyright {
+    font-size: 1.1em;
+  }
 }
 
 @media screen and (min-width: 1000px) {
@@ -106,8 +114,9 @@
       flex-direction: row;
     }
     .desc-container .description h2 {
-      text-align: left;
+      text-align: center;
     }
+
 }
 
 
