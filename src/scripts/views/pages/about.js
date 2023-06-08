@@ -41,8 +41,8 @@ const about = {
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nobis nam consectetur officia a ipsum odit delectus Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     
                     <div class="social-media">
-                        <a href=""><i class="bi bi-github"></i></a>
-                        <a href=""><i class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/OmMahen"><i class="bi bi-github"></i></a>
+                        <a href="https://www.linkedin.com/in/mahendra-putra-raharja/"><i class="bi bi-linkedin"></i></a>
                     </div>
                 </div>
 
@@ -54,8 +54,8 @@ const about = {
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nobis nam consectetur officia a ipsum odit delectus Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     
                     <div class="social-media">
-                        <a href=""><i class="bi bi-github"></i></a>
-                        <a href=""><i class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/Menrva-pixel"><i class="bi bi-github"></i></a>
+                        <a href="https://www.linkedin.com/in/barkah-herdyanto-sejati-636840258/"><i class="bi bi-linkedin"></i></a>
                     </div>
                 </div>
 
@@ -67,7 +67,7 @@ const about = {
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nobis nam consectetur officia a ipsum odit delectus Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     
                     <div class="social-media">
-                        <a href=""><i class="bi bi-github"></i></a>
+                        <a href="https://github.com/IbnuHs"><i class="bi bi-github"></i></a>
                         <a href=""><i class="bi bi-linkedin"></i></a>
                     </div>
                 </div>
@@ -80,8 +80,8 @@ const about = {
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nobis nam consectetur officia a ipsum odit delectus Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     
                     <div class="social-media">
-                        <a href=""><i class="bi bi-github"></i></a>
-                        <a href=""><i class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/VickyPratama87"><i class="bi bi-github"></i></a>
+                        <a href="https://www.linkedin.com/in/vicky-pratama/"><i class="bi bi-linkedin"></i></a>
                     </div>
                 </div>
             </div>

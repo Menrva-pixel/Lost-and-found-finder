@@ -579,6 +579,8 @@ hr {
   min-height: 430px;
   background-color: #fff;
   border-radius: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
 }
 
 .our-team .profile img {
@@ -604,6 +606,7 @@ hr {
 }
 
 .our-team .social-media a {
+  color: #f08f85;
   padding: 10px;
 }
 
@@ -613,6 +616,8 @@ hr {
 
 .our-team .social-media a:hover i {
   transform: scale(1.2);
+  color: rgb(54, 54, 54);
+
 }
 
 /* item detail */
