@@ -523,6 +523,55 @@ information-section a:hover {
   align-items: center;
 }
 
+
+/* item home card */
+
+.home-card {
+  background-color: #dd7160;
+  border: 2px solid #333;
+  position: relative;
+}
+
+.home-location {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  margin: 5px;
+  background-color: #000000;
+  color: #cacaca;
+  padding: 5px;
+}
+
+.card-home-body {
+  padding: 10px;
+}
+
+.card-home-body h5 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.card-home-body h5 a{
+  color: #333 !important;
+}
+
+.card-home-body h5 a:hover {
+  color: #43609b !important;
+}
+
+
+.card-home-text {
+  text-align: center;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; 
+          line-clamp: 2; 
+  -webkit-box-orient: vertical;
+  color: #fff;
+}
+
 /* about page */
 .about {
   margin: 25px 0 20px;
