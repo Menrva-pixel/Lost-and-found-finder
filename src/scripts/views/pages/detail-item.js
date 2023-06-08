@@ -6,12 +6,20 @@ import UrlParser from '../../routes/url-parser';
 const DetailItems = {
   async render() {
     return `
-        <div id="detail-item">
-
-        </div>
-        <div class="detail-function">
-          <p></p>   
-        </div>
+    <div id="detail-page">
+    <header class="item-detail-header">
+      <h2>ITEM DETAIL</h2>
+    </header>
+    <div id="detail-item">
+      <div class="loading-animation">
+        <div class="loader"></div>
+        <div class="loading-text">Loading Item Detail</div>
+      </div>
+    </div>
+    <div class="detail-function">
+      <p></p>
+    </div>
+  </div>
      `;
   },
 
@@ -30,6 +38,11 @@ const DetailItems = {
     document.querySelector('.detail-function p').innerHTML = detailText;
 
     const detailContainer = document.querySelector('#detail-item');
+
+    // Show loading animation initially
+    const loadingAnimation = detailContainer.querySelector('.loading-animation');
+    loadingAnimation.style.display = 'flex';
+
     detailContainer.innerHTML = `
       <div class="detail-image">
         <img src="${CONFIG.BASE_IMAGE_URL}${item.iditem_image}" alt="item-detail-img">
@@ -68,6 +81,11 @@ const DetailItems = {
         </div>
       </div>
     `;
+    // Hide loading animation once the item detail is loaded
+    const detailImage = detailContainer.querySelector('.detail-image img');
+    detailImage.onload = () => {
+      loadingAnimation.style.display = 'none';
+    };
   },
 };
 

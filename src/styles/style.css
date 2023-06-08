@@ -191,7 +191,8 @@ main {
 site-description-element div {
   background-color: transparent;
   padding: 10px;
-  word-break: break-all;
+  text-align: justify;
+  word-spacing: 0.2cm;
 }
 
 site-description-element .desc-container {
@@ -220,7 +221,7 @@ site-description-element .desc-container {
 
 .desc-container .description p {
   color: #0c0c0c;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .desc-container .description h2 {
@@ -528,7 +529,7 @@ information-section a:hover {
 
 .home-card {
   background-color: #dd7160;
-  border: 2px solid #333;
+  border: 1.2px solid #333;
   position: relative;
 }
 
@@ -665,6 +666,10 @@ hr {
 }
 
 /* item detail */
+#detail-page {
+  min-height: 900px;
+}
+
 #detail-item {
   display: flex;
   flex-direction: column;
@@ -674,6 +679,19 @@ hr {
   margin: 25px auto;
   padding: 30px 20px;
   overflow: hidden;
+}
+
+.item-detail-header {
+  text-align: center;
+  background-color: #bebdbd;
+  padding: 16px;
+}
+
+.item-detail-header h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #333333;
+  font-weight: bold;
 }
 
 .detail-image img{
@@ -708,7 +726,6 @@ hr {
 }
 
 .detail-title h3 {
-  font-family: 'Raleway', sans-serif;
   font-weight: bold;
   margin-bottom: 0px !important;
 }
@@ -831,5 +848,40 @@ hr {
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+
+/* loading animation */
+.loading-animation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  position: relative;
+}
+
+.loader {
+  border: 4px solid rgba(255, 255, 255, 0.2);
+  border-top: 4px solid #333;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+.loading-text {
+  margin-top: 16px;
+  font-size: 16px;
+  color: #333;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
