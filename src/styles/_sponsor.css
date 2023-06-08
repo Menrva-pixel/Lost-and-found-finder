@@ -35,8 +35,10 @@
 }
 
 .university img {
-    max-width: 275px;
+    max-width: 300px;
     background-size: cover;
+    border-radius: 5px;
+    max-height: 125px;
 }
 
 
