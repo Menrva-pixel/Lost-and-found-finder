@@ -625,7 +625,7 @@ hr {
 
 .box-card {
   margin: auto;
-  padding: 0 30px;
+  padding: 40px 0 30px;
   justify-content: space-around;
   gap: 20px;
   margin-bottom: 30px;
@@ -634,18 +634,19 @@ hr {
 }
 
 .our-team .profile {
-  box-shadow: rgba(0, 0, 2, 0.24) 0px 3px 8px;
-  padding: 30px;
-  min-height: 430px;
+  padding: 30px 30px 20px;
+  min-height: 325px;
   background-color: #fff;
-  border-radius: 5px;
+  border-radius: 10px;
   box-sizing: border-box;
   cursor: pointer;
+  position: relative;
+  /* visibility: hidden; */
 }
 
 .our-team .profile img {
   width: 100px;
-  border: 1px solid black;
+  border: 3px solid #bfbfbf;
   border-radius: 50%;
   margin: 20px auto;
 }
@@ -653,11 +654,15 @@ hr {
 .image-profile {
   display: flex;
   justify-content: center;
+  position: absolute;
+  top: -70px;
+  left: 90px;
 }
 
 .our-team .profile h4 {
   margin: 8px;
   text-align: center;
+  margin-top: 50px;
 }
 
 .our-team .social-media {
