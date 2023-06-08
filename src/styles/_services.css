@@ -78,8 +78,7 @@
 /* List Item Service */
 
 #item-list {
-  max-height: 1300px;
-  min-height: 1300px;
+  height: 100vh;
   overflow: auto;
 }
 

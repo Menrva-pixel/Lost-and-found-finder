@@ -1,8 +1,8 @@
 import CONFIG from '../../globals/config';
 
 const createLostItemCard = (item) => `
-<div class="card home-card lazyload" style="width: 18rem;">
-    <img src="${CONFIG.BASE_IMAGE_URL}${item.iditem_image}" class="card-img-top" alt="...">
+<div class="card home-card" style="width: 18rem;">
+    <img data-src="${CONFIG.BASE_IMAGE_URL}${item.iditem_image}" class="card-img-top lazyload" alt="...">
     <div class="card-home-body">
         <h5><a href="#/item-detail/${item.id}">${item.item_name}</a></h5>
         <p class="card-home-text">${item.item_description}</p>

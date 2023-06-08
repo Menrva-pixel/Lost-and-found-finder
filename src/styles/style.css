@@ -227,8 +227,9 @@ site-description-element .desc-container {
 .desc-container .description h2 {
   color: #43609b;
   padding-bottom: 20px;
-  font-size: 3.2em !important;
+  font-size: 3.2em;
   font-weight: bold;
+  text-align: center;
 }
 
 /* function section */
@@ -697,15 +698,14 @@ hr {
 }
 
 #item-list {
-  margin: 10px;
-  padding: 10px;
+  /* margin: 10px;
+  padding: 10px; */
   border-radius: 5px;
 }
 
 .form-control {
   border: 1px solid #333;
   border-radius: 15px;
-  max-width: 450px;
 }
 
 .form-control:focus {
