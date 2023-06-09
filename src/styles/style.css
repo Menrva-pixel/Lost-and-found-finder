@@ -983,9 +983,22 @@ hr {
   margin: 170px;
 }
 
- #bad-request img {
-  max-width: 1300px;
- }
+#bad-request img {
+  max-width: 100%;
+  height: auto;
+  min-width: 300px;
+}
+
+#bad-request .bd-desc {
+  max-width: 100%;
+  min-width: 300px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.bad-desc p {
+  font-size: 1.4em;
+}
 
 
 #close-modal-button.btn-close {
