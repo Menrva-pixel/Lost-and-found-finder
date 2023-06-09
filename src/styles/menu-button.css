@@ -12,6 +12,7 @@
   -o-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
   cursor: pointer;
+  z-index: 99;
 }
 
 #hamburgerButton span {
@@ -19,7 +20,7 @@
   position: absolute;
   height: 5px;
   width: 100%;
-  background: #43609b;
+  background: #333;
   border-radius: 9px;
   opacity: 1;
   left: 0;
@@ -34,7 +35,7 @@
 }
 
 #hamburgerButton span {
-  background: #43609b;
+  background: #333;
 }
 
 #hamburgerButton span:nth-child(1) {

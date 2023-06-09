@@ -54,10 +54,9 @@
 
 .app-bar .app-bar__navigation {
   position: absolute;
-  top: -0px;
-  left: -200px;
-  width: 200px;
-  height: 100vh;
+  top: 57px;
+  width: 100%;
+  height: auto;
   transition: all 0.3s;
   padding: 8px;
   background: none;
@@ -72,6 +71,11 @@
 .app-bar .app-bar__navigation.open .nav-link {
   color: #d7d7d7 !important;
   font-size: 1.2em;
+  text-align: center;
+}
+
+.app-bar .app-bar__navigation.open .nav-link:hover {
+  color: #dd7160 !important;
 }
 
 .app-bar .app-bar__navigation.open ul li {
