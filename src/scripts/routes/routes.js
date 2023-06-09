@@ -1,5 +1,5 @@
 import Home from '../views/pages/home';
-import Contact from '../views/pages/contact';
+import Error from '../views/pages/404';
 import about from '../views/pages/about';
 import FoundForm from '../views/pages/found-form';
 import Tou from '../views/pages/tou-page';
@@ -12,7 +12,7 @@ import DetailItems from '../views/pages/detail-item';
 const routes = {
   '/': Home, // default page
   '/home': Home, // default page
-  '/contact': Contact,
+  '/404': Error,
   '/about': about,
   '/found-form': FoundForm,
   '/terms-of-use': Tou,
