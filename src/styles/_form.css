@@ -19,6 +19,8 @@
     position: relative;
     background-color: #43609b;
     text-align: center;
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
 }
 
 .left-form img {
@@ -45,6 +47,8 @@
 /* right form */
 .right-form {
     background-color: #dfdfdf;
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
 }
 
 #lost-form, #found-form {
@@ -78,8 +82,14 @@
 /*sweet alert custom */
 
 .swal2-popup {
-    background-color: #f08f85 !important;
+    /* background-color: #f08f85 !important; */
+		border: 3px solid #bfbfbf !important;
+		border-radius: 10px !important;
   }
+
+	.swal2-popup button {
+		background-color: #f08f85 !important;
+	}
   
   .swal2-popup .swal2-content {
     padding: 0;
@@ -88,7 +98,7 @@
   .swal2-popup .swal2-title {
     font-size: 2.4em;
     margin-bottom: 20px;
-    color: #dfdfdf !important;
+    /* color: #dfdfdf !important; */
   }
   
   .swal2-popup .swal2-icon img {
