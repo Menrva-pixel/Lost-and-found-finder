@@ -1,4 +1,6 @@
-/* eslint-disable import/no-duplicates */
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import srcImg1 from '../../../public/images/img-missing-1.jpg';
 import srcImg2 from '../../../public/images/img-finder-2.jpg';
 import srcImg3 from '../../../public/images/missing-item-2.jpg';
@@ -6,11 +8,13 @@ import srcImg3 from '../../../public/images/missing-item-2.jpg';
 class ServiceElement extends HTMLElement {
   connectedCallback() {
     this.render();
+    this.initializeAOS();
+    this.handleScroll();
   }
 
   render() {
     this.innerHTML = `
-      <div id="services" class="services">
+      <div id="services" class="services" data-aos='fade-up'>
         <h1> Siapakah Kamu ? </h1>
         <div class="services-list">
           <div class="service-item1">
@@ -33,6 +37,31 @@ class ServiceElement extends HTMLElement {
         </div>
       </div>
       `;
+  }
+
+  initializeAOS() {
+    AOS.init({
+      offset: 200,
+      duration: 500,
+      easing: 'ease-in-sine',
+      delay: 100,
+      once: false,
+      mirror: true,
+    });
+  }
+
+  handleScroll() {
+    let lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const isScrollingDown = scrollTop > lastScrollTop;
+
+      if (isScrollingDown) {
+        AOS.refresh();
+      }
+
+      lastScrollTop = scrollTop;
+    });
   }
 }
 

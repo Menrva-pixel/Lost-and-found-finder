@@ -1,7 +1,12 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 class findAndLost extends HTMLElement {
   connectedCallback() {
     this.render();
     this.addEventListeners();
+    this.initializeAOS();
+    this.handleScroll();
   }
 
   addEventListeners() {
@@ -20,11 +25,11 @@ class findAndLost extends HTMLElement {
   render() {
     this.innerHTML = `
 
-    <div class="left-side">
+    <div class="left-side" data-aos='fade-up'>
         <img src="images/question-img.png" alt="pointing guy">
         </div>
       </div>
-      <div class="right-side">
+      <div class="right-side" data-aos='fade-up'>
       <h2>Seeker ?</h2>
         <div class="lostButton">
             <p>Merasa kehilangan barang? coba buat laporan disini !!</p>
@@ -37,6 +42,31 @@ class findAndLost extends HTMLElement {
         </div>
         </div>
         `;
+  }
+
+  initializeAOS() {
+    AOS.init({
+      offset: 200,
+      duration: 500,
+      easing: 'ease-in-sine',
+      delay: 100,
+      once: false,
+      mirror: true,
+    });
+  }
+
+  handleScroll() {
+    let lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const isScrollingDown = scrollTop > lastScrollTop;
+
+      if (isScrollingDown) {
+        AOS.refresh();
+      }
+
+      lastScrollTop = scrollTop;
+    });
   }
 }
 customElements.define('function-section', findAndLost);
