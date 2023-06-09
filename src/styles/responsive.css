@@ -35,7 +35,8 @@
   }
 
   .btn-abt:hover {
-    transform: scale(1.1);
+    transform: none !important;
+    background-color: #1e386b;
   }
 }
 /*  Credit in about page */
