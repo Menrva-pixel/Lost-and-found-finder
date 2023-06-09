@@ -716,7 +716,7 @@ hr {
 
 #search-input {
   border: 1px solid #333 !important;
-  background-color: #dd7160;
+  /* background-color: #dd7160; */
   border-radius: 15px 0 0 15px;
 }
 
@@ -748,8 +748,9 @@ hr {
 }
 
 .input-group-text {
-  background-color: #dbdbdb;
   border-radius: 0 15px 15px 0;
+  border: 1px solid rgb(54, 54, 54);
+  background-color: #dd7160;
 }
 
 .input-group-search .search-icon img {

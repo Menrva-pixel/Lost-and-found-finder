@@ -16,7 +16,7 @@ const DetailItems = {
 
           <div class="input-group-search mb-3">
           <div class="input-group-prepend">
-            <span class="input-group-text search-icon"><img src="https://img.icons8.com/dotty/80/search.png" alt="search-icon"></span>
+            <span class="input-group-text search-icon"><img src="https://img.icons8.com/dotty/80/FFFFFF/search.png" alt="search-icon"></span>
           </div>
           <input id="search-input" type="text" class="form-control" placeholder="Cari barang.." aria-describedby="basic-addon2">
         </div>
