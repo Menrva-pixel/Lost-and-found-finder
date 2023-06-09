@@ -412,8 +412,9 @@ information-section a:hover {
 }
 
 .card-date {
-  margin-left: 10px;
+  padding-left: 5px;
   font-size: 0.8em;
+  margin-bottom: 5px;
 }
 
 .item-found-tag {
@@ -460,7 +461,6 @@ information-section a:hover {
 }
 
 .item-card h5 a {
-  padding: 0 5px;
   font-weight: 600;
   color: #202224 !important;
 }
@@ -472,6 +472,8 @@ information-section a:hover {
 .card-body h5{
   font-size: 1.5em;
   font-weight: 600;
+  margin-bottom: 0;
+  padding: 0 5px;
 }
 
 .card-body h5 a:hover {

@@ -72,7 +72,7 @@ const DetailItems = {
     const searchInput = document.querySelector('#search-input');
     const itemContainer = document.querySelector('#item-list');
 
-    const items = await LostAndFoundAPI.itemList();
+    const items = (await LostAndFoundAPI.itemList()).reverse();
 
     function filterItems() {
       const selectedStatus = statusFilter.value;
