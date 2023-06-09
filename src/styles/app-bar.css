@@ -60,12 +60,14 @@
   transition: all 0.3s;
   padding: 8px;
   background: none;
+  display: none;
 }
 
 .app-bar .app-bar__navigation.open {
   left: 0;
   background: #43609b;
   padding: 16px;
+  display: inline-block;
 }
 
 .app-bar .app-bar__navigation.open .nav-link {
