@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap');
 
 Pallete {
-  color: #dd7160, #43609b ;
+  color: #dd7160, #43609b, #252525 ;
 }
 
 
@@ -331,7 +331,7 @@ information-section a {
 information-section a:hover {
   text-decoration: none;
   transform: translate(1.4px);
-  color: #c99c26;
+  color: #dd7160;
 }
 
 #scrollLeft,#scrollRight {
@@ -368,6 +368,10 @@ information-section a:hover {
   width: 90%;
   overflow-x: hidden;
   scroll-behavior: smooth;
+}
+
+.bi-caret-right-fill:hover, .bi-caret-left-fill:hover {
+  color: #dd7160 !important;
 }
 
 .bi-caret-right-fill::before {
@@ -535,7 +539,7 @@ information-section a:hover {
 /* item home card */
 
 .home-card {
-  background-color: #dd7160;
+  background-color: #e2e2e2;
   border: 1.2px solid #333;
   position: relative;
   box-shadow: 2px 2px 8px #333;
@@ -568,7 +572,7 @@ information-section a:hover {
 }
 
 .card-home-body h5 a{
-  color: #333 !important;
+  color: #dd7160 !important;
 }
 
 .card-home-body h5 a:hover {
@@ -583,7 +587,7 @@ information-section a:hover {
   -webkit-line-clamp: 3; 
           line-clamp: 3; 
   -webkit-box-orient: vertical;
-  color: #fff;
+  color: #333;
 }
 
 /* about page */
@@ -968,3 +972,43 @@ hr {
     transform: rotate(360deg);
   }
 }
+
+/* 404 page */
+
+#bad-request {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 170px;
+}
+
+ #bad-request img {
+  max-width: 1300px;
+ }
+
+
+#close-modal-button.btn-close {
+  background: transparent !important;
+  cursor: default;
+}
+
+/* counter/timer */
+#countdown {
+  font-size: 48px;
+  color: #ff0000;
+  animation: countdown-animation 1s linear infinite;
+}
+
+@keyframes countdown-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
