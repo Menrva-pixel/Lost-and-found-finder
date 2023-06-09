@@ -24,7 +24,6 @@ const FoundForm = {
   },
 
   async afterRender() {
-    // Fungsi ini akan dipanggil setelah render()
   },
 };
 

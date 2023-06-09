@@ -1,7 +1,7 @@
 /* eslint-disable no-empty-function */
 import '../components/_found-form';
 
-import bgImg from '../../../public/images/img-writing.png';
+import bgImg from '../../../public/images/img-finder.png';
 import onSubmitFoundForm from '../../utils/found-form-handler';
 
 const FoundItemService = {

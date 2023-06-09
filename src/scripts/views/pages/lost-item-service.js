@@ -1,7 +1,7 @@
 /* eslint-disable no-empty-function */
 import '../components/_lost-form';
 
-import bgImg from '../../../public/images/img-finder.png';
+import bgImg from '../../../public/images/img-missing-2.png';
 import onSubmitLostForm from '../../utils/lost-form-handler';
 
 const LostItemService = {

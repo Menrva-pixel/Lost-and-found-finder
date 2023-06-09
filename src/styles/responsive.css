@@ -3,6 +3,10 @@
     grid-template-columns: 1fr auto;
   }
 
+  #navigationDrawer.open {
+    display: none;
+  }
+
   .app-bar .app-bar__menu {
     display: none;
   }
@@ -314,11 +318,12 @@
   }
 }
 
-
 /* footer section */
-@media only screen and (max-width: 766px) {
+@media only screen and (max-width: 767px) {
   .footer-top {
     text-align: center;
+    border-radius: 0;
+    margin: 0;
   }
 
   .footer-copyright {
@@ -327,6 +332,16 @@
 
   .app-bar .app-bar__navigation {
     display: none;
+  }
+
+  .left-form {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .right-form {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 }
 
