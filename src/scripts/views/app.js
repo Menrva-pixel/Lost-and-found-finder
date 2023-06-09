@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-use-before-define */
 /* eslint-disable no-plusplus */
+import AOS from 'aos';
 import routes from '../routes/routes';
 import UrlParser from '../routes/url-parser';
 import DrawerInitiator from '../utils/drawer-initiator';
@@ -72,6 +73,13 @@ document.getElementById('backToTopBtn').addEventListener('click', () => {
     top: 0,
     behavior: 'smooth',
   });
+});
+
+// div animation
+AOS.init({
+  offset: 200, // Start the animation 200px before the element is visible
+  duration: 800, // Animation duration
+  easing: 'ease-in-out', // Easing function for the animation
 });
 
 export default App;
