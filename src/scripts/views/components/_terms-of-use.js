@@ -12,9 +12,7 @@ class TermsOfUse extends HTMLElement {
     privacyLink.addEventListener('click', () => this.showPrivacyPolicy());
 
     const cancelButton = document.querySelector('#cancel');
-    cancelButton.addEventListener('click', () => {
-      window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
-    });
+    cancelButton.addEventListener('click', this.handleCancelButtonClick.bind(this));
 
     const acceptButton = document.querySelector('#accept');
     acceptButton.addEventListener('click', this.handleAcceptButtonClick.bind(this));
@@ -119,19 +117,28 @@ class TermsOfUse extends HTMLElement {
     }
   }
 
-  // handleTermsScroll() {
-  //   const termsContainer = this.querySelector('#terms-of-use');
-  //   const acceptButton = this.querySelector('#accept');
-
-  //   if (termsContainer.scrollTop + termsContainer.clientHeight === termsContainer.scrollHeight) {
-  //     // User has scrolled to the bottom of the terms and conditions
-  //     acceptButton.disabled = false;
-  //   } else {
-  //     // User has not scrolled to the bottom of the terms and conditions
-  //     acceptButton.disabled = true;
-  //   }
-  // }
+  handleCancelButtonClick() {
+    const cancelButton = document.querySelector('#cancel');
+    cancelButton.addEventListener('click', () => {
+      const element = document.getElementById('close-modal-button');
+      const event = new Event('click');
+      element.dispatchEvent(event);
+      window.location.href = '#/404';
+    });
+  }
 }
+// handleTermsScroll() {
+//   const termsContainer = this.querySelector('#terms-of-use');
+//   const acceptButton = this.querySelector('#accept');
+
+//   if (termsContainer.scrollTop + termsContainer.clientHeight === termsContainer.scrollHeight) {
+//     // User has scrolled to the bottom of the terms and conditions
+//     acceptButton.disabled = false;
+//   } else {
+//     // User has not scrolled to the bottom of the terms and conditions
+//     acceptButton.disabled = true;
+//   }
+// }
 
 // Define the custom element
 customElements.define('terms-of-use', TermsOfUse);

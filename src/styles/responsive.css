@@ -220,7 +220,7 @@
   }
   .containerCard {
     width: 70%;
-    padding: 0 9px;
+    padding: 15px 15px; 
   }
 
   .desc-container .description h2 {
