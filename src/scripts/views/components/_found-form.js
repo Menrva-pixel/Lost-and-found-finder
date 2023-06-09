@@ -1,8 +1,7 @@
 /* eslint-disable no-promise-executor-return */
 /* eslint-disable class-methods-use-this */
 /* eslint-disable no-use-before-define */
-// import swal from 'sweetalert2';
-import img from '../../../public/images/img-finder.png';
+import img from '../../../public/images/question-img.png';
 import { createModalElement } from '../template/template-creator';
 
 class FoundForm extends HTMLElement {
@@ -104,20 +103,6 @@ class FoundForm extends HTMLElement {
         reader.readAsDataURL(uploadElement.files[0]);
       }
     });
-
-    // formElement.addEventListener('submit', async (event) => {
-    //   event.preventDefault();
-    //   if (validateForm()) {
-    //     // Disable submit button and show loading state
-    //   } else {
-    //     console.log('Form validation failed!');
-    //     swal.fire({
-    //       title: 'Error',
-    //       text: 'Form validation failed!',
-    //       icon: 'error',
-    //     });
-    //   }
-    // });
 
     formElement.addEventListener('input', () => {
       if (validateForm()) {

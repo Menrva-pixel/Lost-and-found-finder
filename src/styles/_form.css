@@ -61,6 +61,19 @@
     resize: none;
 }
 
+#submit-btn {
+  box-shadow: 2px 4px 2px #333;
+}
+
+#submit-btn:hover {
+  background-color: #43609b;
+}
+
+#submit-btn:active {
+  transform: translateY(1.5px);
+  box-shadow: 1px 3px 2px #333;
+}
+
 
 /* form Button */
 
@@ -79,10 +92,11 @@
     }
 }
 
+
+
 /*sweet alert custom */
 
 .swal2-popup {
-    /* background-color: #f08f85 !important; */
 		border: 3px solid #bfbfbf !important;
 		border-radius: 10px !important;
   }
@@ -98,7 +112,6 @@
   .swal2-popup .swal2-title {
     font-size: 2.4em;
     margin-bottom: 20px;
-    /* color: #dfdfdf !important; */
   }
   
   .swal2-popup .swal2-icon img {

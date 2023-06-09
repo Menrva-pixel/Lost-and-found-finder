@@ -74,4 +74,16 @@ document.getElementById('backToTopBtn').addEventListener('click', () => {
   });
 });
 
+/* hamburger auto close when resize to desktop */
+
+window.addEventListener('resize', () => {
+  const navigationDrawer = document.getElementById('navigationDrawer');
+  const hamburgerButton = document.getElementById('hamburgerButton');
+
+  if (window.innerWidth >= 767) {
+    navigationDrawer.classList.remove('open');
+    hamburgerButton.classList.remove('open');
+  }
+});
+
 export default App;
