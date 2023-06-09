@@ -34,6 +34,67 @@
     transform: scale(1.1);
   }
 }
+/*  Credit in about page */
+@media screen and (max-width: 1050px){
+  .credit {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 800px){
+  .credit .credit-list{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .credit .credit-list .credit-item img{
+    width: 4em;
+  }
+  .credit .credit-list .credit-item h6{
+    font-size: 1em;
+  }
+  /* .Github {
+    grid-column-start: 1;
+  }
+  .express {
+    grid-column-start: 3;
+  } */
+}
+@media screen and (max-width: 500px){
+  .credit {
+    margin: auto;
+    width: 80%;
+    padding: 40px 0 50px 0;
+    /* padding: 50px 70px; */
+  }
+  .credit .credit-list{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .credit .credit-list .credit-item img{
+    width: 3.9em;
+  }
+  .credit .credit-list .credit-item h6{
+    font-size: .9em;
+  }
+}
+
+@media screen and (max-width: 450px){
+  .credit {
+    margin: 10px auto;
+    margin-bottom: 20px;
+    width: 85%;
+    /* padding: 50px 70px; */
+  }
+  .credit .credit-list{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 390px){
+  .credit {
+    margin: 50px auto;
+  }
+}
+
+
+
 
 @media screen and (min-width: 650px) {
   /* Function Section */
@@ -200,6 +261,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 80px;
     padding: 10px;
+    margin-top: 100px;
   }
 
   .profile {
@@ -208,10 +270,6 @@
     min-width: 300px;
   }
 
-  .image-profile {
-    top: -70px;
-    left: 100px;
-  }
 
   .profile p{
     margin: auto;
@@ -219,7 +277,7 @@
   }
 
   .credit .credit-list .credit-item {
-    width: 40%;
+    /* width: 40%; */
   }
 }
 
@@ -246,13 +304,13 @@
   }
 
   .credit-list .credit-item {
-    width: 100%;
+    /* width: 100%; */
   }
 }
 
 @media only screen and (max-width: 500px) {
   .credit .credit-list .credit-item img {
-    width: 100%;
+    /* width: 100%; */
   }
 }
 

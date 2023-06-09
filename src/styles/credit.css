@@ -1,7 +1,8 @@
 .credit {
-  width: 100%;
+  width: 70%;
+  margin: 60px auto;
   height: auto;
-  padding: 50px 70px;
+  /* padding: 50px 70px; */
 }
 
 .credit h2 {
@@ -10,16 +11,22 @@
 }
 
 .credit .line-credit {
-  width: 250px;
+  /* width: 250px; */
+  width: 30%;
 }
 
 .credit .credit-list {
-  display: flex;
+  margin: auto;
+  /* display: flex;
   padding: 10px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  row-gap: 15px;
+  row-gap: 15px; */
+  /* width: 70%; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
 }
 
 /* .credit-item {
@@ -27,16 +34,20 @@
 } */
 
 .credit .credit-list .credit-item {
-  width: 25%;
+  /* width: 1em; */
   padding: 10px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  flex-direction: column;
   align-items: center;
-  overflow: hidden;
+  /* overflow: hidden; */
   transition-timing-function: ease-in-out;
   cursor: pointer;
 }
+.credit .credit-list .credit-item h6{
+  justify-self: flex-end;
+}
 
 .credit .credit-list .credit-item img {
-  width: 50%;
+  width: 5em;
 }
