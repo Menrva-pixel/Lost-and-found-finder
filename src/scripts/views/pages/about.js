@@ -1,4 +1,5 @@
 import pictDev1 from '../../../public/images/dev/man-1.jpg';
+import pictMahen from '../../../public/images/dev/profile-mahen.jpg';
 import pictCreditHtml from '../../../public/images/credit/html5-logo.png';
 import pictCreditCss from '../../../public/images/credit/css3-logo.png';
 import pictCreditJavaScript from '../../../public/images/credit/javascript-logo.png';
@@ -33,11 +34,11 @@ const about = {
             <div class="box-card">
                 <div class="profile">
                     <div class ="image-profile">
-                        <img src="${pictDev1}" alt="">
+                        <img src="${pictMahen}" alt="">
                     </div>
                     <div class="image-detail">
                         <h4>Mahendra</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nobis nam consectetur officia a ipsum odit delectus Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p>"By pure chance, I teamed up with a talented crew, and together, we transformed our ideas into an outstanding digital experience. From coding to design, we conquered challenges and poured our passion into creating a killer website. Enjoy the results of our collaboration!"</p>
                         
                         <div class="social-media">
                         <a href="https://github.com/OmMahen" target="_blank"><i class="bi bi-github"></i></a>
