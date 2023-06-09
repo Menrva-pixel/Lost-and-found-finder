@@ -324,6 +324,10 @@
   .footer-copyright {
     text-align: center;
   }
+
+  .app-bar .app-bar__navigation {
+    display: none;
+  }
 }
 
 /* item list */

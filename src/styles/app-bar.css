@@ -60,7 +60,6 @@
   transition: all 0.3s;
   padding: 8px;
   background: none;
-  display: none;
 }
 
 .app-bar .app-bar__navigation.open {
