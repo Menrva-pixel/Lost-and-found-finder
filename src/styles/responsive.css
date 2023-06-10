@@ -63,12 +63,6 @@
   .credit .credit-list .credit-item h6{
     font-size: 1em;
   }
-  /* .Github {
-    grid-column-start: 1;
-  }
-  .express {
-    grid-column-start: 3;
-  } */
 }
 @media screen and (max-width: 500px){
   .credit {
@@ -181,9 +175,9 @@
     site-description-element .desc-container {
         grid-template-columns: 1fr 1fr;
     }
-    .box-card{
+    /* .box-card{
       flex-direction: row;
-    }
+    } */
     #detail-item {
       flex-direction: row;
     }
@@ -281,6 +275,7 @@
     margin: auto;
     max-width: 350px;
     min-width: 300px;
+    height: 100%;
   }
 
 
@@ -289,9 +284,6 @@
     padding: 0 10px;
   }
 
-  .credit .credit-list .credit-item {
-    /* width: 40%; */
-  }
 }
 
 
@@ -317,9 +309,6 @@
     padding: 0px 30px;
   }
 
-  .credit-list .credit-item {
-    /* width: 100%; */
-  }
 }
 
 @media only screen and (max-width: 899px) {
