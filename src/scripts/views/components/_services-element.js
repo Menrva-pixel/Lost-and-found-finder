@@ -19,19 +19,19 @@ class ServiceElement extends HTMLElement {
         <div class="services-list">
           <div class="service-item1">
               <img src="${srcImg1}">
-              <a href="#" class="role-title">Finder</a>
+              <a href="#/finder-profile" class="role-title">Finder</a>
               <p class="role-desc">Menemukan barang milik orang lain ?</p>
           </div>
 
           <div class="service-item2">
             <img src="${srcImg2}">
-            <a href="#" class="role-title">Helper</a>
+            <a href="#/finder-profile" class="role-title">Helper</a>
             <p class="role-desc">Ingin menolong orang mencari atau<br> menemukan barang yang hilang ?</p>
           </div>
 
           <div class="service-item3">
             <img src="${srcImg3}">
-            <a href="#" class="role-title">Seeker</a>
+            <a href="#/finder-profile" class="role-title">Seeker</a>
             <p class="role-desc">Kamu merasa kehilangan barang ?</p>
           </div>
         </div>
