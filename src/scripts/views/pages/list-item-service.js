@@ -117,8 +117,14 @@ const DetailItems = {
     // Tambahkan event listener untuk tombol filter dan tombol pencarian
     const filterButton = document.querySelector('.btn-primary');
 
-    filterButton.addEventListener('click', filterItems);
-    searchInput.addEventListener('input', filterItems);
+    filterButton.addEventListener('click', (event) => {
+      event.preventDefault();
+      filterItems();
+    });
+    searchInput.addEventListener('input', (event) => {
+      event.preventDefault();
+      filterItems();
+    });
   },
 
 };

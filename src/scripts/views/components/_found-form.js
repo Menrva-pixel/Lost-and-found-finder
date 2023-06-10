@@ -92,6 +92,7 @@ class FoundForm extends HTMLElement {
     const agreementCheckbox = document.getElementById('agreement');
     const formElement = document.getElementById('found-form');
     const submitButton = document.getElementById('submit-btn');
+    submitButton.disabled = true;
 
     uploadElement.addEventListener('change', () => {
       if (uploadElement.files && uploadElement.files[0]) {
@@ -99,8 +100,13 @@ class FoundForm extends HTMLElement {
         reader.onload = (e) => {
           const imageResult = document.getElementById('imageResult');
           imageResult.src = e.target.result;
+          if (validateForm()) {
+            submitButton.disabled = false;
+          }
         };
         reader.readAsDataURL(uploadElement.files[0]);
+      } else {
+        submitButton.disabled = true;
       }
     });
 
@@ -120,6 +126,7 @@ class FoundForm extends HTMLElement {
       const itemDescription = document.getElementById('item-description').value;
       const foundDate = document.getElementById('found-date').value;
       const foundLocation = document.getElementById('find-location').value;
+      const uploadFile = document.getElementById('upload').value;
       const agreementChecked = agreementCheckbox.checked;
 
       // Validation logic
@@ -131,6 +138,7 @@ class FoundForm extends HTMLElement {
         || itemDescription.trim() === ''
         || foundDate.trim() === ''
         || foundLocation.trim() === ''
+        || uploadFile === ''
         || !agreementChecked
       ) {
         return false;

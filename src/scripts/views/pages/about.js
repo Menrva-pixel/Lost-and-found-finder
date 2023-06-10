@@ -1,4 +1,5 @@
-import pictDev1 from '../../../public/images/dev/man-1.jpg';
+import pictVicky from '../../../public/images/dev/profile-vicky.png';
+import pictIbnu from '../../../public/images/dev/profile-ibnu.png';
 import pictMahen from '../../../public/images/dev/profile-mahen.jpg';
 import pictBarkah from '../../../public/images/dev/profile-barkah.png';
 import pictCreditHtml from '../../../public/images/credit/html5-logo.png';
@@ -39,8 +40,9 @@ const about = {
                     </div>
                     <div class="image-detail">
                         <h4>Mahendra</h4>
-                        <p>"By pure chance, I teamed up with a talented crew, and together, we transformed our ideas into an outstanding digital experience. From coding to design, we conquered challenges and poured our passion into creating a killer website. Enjoy the results of our collaboration!"</p>
-                        
+                        <p>Universitas Mataram, Fakultas Teknik, Jurusan Teknik Informatika</p>
+                        <br>
+                        <p>"Our team's collaboration created an impressive capstone project that I'm sure will outshine the rest."</p>
                         <div class="social-media">
                         <a href="https://github.com/OmMahen" target="_blank"><i class="bi bi-github"></i></a>
                         <a href="https://www.linkedin.com/in/mahendra-putra-raharja/" target="_blank"><i class="bi bi-linkedin"></i></a>
@@ -66,11 +68,12 @@ const about = {
 
                 <div class="profile">
                     <div class ="image-profile">
-                        <img src="${pictDev1}" alt="dev-pic3">
+                        <img src="${pictIbnu}" alt="dev-pic3">
                     </div>
                     <div class="image-detail">
                         <h4>Ibnu Hasyim</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nobis nam consectetur officia a ipsum odit delectus Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p>Saya Mahasiswa Universitas Muslim Indonesia Makassar, Fakultas Ilmu Komputer Jurusan Teknik Informatika.
+                        Saat ini saya sedang fokus mempelajari tentang pengembangan Front End Web Developer.</p>
                         
                         <div class="social-media">
                         <a href="https://github.com/IbnuHs" target="_blank"><i class="bi bi-github"></i></a>
@@ -81,11 +84,11 @@ const about = {
 
                 <div class="profile">
                     <div class ="image-profile">
-                        <img src="${pictDev1}" alt="dev-pic4">
+                        <img src="${pictVicky}" alt="dev-pic4">
                     </div>
                     <div class="image-detail">
                         <h4>Vicky</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nobis nam consectetur officia a ipsum odit delectus Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p>Universitas Negeri Surabaya, Fakultas Teknik, Jurusan Teknik Informatika</p>
                         
                         <div class="social-media">
                         <a href="https://github.com/VickyPratama87" target="_blank"><i class="bi bi-github"></i></a>
