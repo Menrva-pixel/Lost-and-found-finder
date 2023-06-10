@@ -1,5 +1,6 @@
 import pictDev1 from '../../../public/images/dev/man-1.jpg';
 import pictVicky from '../../../public/images/dev/profile-vicky.png';
+import pictIbnu from '../../../public/images/dev/profile-ibnu.png';
 import pictMahen from '../../../public/images/dev/profile-mahen.jpg';
 import pictCreditHtml from '../../../public/images/credit/html5-logo.png';
 import pictCreditCss from '../../../public/images/credit/css3-logo.png';
@@ -13,8 +14,8 @@ import pictCreditExpress from '../../../public/images/credit/express-logo.png';
 import '../components/_sponsor-section';
 
 const about = {
-	async render() {
-		return `
+  async render() {
+    return `
         <h2 class ="about">About</h2>
         <hr class="line-about"/>
         <div class="latar">
@@ -39,7 +40,9 @@ const about = {
                     </div>
                     <div class="image-detail">
                         <h4>Mahendra</h4>
-                        <p>Universitas Mataram, Fakultas Teknik, Jurusan Informatika :)</p>
+                        <p>Universitas Mataram, Fakultas Teknik, Jurusan Teknik Informatika</p>
+                        <br>
+                        <p>"Our team's collaboration created an impressive capstone project that I'm sure will outshine the rest."</p>
                         <div class="social-media">
                         <a href="https://github.com/OmMahen" target="_blank"><i class="bi bi-github"></i></a>
                         <a href="https://www.linkedin.com/in/mahendra-putra-raharja/" target="_blank"><i class="bi bi-linkedin"></i></a>
@@ -64,11 +67,12 @@ const about = {
 
                 <div class="profile">
                     <div class ="image-profile">
-                        <img src="${pictDev1}" alt="">
+                        <img src="${pictIbnu}" alt="">
                     </div>
                     <div class="image-detail">
                         <h4>Ibnu Hasyim</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nobis nam consectetur officia a ipsum odit delectus Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p>Saya Mahasiswa Universitas Muslim Indonesia Makassar, Fakultas Ilmu Komputer Jurusan Teknik Informatika.
+                        Saat ini saya sedang fokus mempelajari tentang pengembangan Front End Web Developer.</p>
                         
                         <div class="social-media">
                         <a href="https://github.com/IbnuHs" target="_blank"><i class="bi bi-github"></i></a>
@@ -143,11 +147,11 @@ const about = {
             <sponsor-section></sponsor-section>
     </div>
       `;
-	},
+  },
 
-	async afterRender() {
-		// Fungsi ini akan dipanggil setelah render()
-	},
+  async afterRender() {
+    // Fungsi ini akan dipanggil setelah render()
+  },
 };
 
 export default about;

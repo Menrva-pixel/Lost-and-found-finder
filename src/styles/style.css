@@ -627,8 +627,6 @@ hr {
   box-sizing: border-box;
   cursor: pointer;
   position: relative;
-  /* visibility: hidden; */
-  /* border: 2px solid black; */
 }
 
 .our-team .profile img {
@@ -636,6 +634,11 @@ hr {
   border: 3px solid #bfbfbf;
   border-radius: 50%;
   margin: 20px auto;
+  background-color: #E3E3E3;
+}
+
+.image-detail p {
+  text-align: center;
 }
 
 .image-profile {
@@ -653,7 +656,13 @@ hr {
   margin-top: 50px;
 }
 
+.our-team .image-detail {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
 .our-team .social-media {
+  /* align-self: end; */
   text-align: center;
   margin-top: 20px;
 }
