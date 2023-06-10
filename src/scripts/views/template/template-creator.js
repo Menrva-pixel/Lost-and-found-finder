@@ -20,7 +20,7 @@ const createLostItemCardForResult = (lostItem) => `
         <p class="card-date">
         <span class="day">${new Date(lostItem.item_date).toLocaleDateString('id-ID', { day: 'numeric', month: 'long' })}</span>
          <span class="year">${new Date(lostItem.item_date).toLocaleDateString('id-ID', { year: 'numeric' })}</span>
-        </p>
+        </p>     
         <p class="card-text">${lostItem.item_description}</p>
     </div>
 </div>`;
@@ -35,7 +35,7 @@ const createFoundItemCardForResult = (foundItem) => `
             <p class="card-date">
             <span class="day">${new Date(foundItem.item_date).toLocaleDateString('id-ID', { day: 'numeric', month: 'long' })}</span>
              <span class="year">${new Date(foundItem.item_date).toLocaleDateString('id-ID', { year: 'numeric' })}</span>
-          </p>
+             </p>
         <p class="card-text">${foundItem.item_description}</p>
     </div>
 </div>`;
