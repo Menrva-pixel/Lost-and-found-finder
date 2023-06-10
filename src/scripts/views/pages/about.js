@@ -1,4 +1,5 @@
 import pictDev1 from '../../../public/images/dev/man-1.jpg';
+import pictVicky from '../../../public/images/dev/profile-vicky.jpg';
 import pictMahen from '../../../public/images/dev/profile-mahen.jpg';
 import pictCreditHtml from '../../../public/images/credit/html5-logo.png';
 import pictCreditCss from '../../../public/images/credit/css3-logo.png';
@@ -12,8 +13,8 @@ import pictCreditExpress from '../../../public/images/credit/express-logo.png';
 import '../components/_sponsor-section';
 
 const about = {
-  async render() {
-    return `
+	async render() {
+		return `
         <h2 class ="about">About</h2>
         <hr class="line-about"/>
         <div class="latar">
@@ -79,11 +80,11 @@ const about = {
 
                 <div class="profile">
                     <div class ="image-profile">
-                        <img src="${pictDev1}" alt="">
+                        <img src="${pictVicky}" alt="">
                     </div>
                     <div class="image-detail">
                         <h4>Vicky</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nobis nam consectetur officia a ipsum odit delectus Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p>Seeing the social conditions where many people lost their belongings, my team and I took the initiative to create a web that could overcome and provide solutions to these problems. “Problem is solved with Lost and Found App”</p>
                         
                         <div class="social-media">
                         <a href="https://github.com/VickyPratama87" target="_blank"><i class="bi bi-github"></i></a>
@@ -143,11 +144,11 @@ const about = {
             <sponsor-section></sponsor-section>
     </div>
       `;
-  },
+	},
 
-  async afterRender() {
-    // Fungsi ini akan dipanggil setelah render()
-  },
+	async afterRender() {
+		// Fungsi ini akan dipanggil setelah render()
+	},
 };
 
 export default about;
