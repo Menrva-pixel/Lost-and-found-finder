@@ -63,6 +63,7 @@
 
 #submit-btn {
   box-shadow: 2px 4px 2px #333;
+  border: 1px solid #333;
 }
 
 #submit-btn:hover {
