@@ -1,5 +1,6 @@
 import pictDev1 from '../../../public/images/dev/man-1.jpg';
 import pictMahen from '../../../public/images/dev/profile-mahen.jpg';
+import pictBarkah from '../../../public/images/dev/profile-barkah.png';
 import pictCreditHtml from '../../../public/images/credit/html5-logo.png';
 import pictCreditCss from '../../../public/images/credit/css3-logo.png';
 import pictCreditJavaScript from '../../../public/images/credit/javascript-logo.png';
@@ -34,7 +35,7 @@ const about = {
             <div class="box-card">
                 <div class="profile">
                     <div class ="image-profile">
-                        <img src="${pictMahen}" alt="">
+                        <img src="${pictMahen}" alt="dev-pic1">
                     </div>
                     <div class="image-detail">
                         <h4>Mahendra</h4>
@@ -49,11 +50,12 @@ const about = {
 
                 <div class="profile">
                     <div class ="image-profile">
-                        <img src="${pictDev1}" alt="">
+                        <img src="${pictBarkah}" alt="dev-pic2">
                     </div>
                     <div class="image-detail">
                         <h4>Herdyanto</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nobis nam consectetur officia a ipsum odit delectus Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p>Mahasiswa Ilmu Komputer Fakultas Teknologi Informasi Universitas Bina Sarana Informatika</p>
+                        <p>"Time is a great tailor, stitching the fabric of our lives with threads of experience. In the passing seconds, time dilation teaches us the importance of cherishing every precious moment in our lives."</p>
                         
                         <div class="social-media">
                         <a href="https://github.com/Menrva-pixel" target="_blank"><i class="bi bi-github"></i></a>
@@ -64,7 +66,7 @@ const about = {
 
                 <div class="profile">
                     <div class ="image-profile">
-                        <img src="${pictDev1}" alt="">
+                        <img src="${pictDev1}" alt="dev-pic3">
                     </div>
                     <div class="image-detail">
                         <h4>Ibnu Hasyim</h4>
@@ -79,7 +81,7 @@ const about = {
 
                 <div class="profile">
                     <div class ="image-profile">
-                        <img src="${pictDev1}" alt="">
+                        <img src="${pictDev1}" alt="dev-pic4">
                     </div>
                     <div class="image-detail">
                         <h4>Vicky</h4>
