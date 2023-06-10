@@ -92,6 +92,7 @@ class LostForm extends HTMLElement {
     const agreementCheckbox = document.getElementById('agreement');
     const formElement = document.getElementById('lost-form');
     const submitButton = document.getElementById('submit-btn');
+    submitButton.disabled = true;
 
     uploadElement.addEventListener('change', () => {
       if (uploadElement.files && uploadElement.files[0]) {
@@ -99,7 +100,9 @@ class LostForm extends HTMLElement {
         reader.onload = (e) => {
           const imageResult = document.getElementById('imageResult');
           imageResult.src = e.target.result;
-          submitButton.disabled = false;
+          if (validateForm()) {
+            submitButton.disabled = false;
+          }
         };
         reader.readAsDataURL(uploadElement.files[0]);
       } else {
@@ -123,6 +126,7 @@ class LostForm extends HTMLElement {
       const itemDescription = document.getElementById('item-description').value;
       const lossDate = document.getElementById('loss-date').value;
       const lossLocation = document.getElementById('loss-location').value;
+      const uploadFile = document.getElementById('upload').value;
       const agreementChecked = agreementCheckbox.checked;
 
       // validation logic
@@ -134,6 +138,7 @@ class LostForm extends HTMLElement {
         || itemDescription.trim() === ''
         || lossDate.trim() === ''
         || lossLocation.trim() === ''
+        || uploadFile === ''
         || !agreementChecked
       ) {
         return false;
