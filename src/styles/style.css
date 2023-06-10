@@ -297,7 +297,9 @@ function-section h2 {
   background-color: #dd7160;
   font-weight: 500;
   color: #fff;
+  box-shadow: 2px 2px 3px #333;
 }
+
 
 /* information section */
 information-section {
@@ -1026,3 +1028,137 @@ hr {
   }
 }
 
+/* finder-profile */
+
+#finder-profile {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px auto;
+}
+
+.profile-card {
+  width: 300px;
+  height: 400px;
+  margin: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.profile-card:hover {
+  transform: translateY(-10px) rotateX(15deg);
+}
+
+.profile-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transform-origin: top;
+  transform: rotateX(90deg);
+  transition: transform 0.5s;
+}
+
+.profile-card:hover::before {
+  transform: rotateX(0deg);
+}
+
+.profile-card:hover .profile-info {
+  opacity: 1;
+}
+
+.profile-img {
+  position: relative;
+  overflow: hidden;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.profile-img img {
+  width: 100%;
+  height: auto;
+  min-width: 250px;
+}
+
+.profile-img h2 {
+  color: #161616;
+  font-size: 26px;
+  margin: 0;
+  padding: 15px 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.profile-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.profile-info h3 {
+  font-size: 22px;
+  margin-top: 0;
+  font-weight: 600;;
+}
+
+.profile-info p {
+  font-size: 14px;
+  text-align: center;
+  padding: 15px;
+  cursor: default;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 2.8em;
+  margin: 20px auto;
+}
+
+.warning-card {
+  max-width: 1100px;
+  height: 200px;
+  margin: 20px auto;
+  border-radius: 10px;
+  overflow-y: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.warning-card-content {
+  padding: 20px;
+  line-height: 1.5;
+}
+
+.warning-card-content p {
+  margin: 0;
+}
+
+/* Media queries untuk finder-profile */
+
+@media screen and (max-width: 480px) {
+
+  .page-title {
+    font-size: 1.8em;
+  }
+  
+}

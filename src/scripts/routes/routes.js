@@ -8,6 +8,7 @@ import FoundItemService from '../views/pages/found-item-service';
 // eslint-disable-next-line import/no-named-as-default, import/no-named-as-default-member
 import ListItemsService from '../views/pages/list-item-service';
 import DetailItems from '../views/pages/detail-item';
+import Profile from '../views/pages/finder-profile';
 
 const routes = {
   '/': Home, // default page
@@ -20,6 +21,7 @@ const routes = {
   '/found-item-service': FoundItemService,
   '/list-item-service': ListItemsService,
   '/item-detail/:id': DetailItems,
+  '/finder-profile': Profile,
 };
 
 export default routes;

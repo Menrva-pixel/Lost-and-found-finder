@@ -74,6 +74,12 @@
   box-shadow: 1px 3px 2px #333;
 }
 
+.submit-btn {
+  display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 
 /* form Button */
 
@@ -90,6 +96,7 @@
     .form-title {
         font-size: 3.2em;
     }
+
 }
 
 

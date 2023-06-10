@@ -38,6 +38,14 @@
     transform: none !important;
     background-color: #1e386b;
   }
+
+  .hero {
+    margin:10px auto;
+  }
+
+  .left-form img {
+    max-width: 300px;
+  }
 }
 /*  Credit in about page */
 @media screen and (max-width: 1050px){
@@ -286,6 +294,7 @@
   }
 }
 
+
 @media screen and (max-width: 750px){
   .box-card {
     width: 320px;
@@ -313,28 +322,7 @@
   }
 }
 
-@media only screen and (max-width: 500px) {
-  .credit .credit-list .credit-item img {
-    /* width: 100%; */
-  }
-}
-
-/* footer section */
-@media only screen and (max-width: 767px) {
-  .footer-top {
-    text-align: center;
-    border-radius: 0;
-    margin: 0;
-  }
-
-  .footer-copyright {
-    text-align: center;
-  }
-
-  .app-bar .app-bar__navigation {
-    display: none;
-  }
-
+@media only screen and (max-width: 899px) {
   .left-form {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
@@ -344,6 +332,25 @@
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
+
+  .footer-top {
+    text-align: center;
+    border-radius: 0;
+    margin: 0;
+  }
+}
+
+/* footer section */
+@media only screen and (max-width: 767px) {
+
+  .footer-copyright {
+    text-align: center;
+  }
+
+  .app-bar .app-bar__navigation {
+    display: none;
+  }
+  
 }
 
 /* item list */
@@ -359,3 +366,17 @@
   }
 }
 
+/* HD display */
+
+@media only screen and (min-width: 1366px) {
+
+}
+
+/* full HD display 1080 */
+
+@media only screen and (min-width: 1920px) {
+  .hero {
+    margin: 97px auto;
+  }
+
+}
