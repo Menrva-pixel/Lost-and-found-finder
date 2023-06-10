@@ -638,6 +638,10 @@ hr {
   margin: 20px auto;
 }
 
+.image-detail p {
+  text-align: center;
+}
+
 .image-profile {
   display: flex;
   justify-content: center;
