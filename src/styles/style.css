@@ -513,6 +513,12 @@ information-section a:hover {
   -webkit-box-orient: vertical;
 }
 
+@media (max-width: 576px) {
+  .item-card {
+    max-width: 100%;
+  }
+}
+
 
 
 
