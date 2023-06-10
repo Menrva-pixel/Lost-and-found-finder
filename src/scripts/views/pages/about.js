@@ -1,6 +1,6 @@
 import pictDev1 from '../../../public/images/dev/man-1.jpg';
+import pictVicky from '../../../public/images/dev/profile-vicky.png';
 import pictIbnu from '../../../public/images/dev/profile-ibnu.png';
-import pictVicky from '../../../public/images/dev/profile-vicky.jpg';
 import pictMahen from '../../../public/images/dev/profile-mahen.jpg';
 import pictCreditHtml from '../../../public/images/credit/html5-logo.png';
 import pictCreditCss from '../../../public/images/credit/css3-logo.png';
@@ -87,7 +87,7 @@ const about = {
                     </div>
                     <div class="image-detail">
                         <h4>Vicky</h4>
-                        <p>Seeing the social conditions where many people lost their belongings, my team and I took the initiative to create a web that could overcome and provide solutions to these problems. “Problem is solved with Lost and Found App”</p>
+                        <p>Universitas Negeri Surabaya, Fakultas Teknik, Jurusan Teknik Informatika</p>
                         
                         <div class="social-media">
                         <a href="https://github.com/VickyPratama87" target="_blank"><i class="bi bi-github"></i></a>
