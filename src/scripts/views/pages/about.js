@@ -38,7 +38,9 @@ const about = {
                     </div>
                     <div class="image-detail">
                         <h4>Mahendra</h4>
-                        <p>Universitas Mataram, Fakultas Teknik, Jurusan Informatika :)</p>
+                        <p>Universitas Mataram, Fakultas Teknik, Jurusan Teknik Informatika</p>
+                        <br>
+                        <p>"Our team's collaboration created an impressive capstone project that I'm sure will outshine the rest."</p>
                         <div class="social-media">
                         <a href="https://github.com/OmMahen" target="_blank"><i class="bi bi-github"></i></a>
                         <a href="https://www.linkedin.com/in/mahendra-putra-raharja/" target="_blank"><i class="bi bi-linkedin"></i></a>
