@@ -142,3 +142,35 @@
     padding: 10px 20px;
     font-size: 26px;
   }
+
+  /* filter-group input */
+
+  .input-group-search {
+    display: flex !important;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .input-group-text {
+    border-radius: 0 15px 15px 0;
+    border: 1px solid #9b9b9b;
+    background-color: #dd7160;
+  }
+
+  #search-input {
+    border: 1px solid #9b9b9b !important;
+    border-radius: 15px 0 0 15px;
+    box-shadow: 2px 2px 2px #9b9b9b inset;
+  }
+
+  .form-control {
+    border: 1px solid #9b9b9b !important;
+    box-shadow: 2px 2px 2px #9b9b9b inset;
+    border-radius: 15px;
+  }
+
+  .input-group-search .search-icon img {
+    width: 25px;
+    height: 25px;
+  }
