@@ -10,7 +10,7 @@ class information extends HTMLElement {
 
   render() {
     this.innerHTML = `
-        <h2>Informasi Kehilangan</h2>
+        <h2>Informasi Barang Hilang</h2>
         <button id="scrollLeft"><i class="bi bi-caret-left-fill"></i></button>
         <div class="containerCard">
         </div>

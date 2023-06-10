@@ -57,18 +57,23 @@ class BannerElement extends HTMLElement {
     }
 
     .btn-lapor {
-      padding: 15px 40px 15px 40px;
-      color: #d3d3d3;
-      font-weight: 400;
-      font-size: 1.4em;
-      border: none;
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      font-weight: 500;
+      text-align: center;
+      text-decoration: none;
       background-color: #dd7160;
-      border-radius: 5px;
+      color: #333;
+      border: none;
+      border-radius: 4px;
       cursor: pointer;
+      transition: background-color 0.3s ease;
     }
     
     button:hover {
-      background-color: rgb(54, 54, 54);
+      background-color: #333;
+      color: #fff;
     }
     
     button:active {

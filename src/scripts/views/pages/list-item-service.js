@@ -9,14 +9,14 @@ const DetailItems = {
 
         <div class="col-md-3 mb-3">
 
-          <h2 class="grid-title"><img width="40" height="40" src="https://img.icons8.com/ios-filled/50/filter--v1.png" alt="filter--v1"/> Filters</h2>
+          <h2 class="grid-title"><img width="40" height="40" src="https://img.icons8.com/dotty/80/empty-filter.png" alt="filter--v1"/> Filters</h2>
           <hr>
 
           <form>
 
           <div class="input-group-search mb-3">
           <div class="input-group-prepend">
-            <span class="input-group-text search-icon"><img src="https://img.icons8.com/dotty/80/FFFFFF/search.png" alt="search-icon"></span>
+            <span class="input-group-text search-icon"><img src="https://img.icons8.com/external-vitaliy-gorbachev-lineal-vitaly-gorbachev/60/external-magnifier-infographic-elements-vitaliy-gorbachev-lineal-vitaly-gorbachev.png" alt="search-icon"></span>
           </div>
           <input id="search-input" type="text" class="form-control" placeholder="Cari barang.." aria-describedby="basic-addon2">
         </div>
@@ -47,7 +47,7 @@ const DetailItems = {
 
         <div class="col-md-9">
 
-          <h2><img width="40" height="40" src="https://img.icons8.com/material-outlined/30/check-document.png" alt="check-document"/> Result</h2>
+          <h2><img width="40" height="40" src="https://img.icons8.com/ios/50/test-passed--v1.png" alt="check-document"/> Result</h2>
           <hr>
           <div class="container mb-3">
             <div id="item-list" class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3">
