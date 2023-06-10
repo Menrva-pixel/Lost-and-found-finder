@@ -380,3 +380,43 @@
   }
 
 }
+
+
+/* home card responsif */
+
+@media (max-width: 768px) {
+  .containerCard {
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    overflow-x: auto;
+  }
+  
+  .containerCard > .item-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 649px) {
+  .home-card {
+    min-width: 250px;
+    width: 100%;
+  }
+  
+  .card-img-top {
+    height: 150px;
+  }
+  
+  .card-home-body {
+    padding: 1rem;
+  }
+  
+  .card-home-body h5 {
+    font-size: 1rem;
+  }
+  
+  .card-home-text,
+  .home-location {
+    font-size: 0.75rem;
+  }
+}
