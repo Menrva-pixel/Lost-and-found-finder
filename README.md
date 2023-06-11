@@ -1,6 +1,6 @@
 <div align="center">
   
-  <a href="https://ibb.co/pxpCNDc"><img src="https://i.ibb.co/Nszwfh5/banner.jpg" alt="banner" border="0" /></a>
+  <a href="https://ibb.co/pxpCNDc"><img src="https://i.ibb.co/nfYhnjk/icon.png" alt="icon" border="0"></a>
   
 # Lost & Found 
 
