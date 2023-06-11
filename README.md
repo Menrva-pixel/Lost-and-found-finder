@@ -8,7 +8,7 @@ Capstone Project SIB Cycle 4 - Dicoding 2023
   
 ## Features
 
- Interactive | PWA | Multi Platform
+ Interactive | PWA | Multi Platform | Offline Access | Filtering & Searching  | Submission Form
 
   
 ## Tech
@@ -28,7 +28,7 @@ Capstone Project SIB Cycle 4 - Dicoding 2023
 ![Postgre](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white) 
 ###
 [`Lost-and-Found API`](https://github.com/OmMahen/lost-and-found-api) |
-[`Lost-and-Found Image API`](https://github.com/OmMahen/lost-and-found-image-api)
+[`Lost-and-Found Img API`](https://github.com/OmMahen/lost-and-found-image-api)
   
 
 
