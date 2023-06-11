@@ -93,4 +93,7 @@ Human error  | Adanya miss komunikasi dalam anggota tim. | Project yang dikerjak
 Perubahan Agenda  | Adanya agenda dadakan yang tidak terjadwalkan di luar agenda project. | Keterlambatan dalam menyelesaikan project, perlu menggantinya di lain hari.  | Segera konfirmasi dengan tim untuk mendiskusikan jadwal terbaru. 
 Ujian  | Adanya jadwal ujian dari universitas. | Menghambat proses pengerjaan project.  | Setelah Ujian selesai segera kembali melanjutkan project.
   
+  ## User Flowchart :
+
+  <img src="https://i.ibb.co/Pj0j8kW/Blank-diagram-1.png" alt="Blank-diagram-1" border="0">
   </div>
