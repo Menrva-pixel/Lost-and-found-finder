@@ -14,8 +14,8 @@ import pictCreditExpress from '../../../public/images/credit/express-logo.png';
 import '../components/_sponsor-section';
 
 const about = {
-  async render() {
-    return `
+	async render() {
+		return `
         <h2 class ="about">About</h2>
         <hr class="line-about"/>
         <div class="latar">
@@ -88,7 +88,10 @@ const about = {
                     </div>
                     <div class="image-detail">
                         <h4>Vicky</h4>
-                        <p>Universitas Negeri Surabaya, Fakultas Teknik, Jurusan Teknik Informatika</p>
+                        <p>Universitas Negeri Surabaya, Fakultas Teknik, Jurusan Teknik Informatika
+                        </p>
+
+                        <p>So with IT in the world 5.0, the development is so fast for a Technologist how he adapts and deals with the problem with current developments.</p>
                         
                         <div class="social-media">
                         <a href="https://github.com/VickyPratama87" target="_blank"><i class="bi bi-github"></i></a>
@@ -148,11 +151,11 @@ const about = {
             <sponsor-section></sponsor-section>
     </div>
       `;
-  },
+	},
 
-  async afterRender() {
-    // Fungsi ini akan dipanggil setelah render()
-  },
+	async afterRender() {
+		// Fungsi ini akan dipanggil setelah render()
+	},
 };
 
 export default about;
