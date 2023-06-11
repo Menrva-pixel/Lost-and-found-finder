@@ -278,24 +278,28 @@
     height: 100%;
   }
 
-
   .profile p{
     margin: auto;
     padding: 0 10px;
   }
-
+  .our-team .image-detail {
+   padding-bottom: 60px;
+  }
 }
 
 
 @media screen and (max-width: 750px){
   .box-card {
-    width: 320px;
+    width: 400px;
     grid-template-columns: 1fr;
+  }
+  .social-media a {
+    margin: 50px 0;
   }
   
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 425px) {
   .box-card {
     width: 100%;
   }

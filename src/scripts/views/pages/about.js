@@ -14,8 +14,8 @@ import pictCreditExpress from '../../../public/images/credit/express-logo.png';
 import '../components/_sponsor-section';
 
 const about = {
-	async render() {
-		return `
+  async render() {
+    return `
         <h2 class ="about">About</h2>
         <hr class="line-about"/>
         <div class="latar">
@@ -73,7 +73,8 @@ const about = {
                     <div class="image-detail">
                         <h4>Ibnu Hasyim</h4>
                         <p>Saya Mahasiswa Universitas Muslim Indonesia Makassar, Fakultas Ilmu Komputer Jurusan Teknik Informatika.
-                        Saat ini saya sedang fokus mempelajari tentang pengembangan Front End Web Developer.</p>
+                        Saat ini sedang fokus mempelajari tentang pengembangan Front End Web Developer.</p>
+                        <p>"Error is Our Friend"</p>
                         
                         <div class="social-media">
                         <a href="https://github.com/IbnuHs" target="_blank"><i class="bi bi-github"></i></a>
@@ -151,11 +152,11 @@ const about = {
             <sponsor-section></sponsor-section>
     </div>
       `;
-	},
+  },
 
-	async afterRender() {
-		// Fungsi ini akan dipanggil setelah render()
-	},
+  async afterRender() {
+    // Fungsi ini akan dipanggil setelah render()
+  },
 };
 
 export default about;
