@@ -67,14 +67,14 @@ Capstone Project SIB Cycle 4 - Dicoding 2023
   
 Ada 6 tahapan kegiatan yang harus dilakukan dalam waktu tersebut, yaitu tahap perencanaan selama 7 hari, tahap desain selama 5 hari, tahap penulisan kode program selama 20 hari, tahap pengujian selama 4 hari, tahap peluncuran selama 4 hari, dan tahap hasil akhir selama 5 hari. Setiap tahap memiliki target tertentu yang harus dicapai.   
 
-Scope |  Kegiatan
-------------- | ---------------------------------------
-Planning | Pencarian ide dan pembuatan ide project
-Design | Inisialisasi, mockup, dan evaluasi
-Coding | Setting GitHub Repository, HomePage, fitur utama dan fitur tambahan
-Testing | Testing Fungsionalitas, dan Evaluasi
-Release | Deploy dan Evaluasi
-Final Result | Dokumentasi, Project brieft, Slide presentasi, Video Presentasi
+Minggu | Scope |  Kegiatan
+--|----------- | ---------------------------------------
+1 | Planning | Pencarian ide dan pembuatan ide project
+2 | Design | Inisialisasi, mockup, dan evaluasi
+3 | Coding | Setting GitHub Repository, HomePage, fitur utama dan fitur tambahan
+4 | Testing | Testing Fungsionalitas, dan Evaluasi
+5 | Release | Deploy dan Evaluasi
+6 | Final Result | Dokumentasi, Project brieft, Slide presentasi, Video Presentasi
 
   ##  Risk and Issue Management Plan: 
 
