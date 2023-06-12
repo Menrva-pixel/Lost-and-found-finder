@@ -10,6 +10,10 @@ import pictCreditNodeJs from '../../../public/images/credit/node-js-logo.png';
 import pictCreditGit from '../../../public/images/credit/git-logo.png';
 import pictCreditGithub from '../../../public/images/credit/github-logo.png';
 import pictCreditExpress from '../../../public/images/credit/express-logo.png';
+import pictCreditPostgree from '../../../public/images/credit/postgresql-logo.png';
+import pictCreditNeon from '../../../public/images/credit/neon-log.png';
+import pictCreditVercel from '../../../public/images/credit/vercel-logo.png';
+import pictCreditPostman from '../../../public/images/credit/postman-logo.png';
 
 import '../components/_sponsor-section';
 
@@ -145,6 +149,26 @@ const about = {
                 <div class="credit-item express">
                     <img src="${pictCreditExpress}" alt="">
                     <h6>Express Js</h6>
+                </div>
+
+                <div class="credit-item express">
+                    <img src="${pictCreditNeon}" alt="">
+                    <h6>Neon Tech</h6>
+                </div>
+
+                <div class="credit-item express">
+                    <img src="${pictCreditPostgree}" alt="">
+                    <h6>Postgre SQL</h6>
+                </div>
+
+                <div class="credit-item express">
+                    <img src="${pictCreditVercel}" alt="">
+                    <h6>Vercel</h6>
+                </div>
+
+                <div class="credit-item express">
+                    <img src="${pictCreditPostman}" alt="">
+                    <h6>Postman</h6>
                 </div>
             </div>
         </div>
