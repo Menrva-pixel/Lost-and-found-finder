@@ -19,10 +19,10 @@ class SponsorSection extends HTMLElement {
       <div class="sponsor-container">
       <marquee>
         <div class="university">
-          <img src="${sponsor1}">
-          <img src="${sponsor2}">
-          <img src="${sponsor3}">
-          <img src="${sponsor4}">
+          <img src="${sponsor1}" alt="logo Universitas Mataram">
+          <img src="${sponsor2}" alt="logo Universitas">
+          <img src="${sponsor3}" alt="logo Universitas">
+          <img src="${sponsor4}" alt="logo Universitas">
         </div>
       </marquee>
       </div>     

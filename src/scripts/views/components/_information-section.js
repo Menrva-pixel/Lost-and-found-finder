@@ -16,14 +16,14 @@ class information extends HTMLElement {
   render() {
     this.innerHTML = `
         <h2>Informasi Barang Hilang</h2>
-        <button id="scrollLeft"><i class="bi bi-caret-left-fill"></i></button>
+        <button id="scrollLeft" aria-label="scroll left"><i class="bi bi-caret-left-fill"></i></button>
         <div class="containerCard" data-aos="fade-up">
         <div class="loading-container">
           <div class="loading-spinner"></div>
           <div class="loading-text">Loading item list...</div>
         </div>
         </div>
-        <button id="scrollRight"><i class="bi bi-caret-right-fill"></i></button>
+        <button id="scrollRight" aria-label="scroll right"><i class="bi bi-caret-right-fill"></i></button>
         <h3><a href="#/list-item-service">Lihat Semua...</a></h3>
         `;
   }
