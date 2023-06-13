@@ -69,7 +69,6 @@
     margin: auto;
     width: 80%;
     padding: 40px 0 50px 0;
-    /* padding: 50px 70px; */
   }
   .credit .credit-list{
     grid-template-columns: 1fr 1fr 1fr;
@@ -87,7 +86,6 @@
     margin: 10px auto;
     margin-bottom: 20px;
     width: 85%;
-    /* padding: 50px 70px; */
   }
   .credit .credit-list{
     grid-template-columns: 1fr 1fr;
@@ -104,7 +102,6 @@
 
 
 @media screen and (min-width: 650px) {
-  /* Function Section */
   function-section{
     flex-direction: row;
   }
@@ -167,17 +164,11 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-/*
-  Site Description
-*/
 
 @media screen and (min-width: 1050px) {
     site-description-element .desc-container {
         grid-template-columns: 1fr 1fr;
     }
-    /* .box-card{
-      flex-direction: row;
-    } */
     #detail-item {
       flex-direction: row;
     }
@@ -279,7 +270,7 @@
   }
 
   .profile p{
-    margin: auto;
+    /* margin: auto; */
     padding: 0 10px;
   }
   .our-team .image-detail {
