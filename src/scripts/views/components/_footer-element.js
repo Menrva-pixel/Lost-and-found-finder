@@ -30,13 +30,13 @@ class FooterElement extends HTMLElement {
                 </div>
                 <div class="row">
                 <div class="footer-sponsor col-md-4 col-sm-6">
-                    <img src="images/sponsor/merdeka-logo.png" class="img-fluid">
+                    <img src="images/sponsor/merdeka-logo.png" class="img-fluid" alt="logo kampus merdeka">
                 </div>
                 <div class="footer-sponsor col-md-4 col-sm-6">
-                    <img src="images/sponsor/msib-logo.png" class="img-fluid">
+                    <img src="images/sponsor/msib-logo.png" class="img-fluid" alt="logo program MSIB">
                 </div>
                 <div class="footer-sponsor col-md-4 col-sm-6">
-                    <img src="images/sponsor/dicoding-logo-white.png" class="img-fluid">
+                    <img src="images/sponsor/dicoding-logo-white.png" class="img-fluid" alt="logo dicoding">
                 </div>
             </div>
             

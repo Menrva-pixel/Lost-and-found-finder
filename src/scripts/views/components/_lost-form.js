@@ -16,7 +16,7 @@ class LostForm extends HTMLElement {
       <h2 class="form-title">Form Kehilangan Barang</h2>
       <div class="card form-container">
         <div class="left-form">
-          <img src="${img}">
+          <img src="${img}" alt="...">
           <div class="left-description">
             <h4>Masukan Data dan Informasi Kehilangan</h4>
             <p>Pastikan data dan Informasi kehilangan sesuai<br> dengan kriteria,
