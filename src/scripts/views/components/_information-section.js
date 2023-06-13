@@ -18,6 +18,10 @@ class information extends HTMLElement {
         <h2>Informasi Barang Hilang</h2>
         <button id="scrollLeft"><i class="bi bi-caret-left-fill"></i></button>
         <div class="containerCard" data-aos="fade-up">
+        <div class="loading-container">
+          <div class="loading-spinner"></div>
+          <div class="loading-text">Loading item list...</div>
+        </div>
         </div>
         <button id="scrollRight"><i class="bi bi-caret-right-fill"></i></button>
         <h3><a href="#/list-item-service">Lihat Semua...</a></h3>
@@ -59,7 +63,7 @@ class information extends HTMLElement {
     }
 
     const itemContainer = document.querySelector('.containerCard');
-
+    itemContainer.innerHTML = '';
     mostRecent.forEach((item) => {
       itemContainer.innerHTML += createLostItemCard(item);
     });
