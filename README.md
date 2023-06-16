@@ -34,7 +34,7 @@ Capstone Project SIB Cycle 4 - Dicoding 2023
 
   | Presentasi | Demo |
   ----------|---------
- || [Demo Video](https://youtu.be/QguTzavEbrw) 
+ [Presentation Video](https://youtu.be/SAoMJBDLYxs) | [Demo Video](https://youtu.be/QguTzavEbrw) 
 
   
  ### Team ID : `C23-R4104`
