@@ -67,7 +67,7 @@ class FoundForm extends HTMLElement {
 
             <div class="mb-3">
               <label class="form-label" for="upload">Unggah Foto</label>
-              <input id="upload" type="file" class="form-control border-0">
+              <input id="upload" type="file" class="form-control border-0" accept=".jpg">
             </div>
 
             <div class="image-area mb-3">
