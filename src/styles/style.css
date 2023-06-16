@@ -271,9 +271,7 @@ function-section h2 {
 	display: flex;
 	justify-content: end;
 	align-items: flex-end;
-	/* width: 100%; */
 	margin: auto;
-	/* max-width: 700px; */
 }
 
 .right-side {
@@ -399,10 +397,6 @@ information-section a:hover {
 	content: '\f22d';
 	color: #43609b;
 }
-
-/* .containerCard::-webkit-scrollbar {
-  width: 1px;
-} */
 
 .containerCard::-webkit-scrollbar-thumb {
 	background-color: #4b68a3;

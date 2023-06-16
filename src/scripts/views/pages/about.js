@@ -18,8 +18,8 @@ import pictCreditPostman from '../../../public/images/credit/postman-logo.png';
 import '../components/_sponsor-section';
 
 const about = {
-	async render() {
-		return `
+  async render() {
+    return `
         <h2 class ="about">About</h2>
         <hr class="line-about"/>
         <div class="latar">
@@ -44,9 +44,8 @@ const about = {
                     </div>
                     <div class="image-detail">
                         <h4>Mahendra</h4>
-                        <p>Universitas Mataram, Fakultas Teknik, Jurusan Teknik Informatika</p>
-                        <br>
-                        <p>"Our team's collaboration created an impressive capstone project that I'm sure will outshine the rest."</p>
+                        <p>Mahasiswa Universitas Mataram, Fakultas Teknik, Jurusan Teknik Informatika</p>
+                        <p>"<i>Our team's collaboration created an impressive capstone project that I'm sure will outshine the rest.</i>"</p>
                         <div class="social-media">
                         <a href="https://github.com/OmMahen" target="_blank"><i class="bi bi-github"></i></a>
                         <a href="https://www.linkedin.com/in/mahendra-putra-raharja/" target="_blank"><i class="bi bi-linkedin"></i></a>
@@ -61,7 +60,7 @@ const about = {
                     <div class="image-detail">
                         <h4>Herdyanto</h4>
                         <p>Mahasiswa Ilmu Komputer Fakultas Teknologi Informasi Universitas Bina Sarana Informatika</p>
-                        <p>"Time is a great tailor, stitching the fabric of our lives with threads of experience. In the passing seconds, time dilation teaches us the importance of cherishing every precious moment in our lives."</p>
+                        <p>"<i>Time is a great tailor, stitching the fabric of our lives with threads of experience. In the passing seconds, time dilation teaches us the importance of cherishing every precious moment in our lives.</i>"</p>
                         
                         <div class="social-media">
                         <a href="https://github.com/Menrva-pixel" target="_blank"><i class="bi bi-github"></i></a>
@@ -77,7 +76,8 @@ const about = {
                     <div class="image-detail">
                         <h4>Ibnu Hasyim</h4>
                         <p>Saya Mahasiswa Universitas Muslim Indonesia Makassar, Fakultas Ilmu Komputer Jurusan Teknik Informatika.
-                        Saat ini saya sedang fokus mempelajari tentang pengembangan Front End Web Developer.</p>
+                        Saat ini sedang fokus mempelajari tentang pengembangan Front End Web Developer.</p>
+                        <p>"<i>Error is Our Friend</i>"</p>
                         
                         <div class="social-media">
                         <a href="https://github.com/IbnuHs" target="_blank"><i class="bi bi-github"></i></a>
@@ -95,7 +95,7 @@ const about = {
                         <p>Universitas Negeri Surabaya, Fakultas Teknik, Jurusan Teknik Informatika
                         </p>
 
-                        <p>So with IT in the world 5.0, the development is so fast for a Technologist how he adapts and deals with the problem with current developments.</p>
+                        <p>"<i>So with IT in the world 5.0, the development is so fast for a Technologist how he adapts and deals with the problem with current developments.</i>"</p>
                         
                         <div class="social-media">
                         <a href="https://github.com/VickyPratama87" target="_blank"><i class="bi bi-github"></i></a>
@@ -175,11 +175,11 @@ const about = {
             <sponsor-section></sponsor-section>
     </div>
       `;
-	},
+  },
 
-	async afterRender() {
-		// Fungsi ini akan dipanggil setelah render()
-	},
+  async afterRender() {
+    // Fungsi ini akan dipanggil setelah render()
+  },
 };
 
 export default about;

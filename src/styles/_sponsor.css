@@ -18,27 +18,25 @@
 }
 
 .sponsor-container {
-    width: full;
-    padding: 20px;
-    align-items: center;
-    /* background-color: red; */
-    margin: 20px 0;
+  width: full;
+  padding: 20px;
+  align-items: center;
+  margin: 20px 0;
 }
 
 .university {
-    padding: 20px;
-    display: flex;
-    justify-content: space-evenly;
-    gap: 15px;
-    /* background-color: blue; */
-    flex-wrap: wrap;
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
 .university img {
-    max-width: 300px;
-    background-size: cover;
-    border-radius: 5px;
-    max-height: 125px;
+  max-width: 300px;
+  background-size: cover;
+  border-radius: 5px;
+  max-height: 125px;
 }
 
 
