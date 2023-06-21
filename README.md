@@ -96,4 +96,11 @@ Ujian  | Adanya jadwal ujian dari universitas. | Menghambat proses pengerjaan pr
   ## User Flowchart :
 
   <img src="https://i.ibb.co/Pj0j8kW/Blank-diagram-1.png" alt="Blank-diagram-1" border="0">
+
+  ## Presented By :
+
+  <img src="https://i.ibb.co/xGPVFJD/dicoding-logo-white.png" height="50" alt="dicoding-logo-white" border="0">  |   <img src="https://i.ibb.co/0j74xkz/msib-logo.png" height="150" alt="msib-logo" border="0"> | <img src="https://i.ibb.co/LRVcmvB/merdeka-logo.png" height="100" alt="merdeka-logo" border="0">
+-----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|-----------------------------
   </div>
+  
+  
