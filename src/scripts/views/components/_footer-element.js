@@ -47,7 +47,7 @@ class FooterElement extends HTMLElement {
     <div class="footer-bottom">
         <div class="container">
                    <div class="col-md-6 footer-copyright">
-                    &copy; 2023 Lost & Found Finder by <a href="#" target="_blank">Capstone Team</a>
+                    &copy; 2023 Lost & Found Finder by <a href="#/about" target="_blank">Capstone Team</a>
     </div>
 </footer>
 
