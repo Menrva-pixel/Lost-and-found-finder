@@ -74,9 +74,8 @@ class KebijakanPrivasi extends HTMLElement {
                 <h2>9. Kontak:</h2>
                 <p>Jika Anda memiliki pertanyaan atau kekhawatiran terkait kebijakan privasi, silakan hubungi kami melalui:</p>
                 <ul>
-                    <li>Alamat: [Alamat perusahaan]</li>
-                    <li>Email: [Email perusahaan]</li>
-                    <li>Nomor telepon: [Nomor telepon perusahaan]</li>
+                    <li>Email: lostandfound@finder.org</li>
+                    <li>Nomor telepon:622-717-659</li>
                 </ul>
 
             </ol>
